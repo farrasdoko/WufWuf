@@ -22,34 +22,49 @@ class ArticleController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         if let quote = parsedData.quote {
-            quoteLabel.text = quote
+            let quoteString = NSAttributedString(string: quote, attributes: [ .font:UIFont.italicSystemFont(ofSize: 14)])
+            quoteLabel.attributedText = quoteString
         } else {
             quoteLabel.isHidden = true
         }
-        
-        
-
-        for artisel in article1 {
-            if let artikel = artisel as? String {
-                let p = NSAttributedString(string: artikel)
+//        titleLabel.text = parsedData.title
+//        bannerImg.image = parsedData.image
+        detailLabel.attributedText = getArticle(article1)
+    }
+    
+    func getArticle(_ detail: [Any]) -> NSMutableAttributedString {
+        let string = NSMutableAttributedString()
+        for article in detail {
+            if let articleString = article as? String {
+                let p = NSAttributedString(string: articleString)
+                string.append(p)
+            } else if article is UIImage {
+                let image = NSTextAttachment(image: resizeImage(article as! UIImage, 190))
+                let imageString = NSAttributedString(attachment: image)
+                let imageCentered = NSMutableAttributedString(attributedString: imageString)
                 
-                detail.append(p)
-            } else if artisel is UIImage {
+                let paragraph = NSMutableParagraphStyle()
+                paragraph.alignment = .center
+                imageCentered.addAttribute(.paragraphStyle, value: paragraph, range: NSMakeRange(0, 1))
                 
-                let textAttatchment = NSTextAttachment()
-                textAttatchment.image = artisel as! UIImage
-                
-                let height = textAttatchment.image?.size.width ?? 0
-                let scaleFactor = height / (detailLabel.frame.size.width - 10)
-                textAttatchment.image = UIImage(cgImage: (textAttatchment.image?.cgImage)!, scale: scaleFactor, orientation: .up)
-                let attrStringWithImage = NSAttributedString(attachment: textAttatchment)
-                
-                detail.append(attrStringWithImage)
+                string.append(imageCentered)
             } else {
-                detail.append(artisel as! NSAttributedString)
+                string.append(article as! NSAttributedString)
             }
         }
-        detailLabel.attributedText = detail
+        return string
+    }
+    
+    func resizeImage(_ image: UIImage,_ height: CGFloat) -> UIImage {
+        let scale = height / image.size.height
+        let width = image.size.width * scale
+        UIGraphicsBeginImageContext(CGSize(width: width, height: height))
+        image.draw(in: CGRect(x: 0, y: 0, width: width, height: height))
+        
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        
+        return newImage
     }
     
 
