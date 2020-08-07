@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49D04E3E24DD8FD600737842 /* Homes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D04E3D24DD8FD600737842 /* Homes.storyboard */; };
+		49D04E4024DD91A300737842 /* ArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D04E3F24DD91A300737842 /* ArticleCollectionViewCell.swift */; };
+		49D04E4224DD91E000737842 /* Articlee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D04E4124DD91E000737842 /* Articlee.swift */; };
+		49D04E4424DD920100737842 /* HomeArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D04E4324DD920100737842 /* HomeArticle.swift */; };
 		A963E14424DD14CB00D6CF39 /* ScannerScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A963E14324DD14CB00D6CF39 /* ScannerScreen.storyboard */; };
 		A963E14624DD153100D6CF39 /* ScannerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A963E14524DD153100D6CF39 /* ScannerScreenViewController.swift */; };
 		A963E14824DD57C500D6CF39 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A963E14724DD57C500D6CF39 /* Inceptionv3.mlmodel */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49D04E3D24DD8FD600737842 /* Homes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homes.storyboard; sourceTree = "<group>"; };
+		49D04E3F24DD91A300737842 /* ArticleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewCell.swift; sourceTree = "<group>"; };
+		49D04E4124DD91E000737842 /* Articlee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articlee.swift; sourceTree = "<group>"; };
+		49D04E4324DD920100737842 /* HomeArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeArticle.swift; sourceTree = "<group>"; };
 		A963E14324DD14CB00D6CF39 /* ScannerScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScannerScreen.storyboard; sourceTree = "<group>"; };
 		A963E14524DD153100D6CF39 /* ScannerScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerScreenViewController.swift; sourceTree = "<group>"; };
 		A963E14724DD57C500D6CF39 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
@@ -53,6 +61,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49D04E3C24DD8F8200737842 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				49D04E3D24DD8FD600737842 /* Homes.storyboard */,
+				49D04E3F24DD91A300737842 /* ArticleCollectionViewCell.swift */,
+				49D04E4124DD91E000737842 /* Articlee.swift */,
+				49D04E4324DD920100737842 /* HomeArticle.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		A963E13D24DD07FC00D6CF39 /* Cataract */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +143,7 @@
 		EDBCD29E24DBE79D002BC5CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				49D04E3C24DD8F8200737842 /* Home */,
 				A963E13D24DD07FC00D6CF39 /* Cataract */,
 				ED62C42D24DC408300AB43EB /* Model */,
 				ED62C42824DC380A00AB43EB /* Article */,
@@ -194,6 +214,7 @@
 				A963E14A24DD5B0100D6CF39 /* Halo.storyboard in Resources */,
 				A963E14424DD14CB00D6CF39 /* ScannerScreen.storyboard in Resources */,
 				ED9B9E0824DA220E00B90B24 /* Assets.xcassets in Resources */,
+				49D04E3E24DD8FD600737842 /* Homes.storyboard in Resources */,
 				ED9B9E0624DA220C00B90B24 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,11 +226,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49D04E4424DD920100737842 /* HomeArticle.swift in Sources */,
 				ED9B9E0324DA220C00B90B24 /* ViewController.swift in Sources */,
 				ED9B9DFF24DA220C00B90B24 /* AppDelegate.swift in Sources */,
 				ED62C42C24DC3DB100AB43EB /* ArticleController.swift in Sources */,
+				49D04E4024DD91A300737842 /* ArticleCollectionViewCell.swift in Sources */,
 				A963E14624DD153100D6CF39 /* ScannerScreenViewController.swift in Sources */,
 				ED9B9E0124DA220C00B90B24 /* SceneDelegate.swift in Sources */,
+				49D04E4224DD91E000737842 /* Articlee.swift in Sources */,
 				ED62C42F24DC409E00AB43EB /* Article.swift in Sources */,
 				A963E14C24DD5B7F00D6CF39 /* HaloViewController.swift in Sources */,
 				A963E14824DD57C500D6CF39 /* Inceptionv3.mlmodel in Sources */,
