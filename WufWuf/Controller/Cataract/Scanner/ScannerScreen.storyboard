@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o2L-Mq-M7S">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scanner Screen View Controller-->
+        <scene sceneID="AJA-dT-dYn">
+            <objects>
+                <viewController storyboardIdentifier="ScannerScreen1" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o2L-Mq-M7S" customClass="ScannerScreenViewController" customModule="WufWuf" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dEu-sF-NhS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKO-na-5nj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Diagnosis Katarak" id="HTD-qn-Q9X">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="4lr-CZ-6BL">
+                                            <connections>
+                                                <action selector="cameraTapped2:" destination="o2L-Mq-M7S" id="TPS-Z9-cQL"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HXw-li-SgA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X9F-Qj-OGh" userLabel="imageView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="387"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhg-Lr-LYZ">
+                                        <rect key="frame" x="0.0" y="387" width="414" height="387"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="halo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9S-UQ-7Lk" userLabel="contentLabel">
+                                                <rect key="frame" x="8" y="8" width="398" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ycC-RT-pXb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="A9S-UQ-7Lk" firstAttribute="leading" secondItem="dhg-Lr-LYZ" secondAttribute="leadingMargin" id="6i1-eA-uoU"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="A9S-UQ-7Lk" secondAttribute="trailing" id="Eev-fl-Cib"/>
+                                            <constraint firstItem="A9S-UQ-7Lk" firstAttribute="top" secondItem="dhg-Lr-LYZ" secondAttribute="topMargin" id="SGY-Et-1b1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HXw-li-SgA" firstAttribute="top" secondItem="WlK-69-MCx" secondAttribute="top" constant="44" id="Aen-o4-aUq"/>
+                            <constraint firstItem="WlK-69-MCx" firstAttribute="trailing" secondItem="HXw-li-SgA" secondAttribute="trailing" id="Pld-KW-Qyy"/>
+                            <constraint firstItem="pKO-na-5nj" firstAttribute="leading" secondItem="HXw-li-SgA" secondAttribute="leading" id="WDU-eC-qRN"/>
+                            <constraint firstItem="pKO-na-5nj" firstAttribute="trailing" secondItem="HXw-li-SgA" secondAttribute="trailing" id="XQW-Ko-2Cp"/>
+                            <constraint firstItem="WlK-69-MCx" firstAttribute="bottom" secondItem="HXw-li-SgA" secondAttribute="bottom" id="b9Q-pG-hrl"/>
+                            <constraint firstItem="pKO-na-5nj" firstAttribute="top" secondItem="WlK-69-MCx" secondAttribute="top" id="tT4-Xw-R31"/>
+                            <constraint firstItem="HXw-li-SgA" firstAttribute="leading" secondItem="WlK-69-MCx" secondAttribute="leading" id="zJV-6g-YWV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WlK-69-MCx"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="A9S-UQ-7Lk" id="E3a-g2-Xmq"/>
+                        <outlet property="imageView" destination="X9F-Qj-OGh" id="9T8-IJ-6ux"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v4L-st-Mxh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.1304347826087" y="42.857142857142854"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
