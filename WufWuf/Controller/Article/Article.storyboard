@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uGt-QS-BTa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cf3-yg-GIi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Klx-Yi-Kld">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="799.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="859.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m9u-sm-K5r">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="271"/>
@@ -36,19 +36,19 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cZu-of-Kzd">
-                                                <rect key="frame" x="0.0" y="271" width="414" height="528.5"/>
+                                                <rect key="frame" x="0.0" y="271" width="414" height="588.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BRH-06-rFP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="70.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="82.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Katarak" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9k8-25-d5v">
-                                                                <rect key="frame" x="19" y="7" width="67.5" height="21.5"/>
+                                                                <rect key="frame" x="19" y="7" width="67.5" height="33.5"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84i-Vn-nmJ">
-                                                                <rect key="frame" x="19" y="35.5" width="376" height="24"/>
+                                                                <rect key="frame" x="19" y="47.5" width="376" height="24"/>
                                                                 <string key="text">Katarak adalah kondisi kerusakan mata dimana terjadi kekeruhan pada lensa mata yang menyebabkan penglihatan menjadi buram/rabun.</string>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                 <nil key="textColor"/>
@@ -66,19 +66,19 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="daC-wx-TnY">
-                                                        <rect key="frame" x="0.0" y="80.5" width="414" height="84"/>
+                                                        <rect key="frame" x="0.0" y="92.5" width="414" height="96"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nQw-jc-nbF">
-                                                                <rect key="frame" x="19" y="7" width="376" height="70"/>
+                                                                <rect key="frame" x="19" y="7" width="376" height="82"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diagnosa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UH-wC-A3U">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="376" height="17"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="376" height="29"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNf-4k-A6G">
-                                                                        <rect key="frame" x="0.0" y="22" width="376" height="48"/>
+                                                                        <rect key="frame" x="0.0" y="34" width="376" height="48"/>
                                                                         <string key="text">1. Terdapat selaput putih yang menutupi bola mata anjing
     peliharaan.
 2. Katarak yang dialami diatas 60% mengakibatkan gangguan
@@ -99,19 +99,19 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hcg-NR-tBe">
-                                                        <rect key="frame" x="0.0" y="174.5" width="414" height="212.5"/>
+                                                        <rect key="frame" x="0.0" y="198.5" width="414" height="248.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TdT-zc-mOA">
-                                                                <rect key="frame" x="19" y="7" width="376" height="198.5"/>
+                                                                <rect key="frame" x="19" y="7" width="376" height="234.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penanganan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNi-hy-6UL">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="376" height="17"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="376" height="53"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dR-kc-7Rd">
-                                                                        <rect key="frame" x="0.0" y="22" width="376" height="131.5"/>
+                                                                        <rect key="frame" x="0.0" y="58" width="376" height="131.5"/>
                                                                         <string key="text">Pemberian obat tetes mata khusus  anti-katarak hanya membantu memperlambat progress penyakit yaitu kekeruhan dan ketebalan, namun tidak bisa memperbaiki kerusakan sel menjadi normal kembali.
 
 Jika dokter hewan menyatakan bahwa katarak pada  mata anjing anda harus dioperasi, maka segera lakukan agar tidak sampai berkembang menjadi penyakit yang lebih parah seperti glaukoma. Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tidak ditangani dengan cepat bisa menyebakan kebutaan, terutama untuk katarak yang diinisiasi oleh diabetes mellitus. Operasi merupakan jalan satu-satunya untuk mengobati katarak.</string>
@@ -120,7 +120,7 @@ Jika dokter hewan menyatakan bahwa katarak pada  mata anjing anda harus dioperas
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxL-Dn-3X9">
-                                                                        <rect key="frame" x="0.0" y="158.5" width="376" height="40"/>
+                                                                        <rect key="frame" x="0.0" y="194.5" width="376" height="40"/>
                                                                         <color key="backgroundColor" red="0.23921568627450979" green="0.52156862745098043" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="520-Lu-Uek"/>
@@ -146,7 +146,7 @@ Jika dokter hewan menyatakan bahwa katarak pada  mata anjing anda harus dioperas
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BIT-Or-fMw">
-                                                        <rect key="frame" x="0.0" y="397" width="414" height="131.5"/>
+                                                        <rect key="frame" x="0.0" y="457" width="414" height="131.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="p6n-2q-d8L">
                                                                 <rect key="frame" x="19" y="7" width="376" height="117.5"/>
@@ -221,7 +221,7 @@ Jika dokter hewan menyatakan bahwa katarak pada  mata anjing anda harus dioperas
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1t-zP-AE8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1963.7681159420292" y="133.92857142857142"/>
+            <point key="canvasLocation" x="1949" y="134"/>
         </scene>
         <!--Article Controller-->
         <scene sceneID="jZZ-pe-tWk">
@@ -340,5 +340,256 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
             </objects>
             <point key="canvasLocation" x="2713" y="134"/>
         </scene>
+        <!--Info Controller-->
+        <scene sceneID="deV-AC-FAy">
+            <objects>
+                <viewController id="cf3-yg-GIi" customClass="InfoController" customModule="WufWuf" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dYO-Ky-uVM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWG-vv-WZn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbN-Xi-pam">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1080"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="GFF-FT-uNk">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="GFF-FT-uNk" secondAttribute="height" multiplier="207:142" id="d4u-2M-ZQk"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="ubM-G4-3RS">
+                                                <rect key="frame" x="0.0" y="295" width="414" height="772"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pBA-JW-DXw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="82.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Diagnosa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81t-mH-KSw">
+                                                                <rect key="frame" x="19" y="7" width="81" height="21.5"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Penyakit: Katarak Tingkat: SEDANG" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUo-Sc-TnU">
+                                                                <rect key="frame" x="19" y="35.5" width="376" height="36"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="81t-mH-KSw" firstAttribute="top" secondItem="pBA-JW-DXw" secondAttribute="top" constant="7" id="2ZP-XS-rjw"/>
+                                                            <constraint firstAttribute="bottom" secondItem="PUo-Sc-TnU" secondAttribute="bottom" constant="11" id="ApO-1r-PRT"/>
+                                                            <constraint firstItem="PUo-Sc-TnU" firstAttribute="top" secondItem="81t-mH-KSw" secondAttribute="bottom" constant="7" id="DCN-pI-PTH"/>
+                                                            <constraint firstAttribute="trailing" secondItem="PUo-Sc-TnU" secondAttribute="trailing" constant="19" id="Hqf-s0-B8U"/>
+                                                            <constraint firstItem="PUo-Sc-TnU" firstAttribute="leading" secondItem="pBA-JW-DXw" secondAttribute="leading" constant="19" id="ZJe-Jj-UZf"/>
+                                                            <constraint firstItem="81t-mH-KSw" firstAttribute="leading" secondItem="PUo-Sc-TnU" secondAttribute="leading" id="vh5-ua-Ybr"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDO-O6-eh5">
+                                                        <rect key="frame" x="0.0" y="93.5" width="414" height="112.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5cJ-WL-lOi">
+                                                                <rect key="frame" x="19" y="7" width="376" height="98.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Indikasi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPJ-ei-DZG">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="376" height="21.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYs-zs-B41">
+                                                                        <rect key="frame" x="0.0" y="26.5" width="376" height="72"/>
+                                                                        <string key="text">1. Terdapat selaput putih yang menutupi 
+    bola mata anjing peliharaan.
+2. Katarak yang dialami diatas 60% 
+    mengakibatkan gangguan penglihatan.</string>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="5cJ-WL-lOi" secondAttribute="trailing" constant="19" id="YGN-co-7c4"/>
+                                                            <constraint firstItem="5cJ-WL-lOi" firstAttribute="leading" secondItem="YDO-O6-eh5" secondAttribute="leading" constant="19" id="hL3-cS-qRq"/>
+                                                            <constraint firstItem="5cJ-WL-lOi" firstAttribute="top" secondItem="YDO-O6-eh5" secondAttribute="top" constant="7" id="qMk-sO-3NX"/>
+                                                            <constraint firstAttribute="bottom" secondItem="5cJ-WL-lOi" secondAttribute="bottom" constant="7" id="qxR-la-HGT"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHX-Oj-oHd">
+                                                        <rect key="frame" x="0.0" y="217" width="414" height="251.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="c9Z-JJ-8VM">
+                                                                <rect key="frame" x="19" y="7" width="376" height="237.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gambar dari Katarak" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66R-NE-ySM">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="376" height="21.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="s6r-Zo-ipJ">
+                                                                        <rect key="frame" x="0.0" y="26.5" width="376" height="103"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="attachment" translatesAutoresizingMaskIntoConstraints="NO" id="vRL-iy-n65">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="185.5" height="103"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="103" id="Fkw-fe-YE4"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                        <integer key="value" value="5"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </imageView>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="artikel-demo" translatesAutoresizingMaskIntoConstraints="NO" id="yqO-T4-cbe">
+                                                                                <rect key="frame" x="190.5" y="0.0" width="185.5" height="103"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="103" id="RUZ-CW-2KB"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                        <integer key="value" value="5"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LMN-NG-sWr">
+                                                                        <rect key="frame" x="0.0" y="134.5" width="376" height="103"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="katarak" translatesAutoresizingMaskIntoConstraints="NO" id="CeP-rm-gDr">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="185.5" height="103"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="103" id="q9V-Zi-1Gb"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                        <integer key="value" value="5"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </imageView>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="Yqv-aJ-rpw">
+                                                                                <rect key="frame" x="190.5" y="0.0" width="185.5" height="103"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="103" id="oHy-D4-feX"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                        <integer key="value" value="5"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="c9Z-JJ-8VM" secondAttribute="bottom" constant="7" id="GdU-gN-bi2"/>
+                                                            <constraint firstAttribute="trailing" secondItem="c9Z-JJ-8VM" secondAttribute="trailing" constant="19" id="fl0-ie-N1q"/>
+                                                            <constraint firstItem="c9Z-JJ-8VM" firstAttribute="leading" secondItem="uHX-Oj-oHd" secondAttribute="leading" constant="19" id="msu-FK-cAL"/>
+                                                            <constraint firstItem="c9Z-JJ-8VM" firstAttribute="top" secondItem="uHX-Oj-oHd" secondAttribute="top" constant="7" id="tub-4B-dQy"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Cu-fP-ksZ">
+                                                        <rect key="frame" x="0.0" y="479.5" width="414" height="292.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eC6-df-xpD">
+                                                                <rect key="frame" x="19" y="7" width="376" height="278.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Penanganan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEP-K0-hwe">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="376" height="21.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeE-8F-E6i">
+                                                                        <rect key="frame" x="0.0" y="31.5" width="376" height="197"/>
+                                                                        <string key="text">Pemberian obat tetes mata khusus anti-katarak hanya membantu memperlambat progress penyakit yaitu kekeruhan dan ketebalan, namun tidak bisa memperbaiki kerusakan sel menjadi normal kembali.
+
+Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tidak ditangani dengan cepat bisa menyebakan kebutaan, terutama untuk katarak yang diinisiasi oleh diabetes mellitus. Operasi merupakan jalan satu-satunya untuk mengobati katarak.</string>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cma-qg-Q4G">
+                                                                        <rect key="frame" x="0.0" y="238.5" width="376" height="40"/>
+                                                                        <color key="backgroundColor" red="0.23921568630000001" green="0.52156862749999999" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="Li8-H7-qZB"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Temukan Klinik Hewan Terdekat">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="11"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="eC6-df-xpD" secondAttribute="bottom" constant="7" id="1re-oG-1rO"/>
+                                                            <constraint firstAttribute="trailing" secondItem="eC6-df-xpD" secondAttribute="trailing" constant="19" id="Xa2-lZ-gNd"/>
+                                                            <constraint firstItem="eC6-df-xpD" firstAttribute="leading" secondItem="6Cu-fP-ksZ" secondAttribute="leading" constant="19" id="kh2-tB-qn9"/>
+                                                            <constraint firstItem="eC6-df-xpD" firstAttribute="top" secondItem="6Cu-fP-ksZ" secondAttribute="top" constant="7" id="oLa-MR-nfb"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.96470588239999999" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="GFF-FT-uNk" firstAttribute="leading" secondItem="nbN-Xi-pam" secondAttribute="leading" id="Ewx-xJ-jGv"/>
+                                            <constraint firstAttribute="trailing" secondItem="ubM-G4-3RS" secondAttribute="trailing" id="ILW-EN-o87"/>
+                                            <constraint firstAttribute="bottom" secondItem="ubM-G4-3RS" secondAttribute="bottom" constant="13" id="RJx-VV-f8T"/>
+                                            <constraint firstItem="ubM-G4-3RS" firstAttribute="leading" secondItem="nbN-Xi-pam" secondAttribute="leading" id="b1C-Qu-gxD"/>
+                                            <constraint firstAttribute="trailing" secondItem="GFF-FT-uNk" secondAttribute="trailing" id="gav-mk-lCH"/>
+                                            <constraint firstItem="ubM-G4-3RS" firstAttribute="top" secondItem="GFF-FT-uNk" secondAttribute="bottom" constant="11" id="mph-1C-pOI"/>
+                                            <constraint firstItem="GFF-FT-uNk" firstAttribute="top" secondItem="nbN-Xi-pam" secondAttribute="top" id="wFO-H4-wtP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nbN-Xi-pam" firstAttribute="leading" secondItem="wWG-vv-WZn" secondAttribute="leading" id="5ud-Nm-Zvc"/>
+                                    <constraint firstAttribute="trailing" secondItem="nbN-Xi-pam" secondAttribute="trailing" id="Lb9-0g-iRk"/>
+                                    <constraint firstAttribute="bottom" secondItem="nbN-Xi-pam" secondAttribute="bottom" id="Uz6-am-NbO"/>
+                                    <constraint firstItem="nbN-Xi-pam" firstAttribute="width" secondItem="wWG-vv-WZn" secondAttribute="width" id="Z99-xL-fnp"/>
+                                    <constraint firstItem="nbN-Xi-pam" firstAttribute="top" secondItem="wWG-vv-WZn" secondAttribute="top" id="qeg-ke-L6r"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wWG-vv-WZn" firstAttribute="top" secondItem="Pqk-Is-mjh" secondAttribute="top" id="CbK-Oq-8hQ"/>
+                            <constraint firstItem="wWG-vv-WZn" firstAttribute="leading" secondItem="Pqk-Is-mjh" secondAttribute="leading" id="ZTv-rB-Xpe"/>
+                            <constraint firstItem="Pqk-Is-mjh" firstAttribute="bottom" secondItem="wWG-vv-WZn" secondAttribute="bottom" id="hbb-mq-qbJ"/>
+                            <constraint firstItem="wWG-vv-WZn" firstAttribute="trailing" secondItem="Pqk-Is-mjh" secondAttribute="trailing" id="kga-l2-Fu3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pqk-Is-mjh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZKo-cT-KIv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3478" y="134"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="artikel-demo" width="911" height="592"/>
+        <image name="attachment" width="1080" height="1080"/>
+        <image name="banner" width="534" height="284"/>
+        <image name="katarak" width="186" height="103"/>
+    </resources>
 </document>

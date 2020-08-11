@@ -19,6 +19,7 @@
 		ED62C42A24DC39AB00AB43EB /* Article.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED62C42924DC39AB00AB43EB /* Article.storyboard */; };
 		ED62C42C24DC3DB100AB43EB /* ArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED62C42B24DC3DB100AB43EB /* ArticleController.swift */; };
 		ED62C42F24DC409E00AB43EB /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED62C42E24DC409E00AB43EB /* Article.swift */; };
+		ED7DCC6424E257090067CD5E /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7DCC6324E257090067CD5E /* InfoController.swift */; };
 		ED9B9DFF24DA220C00B90B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9B9DFE24DA220C00B90B24 /* AppDelegate.swift */; };
 		ED9B9E0124DA220C00B90B24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9B9E0024DA220C00B90B24 /* SceneDelegate.swift */; };
 		ED9B9E0324DA220C00B90B24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9B9E0224DA220C00B90B24 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		ED62C42924DC39AB00AB43EB /* Article.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Article.storyboard; sourceTree = "<group>"; };
 		ED62C42B24DC3DB100AB43EB /* ArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = "<group>"; };
 		ED62C42E24DC409E00AB43EB /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		ED7DCC6324E257090067CD5E /* InfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
 		ED9B9DFB24DA220C00B90B24 /* WufWuf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WufWuf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9B9DFE24DA220C00B90B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED9B9E0024DA220C00B90B24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				ED62C42924DC39AB00AB43EB /* Article.storyboard */,
 				ED62C42B24DC3DB100AB43EB /* ArticleController.swift */,
+				ED7DCC6324E257090067CD5E /* InfoController.swift */,
 			);
 			path = Article;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				ED62C42F24DC409E00AB43EB /* Article.swift in Sources */,
 				A963E14C24DD5B7F00D6CF39 /* HaloViewController.swift in Sources */,
 				A963E14824DD57C500D6CF39 /* Inceptionv3.mlmodel in Sources */,
+				ED7DCC6424E257090067CD5E /* InfoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -60,5 +60,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Lokasi Anda saat ini akan ditampilkan di peta dan digunakan untuk petunjuk arah, hasil pencarian di sekitar, dan perkiraan waktu perjalanan.</string>
 </dict>
 </plist>
