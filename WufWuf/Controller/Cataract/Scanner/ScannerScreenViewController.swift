@@ -42,7 +42,7 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
     }
     
     func detect(_ image: CIImage) {
-        guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else {
+        guard let model = try? VNCoreMLModel(for: CataractDogImageClassifier().model) else {
             fatalError("Loading CoreML Model Failed.")
         }
         
