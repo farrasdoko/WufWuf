@@ -16,6 +16,7 @@
 		A963E14824DD57C500D6CF39 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A963E14724DD57C500D6CF39 /* Inceptionv3.mlmodel */; };
 		A963E14A24DD5B0100D6CF39 /* Halo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A963E14924DD5B0100D6CF39 /* Halo.storyboard */; };
 		A963E14C24DD5B7F00D6CF39 /* HaloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A963E14B24DD5B7F00D6CF39 /* HaloViewController.swift */; };
+		ED0407DA24E2981C00B9DFA8 /* MapsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0407D924E2981C00B9DFA8 /* MapsController.swift */; };
 		ED62C42A24DC39AB00AB43EB /* Article.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED62C42924DC39AB00AB43EB /* Article.storyboard */; };
 		ED62C42C24DC3DB100AB43EB /* ArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED62C42B24DC3DB100AB43EB /* ArticleController.swift */; };
 		ED62C42F24DC409E00AB43EB /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED62C42E24DC409E00AB43EB /* Article.swift */; };
@@ -38,6 +39,7 @@
 		A963E14724DD57C500D6CF39 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		A963E14924DD5B0100D6CF39 /* Halo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Halo.storyboard; sourceTree = "<group>"; };
 		A963E14B24DD5B7F00D6CF39 /* HaloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaloViewController.swift; sourceTree = "<group>"; };
+		ED0407D924E2981C00B9DFA8 /* MapsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsController.swift; sourceTree = "<group>"; };
 		ED62C42924DC39AB00AB43EB /* Article.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Article.storyboard; sourceTree = "<group>"; };
 		ED62C42B24DC3DB100AB43EB /* ArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = "<group>"; };
 		ED62C42E24DC409E00AB43EB /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				ED62C42924DC39AB00AB43EB /* Article.storyboard */,
 				ED62C42B24DC3DB100AB43EB /* ArticleController.swift */,
 				ED7DCC6324E257090067CD5E /* InfoController.swift */,
+				ED0407D924E2981C00B9DFA8 /* MapsController.swift */,
 			);
 			path = Article;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			files = (
 				49D04E4424DD920100737842 /* HomeArticle.swift in Sources */,
 				ED9B9E0324DA220C00B90B24 /* ViewController.swift in Sources */,
+				ED0407DA24E2981C00B9DFA8 /* MapsController.swift in Sources */,
 				ED9B9DFF24DA220C00B90B24 /* AppDelegate.swift in Sources */,
 				ED62C42C24DC3DB100AB43EB /* ArticleController.swift in Sources */,
 				49D04E4024DD91A300737842 /* ArticleCollectionViewCell.swift in Sources */,

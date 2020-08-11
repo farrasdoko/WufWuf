@@ -221,7 +221,7 @@ Jika dokter hewan menyatakan bahwa katarak pada  mata anjing anda harus dioperas
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1t-zP-AE8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1949" y="134"/>
+            <point key="canvasLocation" x="2712" y="818"/>
         </scene>
         <!--Article Controller-->
         <scene sceneID="jZZ-pe-tWk">
@@ -292,13 +292,15 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dpe-Sj-blQ" userLabel="backgroundBtn">
                                 <rect key="frame" x="0.0" y="788" width="414" height="108"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0j-H8-E5y">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0j-H8-E5y">
                                         <rect key="frame" x="45" y="13" width="324" height="40"/>
                                         <color key="backgroundColor" red="0.23921568630000001" green="0.52156862749999999" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="XKY-it-XRe"/>
                                         </constraints>
-                                        <state key="normal" title="Identifikasi Anjingmu">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Identifikasi Anjingmu" image="camera.fill" catalog="system">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -339,6 +341,21 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iRq-ad-9dk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2713" y="134"/>
+        </scene>
+        <!--Maps Controller-->
+        <scene sceneID="aZP-CN-IB2">
+            <objects>
+                <viewController id="UU8-f4-lgy" customClass="MapsController" customModule="WufWuf" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iQl-P9-kjl" customClass="ArticleCon">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="waT-68-VDV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JC7-QZ-lEO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3477" y="818"/>
         </scene>
         <!--Info Controller-->
         <scene sceneID="deV-AC-FAy">
@@ -437,7 +454,7 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="s6r-Zo-ipJ">
                                                                         <rect key="frame" x="0.0" y="26.5" width="376" height="103"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="attachment" translatesAutoresizingMaskIntoConstraints="NO" id="vRL-iy-n65">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vRL-iy-n65">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="185.5" height="103"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="103" id="Fkw-fe-YE4"/>
@@ -475,7 +492,7 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
                                                                                     </userDefinedRuntimeAttribute>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </imageView>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="Yqv-aJ-rpw">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yqv-aJ-rpw">
                                                                                 <rect key="frame" x="190.5" y="0.0" width="185.5" height="103"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="103" id="oHy-D4-feX"/>
@@ -520,13 +537,15 @@ Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tid
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cma-qg-Q4G">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cma-qg-Q4G">
                                                                         <rect key="frame" x="0.0" y="238.5" width="376" height="40"/>
                                                                         <color key="backgroundColor" red="0.23921568630000001" green="0.52156862749999999" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="Li8-H7-qZB"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Temukan Klinik Hewan Terdekat">
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                        <state key="normal" title="Temukan Klinik Hewan Terdekat" image="magnifyingglass" catalog="system">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
@@ -580,6 +599,16 @@ Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tid
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Pqk-Is-mjh"/>
                     </view>
+                    <connections>
+                        <outlet property="bannerImg" destination="GFF-FT-uNk" id="Myh-hn-4IO"/>
+                        <outlet property="diagnosaTxt" destination="PUo-Sc-TnU" id="HZM-pp-QUV"/>
+                        <outlet property="indikasiTxt" destination="IYs-zs-B41" id="2Nh-U0-LRe"/>
+                        <outlet property="penangananTxt" destination="LeE-8F-E6i" id="4dE-Ld-h0s"/>
+                        <outlet property="pict1" destination="vRL-iy-n65" id="c55-Iw-PbU"/>
+                        <outlet property="pict2" destination="yqO-T4-cbe" id="1Is-CY-o0C"/>
+                        <outlet property="pict3" destination="CeP-rm-gDr" id="Xeb-sU-CS4"/>
+                        <outlet property="pict4" destination="Yqv-aJ-rpw" id="fKR-Kd-6dU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKo-cT-KIv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -588,8 +617,9 @@ Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tid
     </scenes>
     <resources>
         <image name="artikel-demo" width="911" height="592"/>
-        <image name="attachment" width="1080" height="1080"/>
         <image name="banner" width="534" height="284"/>
+        <image name="camera.fill" catalog="system" width="128" height="96"/>
         <image name="katarak" width="186" height="103"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
     </resources>
 </document>
