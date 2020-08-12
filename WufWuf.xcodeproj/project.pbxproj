@@ -13,9 +13,10 @@
 		49D04E4424DD920100737842 /* HomeArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D04E4324DD920100737842 /* HomeArticle.swift */; };
 		A963E14424DD14CB00D6CF39 /* ScannerScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A963E14324DD14CB00D6CF39 /* ScannerScreen.storyboard */; };
 		A963E14624DD153100D6CF39 /* ScannerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A963E14524DD153100D6CF39 /* ScannerScreenViewController.swift */; };
-		A963E14A24DD5B0100D6CF39 /* Halo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A963E14924DD5B0100D6CF39 /* Halo.storyboard */; };
-		A963E14C24DD5B7F00D6CF39 /* HaloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A963E14B24DD5B7F00D6CF39 /* HaloViewController.swift */; };
 		A9A5389324E238B10090A678 /* CataractDogImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A9A5389224E238B10090A678 /* CataractDogImageClassifier.mlmodel */; };
+		A9C4B12724E28BD700912461 /* DemoDexScannerScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C4B12624E28BD700912461 /* DemoDexScannerScreen.storyboard */; };
+		A9C4B12924E28C1400912461 /* DemodexScannerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4B12824E28C1400912461 /* DemodexScannerScreenViewController.swift */; };
+		A9C4B13324E3C71D00912461 /* DemodexDogImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A9C4B13224E3C71D00912461 /* DemodexDogImageClassifier.mlmodel */; };
 		ED62C42A24DC39AB00AB43EB /* Article.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED62C42924DC39AB00AB43EB /* Article.storyboard */; };
 		ED62C42C24DC3DB100AB43EB /* ArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED62C42B24DC3DB100AB43EB /* ArticleController.swift */; };
 		ED62C42F24DC409E00AB43EB /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED62C42E24DC409E00AB43EB /* Article.swift */; };
@@ -34,9 +35,10 @@
 		49D04E4324DD920100737842 /* HomeArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeArticle.swift; sourceTree = "<group>"; };
 		A963E14324DD14CB00D6CF39 /* ScannerScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScannerScreen.storyboard; sourceTree = "<group>"; };
 		A963E14524DD153100D6CF39 /* ScannerScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerScreenViewController.swift; sourceTree = "<group>"; };
-		A963E14924DD5B0100D6CF39 /* Halo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Halo.storyboard; sourceTree = "<group>"; };
-		A963E14B24DD5B7F00D6CF39 /* HaloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaloViewController.swift; sourceTree = "<group>"; };
 		A9A5389224E238B10090A678 /* CataractDogImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CataractDogImageClassifier.mlmodel; sourceTree = "<group>"; };
+		A9C4B12624E28BD700912461 /* DemoDexScannerScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DemoDexScannerScreen.storyboard; sourceTree = "<group>"; };
+		A9C4B12824E28C1400912461 /* DemodexScannerScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemodexScannerScreenViewController.swift; sourceTree = "<group>"; };
+		A9C4B13224E3C71D00912461 /* DemodexDogImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DemodexDogImageClassifier.mlmodel; sourceTree = "<group>"; };
 		ED62C42924DC39AB00AB43EB /* Article.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Article.storyboard; sourceTree = "<group>"; };
 		ED62C42B24DC3DB100AB43EB /* ArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = "<group>"; };
 		ED62C42E24DC409E00AB43EB /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
@@ -86,8 +88,24 @@
 				A963E14324DD14CB00D6CF39 /* ScannerScreen.storyboard */,
 				A963E14524DD153100D6CF39 /* ScannerScreenViewController.swift */,
 				A9A5389224E238B10090A678 /* CataractDogImageClassifier.mlmodel */,
-				A963E14924DD5B0100D6CF39 /* Halo.storyboard */,
-				A963E14B24DD5B7F00D6CF39 /* HaloViewController.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		A9C4B12424E28B6C00912461 /* Demodex */ = {
+			isa = PBXGroup;
+			children = (
+				A9C4B12524E28B7B00912461 /* Scanner */,
+			);
+			path = Demodex;
+			sourceTree = "<group>";
+		};
+		A9C4B12524E28B7B00912461 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				A9C4B12624E28BD700912461 /* DemoDexScannerScreen.storyboard */,
+				A9C4B13224E3C71D00912461 /* DemodexDogImageClassifier.mlmodel */,
+				A9C4B12824E28C1400912461 /* DemodexScannerScreenViewController.swift */,
 			);
 			path = Scanner;
 			sourceTree = "<group>";
@@ -143,6 +161,7 @@
 		EDBCD29E24DBE79D002BC5CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A9C4B12424E28B6C00912461 /* Demodex */,
 				49D04E3C24DD8F8200737842 /* Home */,
 				A963E13D24DD07FC00D6CF39 /* Cataract */,
 				ED62C42D24DC408300AB43EB /* Model */,
@@ -210,8 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED9B9E0B24DA220E00B90B24 /* LaunchScreen.storyboard in Resources */,
+				A9C4B12724E28BD700912461 /* DemoDexScannerScreen.storyboard in Resources */,
 				ED62C42A24DC39AB00AB43EB /* Article.storyboard in Resources */,
-				A963E14A24DD5B0100D6CF39 /* Halo.storyboard in Resources */,
 				A963E14424DD14CB00D6CF39 /* ScannerScreen.storyboard in Resources */,
 				ED9B9E0824DA220E00B90B24 /* Assets.xcassets in Resources */,
 				49D04E3E24DD8FD600737842 /* Homes.storyboard in Resources */,
@@ -233,10 +252,11 @@
 				49D04E4024DD91A300737842 /* ArticleCollectionViewCell.swift in Sources */,
 				A963E14624DD153100D6CF39 /* ScannerScreenViewController.swift in Sources */,
 				ED9B9E0124DA220C00B90B24 /* SceneDelegate.swift in Sources */,
+				A9C4B13324E3C71D00912461 /* DemodexDogImageClassifier.mlmodel in Sources */,
 				49D04E4224DD91E000737842 /* Articlee.swift in Sources */,
 				ED62C42F24DC409E00AB43EB /* Article.swift in Sources */,
 				A9A5389324E238B10090A678 /* CataractDogImageClassifier.mlmodel in Sources */,
-				A963E14C24DD5B7F00D6CF39 /* HaloViewController.swift in Sources */,
+				A9C4B12924E28C1400912461 /* DemodexScannerScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,10 +407,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wufwuf.WufWuf;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaeltamsil.wufwuf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -405,10 +425,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wufwuf.WufWuf;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaeltamsil.wufwuf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
