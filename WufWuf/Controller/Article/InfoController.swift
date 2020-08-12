@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class InfoController: UIViewController {
 
@@ -20,6 +21,8 @@ class InfoController: UIViewController {
     @IBOutlet weak var pict3: UIImageView!
     @IBOutlet weak var pict4: UIImageView!
     
+    private var locationManager: CLLocationManager!
+    
     private var parsed: (banner: UIImage?, penyakit: String?, tingkat: String?, indikasi: String?, penanganan: String?, pict1: UIImage?, pict2: UIImage?, pict3: UIImage?, pict4: UIImage?)?
     private enum pictRecognizer: String {
         case pict, pict2, pict3, pict4
@@ -30,6 +33,30 @@ class InfoController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+    }
+    @IBAction func goToClinic(_ sender: UIButton) {
+        if CLLocationManager.authorizationStatus() == .notDetermined {
+            if CLLocationManager.locationServicesEnabled() {
+                locationManager = CLLocationManager()
+                locationManager.requestWhenInUseAuthorization()
+            }
+        }
+
+        guard CLLocationManager.authorizationStatus() != .denied else {
+            let alert = UIAlertController(title: "Tidak dapat mencari klinik", message: "Mohon izinkan pengaturan lokasi anda di setting", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
+            return
+        }
+        
+//        let storyboard = UIStoryboard(name: "Map", bundle: nil)
+//        guard let map = storyboard.instantiateInitialViewController() as? MapController else {
+//            return
+//        }
+//        self.navigationController?.pushViewController(map, animated: true)
+//        self.navigationController?.present(map, animated: true, completion: nil)
+        
+//        self.present(map, animated:true, completion:nil)
     }
     
     func setDiagnosaText() {
