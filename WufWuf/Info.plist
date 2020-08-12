@@ -36,7 +36,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
+					<string>Article</string>
 				</dict>
 			</array>
 		</dict>
@@ -44,7 +44,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>ScannerScreen</string>
+	<string>Article</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -60,5 +60,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Lokasi Anda saat ini akan ditampilkan di peta dan digunakan untuk petunjuk arah, hasil pencarian di sekitar, dan perkiraan waktu perjalanan.</string>
 </dict>
 </plist>
