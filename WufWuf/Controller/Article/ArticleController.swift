@@ -9,34 +9,26 @@
 import UIKit
 
 class ArticleController: UIViewController {
-
-    @IBOutlet weak var titleLabel: UILabel!
+    
     @IBOutlet weak var bannerImg: UIImageView!
-    @IBOutlet weak var quoteLabel: UILabel!
+    @IBOutlet weak var segmented: UISegmentedControl!
     @IBOutlet weak var detailLabel: UITextView!
     
-    var parsedData: (title: String?, image: UIImage?, quote: String?, detail: NSMutableAttributedString?)
+    var parsedData: (title: String?, image: UIImage?, detail: NSMutableAttributedString?)
     var detail = NSMutableAttributedString()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        if let quote = parsedData.quote {
-            let quoteString = NSAttributedString(string: quote, attributes: [ .font:UIFont.italicSystemFont(ofSize: 14)])
-            quoteLabel.attributedText = quoteString
-        } else {
-            quoteLabel.isHidden = true
-        }
-//        titleLabel.text = parsedData.title
-//        bannerImg.image = parsedData.image
-        detailLabel.attributedText = getArticle(article1)
+                navigationItem.title = parsedData.title
+                bannerImg.image = parsedData.image
     }
     
     func getArticle(_ detail: [Any]) -> NSMutableAttributedString {
         let string = NSMutableAttributedString()
         for article in detail {
             if let articleString = article as? String {
-                let p = NSAttributedString(string: articleString)
+                let p = NSAttributedString(string: articleString, attributes: [.font:UIFont.systemFont(ofSize: 17)])
                 string.append(p)
             } else if article is UIImage {
                 let image = NSTextAttachment(image: resizeImage(article as! UIImage, 190))
@@ -55,6 +47,47 @@ class ArticleController: UIViewController {
         return string
     }
     
+    @IBAction func onChanged(_ sender: UISegmentedControl) {
+        switch title {
+        case "Katarak":
+            switch sender.titleForSegment(at: sender.selectedSegmentIndex) {
+            case "Pengertian":
+                detailLabel.attributedText = getArticle(katarakPengertian)
+                bannerImg.image = UIImage(named: "katarak-pengertian")
+                break
+            case "Penyebab":
+                detailLabel.attributedText = getArticle(katarakPenyebab)
+                bannerImg.image = UIImage(named: "katarak-penyebab")
+                break
+            case "Gejala":
+                detailLabel.attributedText = getArticle(katarakGejala)
+                bannerImg.image = UIImage(named: "katarak-gajala")
+                break
+            default:
+                break
+            }
+        case "Demodex":
+            switch sender.titleForSegment(at: sender.selectedSegmentIndex) {
+            case "Pengertian":
+                detailLabel.attributedText = getArticle(demodexPengertian)
+                bannerImg.image = UIImage(named: "demodex-pengertian")
+                break
+            case "Penyebab":
+                detailLabel.attributedText = getArticle(demodexPenyebab)
+                bannerImg.image = UIImage(named: "demodex-penyebab")
+                break
+            case "Gejala":
+                detailLabel.attributedText = getArticle(demodexGejala)
+                bannerImg.image = UIImage(named: "demodex-gejala")
+                break
+            default:
+                break
+            }
+        default:
+            break
+        }
+        
+    }
     func resizeImage(_ image: UIImage,_ height: CGFloat) -> UIImage {
         let scale = height / image.size.height
         let width = image.size.width * scale
@@ -67,15 +100,4 @@ class ArticleController: UIViewController {
         return newImage
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
