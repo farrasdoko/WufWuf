@@ -11,7 +11,7 @@
         <!--Scanner Screen View Controller-->
         <scene sceneID="AJA-dT-dYn">
             <objects>
-                <viewController storyboardIdentifier="ScannerScreen1" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o2L-Mq-M7S" customClass="ScannerScreenViewController" customModule="WufWuf" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScannerScreen1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o2L-Mq-M7S" customClass="ScannerScreenViewController" customModule="WufWuf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dEu-sF-NhS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,39 +33,41 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4oB-nN-jWM">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LpW-MY-0Rb">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LpW-MY-0Rb">
                                         <rect key="frame" x="0.0" y="0.0" width="396.5" height="1400.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X9F-Qj-OGh" userLabel="imageView">
-                                                <rect key="frame" x="0.0" y="0.0" width="396.5" height="241.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="396.5" height="271.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Katarak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mny-M4-z43" userLabel="Judul">
-                                                <rect key="frame" x="0.0" y="241.5" width="396.5" height="33.5"/>
+                                                <rect key="frame" x="0.0" y="281.5" width="396.5" height="33.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" name="Hitam (Secondary)"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pLr-Cd-3bQ" userLabel="ViewDiagnosa">
-                                                <rect key="frame" x="0.0" y="275" width="396.5" height="190"/>
+                                                <rect key="frame" x="0.0" y="325" width="396.5" height="172"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Diagnosa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMa-yP-yGd">
-                                                        <rect key="frame" x="19" y="7" width="81" height="39.5"/>
+                                                        <rect key="frame" x="19" y="7" width="81" height="21.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" name="Hitam (Secondary)"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aey-H8-hl3">
-                                                        <rect key="frame" x="19" y="53.5" width="358.5" height="125.5"/>
-                                                        <mutableString key="text">1.  Berdasarkan gejala klinis yang muncul
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aey-H8-hl3" userLabel="DiagnosaDetail">
+                                                        <rect key="frame" x="19" y="35.5" width="358.5" height="125.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <string key="text">1.  Berdasarkan gejala klinis yang muncul
 2. Berdasarkan sejarah penyakit pada anjing
 3. Berdasarkan pemeriksaan fisik
 4. Lakukan pemeriksaan laboratorium (test darah 
     komplit dan test urin)
 5. Electroretinography test
-Diagnosa hanya dapat dilakukan oleh dokter!</mutableString>
+Diagnosa hanya dapat dilakukan oleh dokter!</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" name="Hitam (Secondary)"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -80,7 +82,7 @@ Diagnosa hanya dapat dilakukan oleh dokter!</mutableString>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sI2-6a-ps8" userLabel="TombolPeta">
-                                                <rect key="frame" x="0.0" y="465" width="396.5" height="40"/>
+                                                <rect key="frame" x="0.0" y="507" width="396.5" height="40"/>
                                                 <color key="backgroundColor" name="Biru (Secondary)"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="V4O-Q5-Ind"/>
@@ -100,7 +102,7 @@ Diagnosa hanya dapat dilakukan oleh dokter!</mutableString>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJq-dD-HU9" userLabel="ViewGambar">
-                                                <rect key="frame" x="0.0" y="505" width="396.5" height="251.5"/>
+                                                <rect key="frame" x="0.0" y="557" width="396.5" height="251.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="krb-f4-gP2">
                                                         <rect key="frame" x="19" y="7" width="358.5" height="237.5"/>
@@ -169,7 +171,7 @@ Diagnosa hanya dapat dilakukan oleh dokter!</mutableString>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="krb-f4-gP2" firstAttribute="top" secondItem="cJq-dD-HU9" secondAttribute="top" constant="7" id="FF2-R0-kUQ"/>
                                                     <constraint firstItem="krb-f4-gP2" firstAttribute="leading" secondItem="cJq-dD-HU9" secondAttribute="leading" constant="19" id="SPt-C6-WP2"/>
@@ -178,31 +180,32 @@ Diagnosa hanya dapat dilakukan oleh dokter!</mutableString>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xr0-Sq-bRy" userLabel="ViewSaran">
-                                                <rect key="frame" x="0.0" y="756.5" width="396.5" height="314.5"/>
+                                                <rect key="frame" x="0.0" y="818.5" width="396.5" height="278.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JCt-s1-mFj">
-                                                        <rect key="frame" x="19" y="7" width="358.5" height="300.5"/>
+                                                        <rect key="frame" x="19" y="7" width="358.5" height="264.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Saran" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyc-4f-DZK">
-                                                                <rect key="frame" x="0.0" y="0.0" width="358.5" height="57.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="358.5" height="21.5"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="textColor" name="Hitam (Secondary)"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUY-wd-wKH">
-                                                                <rect key="frame" x="0.0" y="67.5" width="358.5" height="233"/>
-                                                                <mutableString key="text">Jika anda mendapati mata anjing anda terdapat bentukan seperti kabut di salah satu atau kedua mata, segeralah bawa ke dokter hewan. Penanganan lebih awal lebih baik segera dilakukan sebelum ketarak berlanjut lebih parah. 
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUY-wd-wKH" userLabel="SaranDetail">
+                                                                <rect key="frame" x="0.0" y="31.5" width="358.5" height="233"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <string key="text">Jika anda mendapati mata anjing anda terdapat bentukan seperti kabut di salah satu atau kedua mata, segeralah bawa ke dokter hewan. Penanganan lebih awal lebih baik segera dilakukan sebelum ketarak berlanjut lebih parah. 
 
-Dokter hewan akan melakukan pemeriksaan darah bisa untuk mendeteksi kondisi anjing secara umum dan mengetahui penyebab katarak, serta elektroretinografi untuk mendeteksi tingkat keparahan katarak. Pemeriksaan darah juga penting untuk menentukan apakah kondisi hewan memungkinkan untuk dilakukan operasi.</mutableString>
+Dokter hewan akan melakukan pemeriksaan darah bisa untuk mendeteksi kondisi anjing secara umum dan mengetahui penyebab katarak, serta elektroretinografi untuk mendeteksi tingkat keparahan katarak. Pemeriksaan darah juga penting untuk menentukan apakah kondisi hewan memungkinkan untuk dilakukan operasi.</string>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" name="Hitam (Secondary)"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="JCt-s1-mFj" secondAttribute="bottom" constant="7" id="6fk-9C-czP"/>
                                                     <constraint firstItem="JCt-s1-mFj" firstAttribute="leading" secondItem="Xr0-Sq-bRy" secondAttribute="leading" constant="19" id="LRI-2Y-4IQ"/>
@@ -211,36 +214,39 @@ Dokter hewan akan melakukan pemeriksaan darah bisa untuk mendeteksi kondisi anji
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBb-S4-A31" userLabel="ViewPenanganan">
-                                                <rect key="frame" x="0.0" y="1071" width="396.5" height="329.5"/>
+                                                <rect key="frame" x="0.0" y="1107" width="396.5" height="293.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bm1-4u-Qc0">
-                                                        <rect key="frame" x="19" y="7" width="358.5" height="315.5"/>
+                                                        <rect key="frame" x="19" y="7" width="358.5" height="279.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Penanganan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9M-s4-PuU">
                                                                 <rect key="frame" x="0.0" y="0.0" width="358.5" height="21.5"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" name="Hitam (Secondary)"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBG-k7-XAC">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBG-k7-XAC" userLabel="PenangananDetail">
                                                                 <rect key="frame" x="0.0" y="31.5" width="358.5" height="197"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <string key="text">Pemberian obat tetes mata khusus anti-katarak hanya membantu memperlambat progress penyakit yaitu kekeruhan dan ketebalan, namun tidak bisa memperbaiki kerusakan sel menjadi normal kembali.
 
 Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tidak ditangani dengan cepat bisa menyebakan kebutaan, terutama untuk katarak yang diinisiasi oleh diabetes mellitus. Operasi merupakan jalan satu-satunya untuk mengobati katarak.</string>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" name="Hitam (Secondary)"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Operasi merupakan jalan satu-satunya untuk mengobati katarak." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35c-Ej-Gze">
-                                                                <rect key="frame" x="0.0" y="238.5" width="358.5" height="77"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Operasi merupakan jalan satu-satunya untuk mengobati katarak." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35c-Ej-Gze" userLabel="PenangananFooter">
+                                                                <rect key="frame" x="0.0" y="238.5" width="358.5" height="41"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" name="Hitam (Secondary)"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="bm1-4u-Qc0" firstAttribute="top" secondItem="WBb-S4-A31" secondAttribute="top" constant="7" id="Hs4-3n-vzD"/>
                                                     <constraint firstItem="bm1-4u-Qc0" firstAttribute="leading" secondItem="WBb-S4-A31" secondAttribute="leading" constant="19" id="JaQ-Lm-2HF"/>
@@ -249,19 +255,16 @@ Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tid
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="Putih (Secondary)"/>
                                         <constraints>
-                                            <constraint firstItem="X9F-Qj-OGh" firstAttribute="top" secondItem="LpW-MY-0Rb" secondAttribute="top" id="BSD-Ke-F6j"/>
                                             <constraint firstItem="X9F-Qj-OGh" firstAttribute="leading" secondItem="LpW-MY-0Rb" secondAttribute="leading" id="fOS-Un-beH"/>
                                             <constraint firstAttribute="trailing" secondItem="X9F-Qj-OGh" secondAttribute="trailing" id="h3k-o8-OSA"/>
-                                            <constraint firstAttribute="trailing" secondItem="X9F-Qj-OGh" secondAttribute="trailing" id="hBN-U6-r0F"/>
                                             <constraint firstItem="X9F-Qj-OGh" firstAttribute="top" secondItem="LpW-MY-0Rb" secondAttribute="top" id="mNO-iP-p3F"/>
                                             <constraint firstAttribute="height" constant="1400.5" id="vF4-Go-nwz"/>
-                                            <constraint firstItem="X9F-Qj-OGh" firstAttribute="leading" secondItem="LpW-MY-0Rb" secondAttribute="leading" id="wDm-za-80k"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="Putih (Secondary)"/>
                                 <constraints>
                                     <constraint firstItem="LpW-MY-0Rb" firstAttribute="bottom" secondItem="NMY-Ys-txA" secondAttribute="bottom" id="9oR-sz-lcC"/>
                                     <constraint firstItem="LpW-MY-0Rb" firstAttribute="top" secondItem="NMY-Ys-txA" secondAttribute="top" id="Jdq-P8-nGa"/>
@@ -273,7 +276,7 @@ Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tid
                                 <viewLayoutGuide key="frameLayoutGuide" id="sGd-QN-vQj"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="Putih (Secondary)"/>
                         <constraints>
                             <constraint firstItem="pKO-na-5nj" firstAttribute="leading" secondItem="WlK-69-MCx" secondAttribute="leading" id="4Uk-Xa-SbL"/>
                             <constraint firstItem="4oB-nN-jWM" firstAttribute="trailing" secondItem="WlK-69-MCx" secondAttribute="trailing" id="74Y-le-8oD"/>
@@ -299,10 +302,10 @@ Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tid
             </objects>
             <point key="canvasLocation" x="963.76811594202911" y="27.455357142857142"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Map-->
         <scene sceneID="OOe-Rp-Cgz">
             <objects>
-                <viewControllerPlaceholder id="OCs-EH-GXc" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Map" id="OCs-EH-GXc" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="sde-Vw-1xt"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xiW-X7-ixV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -318,10 +321,13 @@ Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tid
         <image name="Katarak4" width="186" height="103"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <namedColor name="Biru (Secondary)">
-            <color red="0.15921166540000001" green="0.57588839530000002" blue="0.818543613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.15899999439716339" green="0.57599997520446777" blue="0.8190000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Hitam (Secondary)">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Putih (Secondary)">
-            <color red="0.93124985689999995" green="0.97283810380000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.9309999942779541" green="0.97299998998641968" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
