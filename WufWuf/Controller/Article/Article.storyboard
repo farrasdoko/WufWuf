@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Qj-g1-DxT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Qj-g1-DxT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -10,7 +10,7 @@
         <!--Article Controller-->
         <scene sceneID="jZZ-pe-tWk">
             <objects>
-                <viewController storyboardIdentifier="p" id="7Qj-g1-DxT" customClass="ArticleController" customModule="WufWuf" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="k" id="7Qj-g1-DxT" customClass="ArticleController" customModule="WufWuf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kGz-IX-o9l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,10 +23,11 @@
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0W1-48-sO1">
                                                 <rect key="frame" x="16" y="340" width="382" height="280"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <string key="text">Opacity terbatas pada area lensa mata atau kapsul atau dapat mempengaruhi keseluruhan struktur. Katarak sempurna mempengaruhi kedua bola mata dimana mengakibatkan kebutaan, ketika daerah kecil yang mengalami katarak non-progresif, hal itu tidak akan mengganggu pengelihatan. 
 
 Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat berkembang menjadi katarak sekunder karena gangguan lain yang diwariskan oleh indukan seperti atrofi retina atau glaukoma yang progresif.</string>
-                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -190,7 +191,7 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="s6r-Zo-ipJ">
                                                                         <rect key="frame" x="0.0" y="26.5" width="376" height="103"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vRL-iy-n65">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Katarak1" translatesAutoresizingMaskIntoConstraints="NO" id="vRL-iy-n65">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="185.5" height="103"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="103" id="Fkw-fe-YE4"/>
@@ -201,7 +202,7 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
                                                                                     </userDefinedRuntimeAttribute>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </imageView>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="artikel-demo" translatesAutoresizingMaskIntoConstraints="NO" id="yqO-T4-cbe">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Katarak3" translatesAutoresizingMaskIntoConstraints="NO" id="yqO-T4-cbe">
                                                                                 <rect key="frame" x="190.5" y="0.0" width="185.5" height="103"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="103" id="RUZ-CW-2KB"/>
@@ -217,7 +218,7 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LMN-NG-sWr">
                                                                         <rect key="frame" x="0.0" y="134.5" width="376" height="103"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="katarak" translatesAutoresizingMaskIntoConstraints="NO" id="CeP-rm-gDr">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Katarak2" translatesAutoresizingMaskIntoConstraints="NO" id="CeP-rm-gDr">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="185.5" height="103"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="103" id="q9V-Zi-1Gb"/>
@@ -228,7 +229,7 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
                                                                                     </userDefinedRuntimeAttribute>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </imageView>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yqv-aJ-rpw">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Katarak4" translatesAutoresizingMaskIntoConstraints="NO" id="Yqv-aJ-rpw">
                                                                                 <rect key="frame" x="190.5" y="0.0" width="185.5" height="103"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="103" id="oHy-D4-feX"/>
@@ -356,9 +357,12 @@ Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tid
         </scene>
     </scenes>
     <resources>
+        <image name="Katarak1" width="186" height="103"/>
+        <image name="Katarak2" width="186" height="103"/>
+        <image name="Katarak3" width="186" height="103"/>
+        <image name="Katarak4" width="186" height="103"/>
         <image name="artikel-demo" width="911" height="592"/>
         <image name="banner" width="534" height="284"/>
-        <image name="katarak" width="186" height="103"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
     </resources>
 </document>

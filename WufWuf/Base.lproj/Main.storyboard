@@ -16,19 +16,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EL1-qO-FDW">
-                                <rect key="frame" x="22" y="44" width="106" height="30"/>
+                                <rect key="frame" x="21" y="222" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Catarak Screen"/>
+                                <state key="normal" title="Tampilan Katarak"/>
                                 <connections>
                                     <segue destination="fYq-oF-7pi" kind="show" id="dd2-vq-CQB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKR-ER-dTZ">
-                                <rect key="frame" x="16" y="69" width="118" height="30"/>
+                                <rect key="frame" x="21" y="289" width="131" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Demodex Screen"/>
+                                <state key="normal" title="Tampilan Demodex"/>
                                 <connections>
                                     <segue destination="Sae-n2-jaa" kind="show" id="R8i-di-a8R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdk-bw-jK6">
+                                <rect key="frame" x="20" y="481" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Article Main"/>
+                                <connections>
+                                    <segue destination="cdP-1M-IFs" kind="show" id="YXj-bI-1sG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPQ-HS-4nc">
+                                <rect key="frame" x="20" y="554" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Peta"/>
+                                <connections>
+                                    <segue destination="zk2-uV-8Zv" kind="show" id="mVr-tL-fVE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -38,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-490" y="-573"/>
+            <point key="canvasLocation" x="-491.304347826087" y="-573.21428571428567"/>
         </scene>
         <!--DemoDexScannerScreen-->
         <scene sceneID="xMG-eI-XTG">
@@ -48,7 +64,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="caC-LM-A7i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="154" y="-855"/>
+            <point key="canvasLocation" x="301" y="-717"/>
         </scene>
         <!--ScannerScreen-->
         <scene sceneID="x9J-K9-xUq">
@@ -58,7 +74,27 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Qn-Zp-QRD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="217" y="-808"/>
+            <point key="canvasLocation" x="226" y="-761"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="Kiq-3f-rWT">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MapMain" storyboardName="Map" id="zk2-uV-8Zv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Z1Z-4r-Qbh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oXP-gD-RIe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="-615"/>
+        </scene>
+        <!--k-->
+        <scene sceneID="Jv8-QH-FgJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Article" referencedIdentifier="k" id="cdP-1M-IFs" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Dgu-vV-wLM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YWy-rJ-hWc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="-657"/>
         </scene>
     </scenes>
 </document>
