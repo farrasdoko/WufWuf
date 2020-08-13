@@ -110,8 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				A9C4B12624E28BD700912461 /* DemoDexScannerScreen.storyboard */,
-				A9C4B13224E3C71D00912461 /* DemodexDogImageClassifier.mlmodel */,
 				A9C4B12824E28C1400912461 /* DemodexScannerScreenViewController.swift */,
+				A9C4B13224E3C71D00912461 /* DemodexDogImageClassifier.mlmodel */,
 			);
 			path = Scanner;
 			sourceTree = "<group>";

@@ -14,7 +14,6 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
     
     let imagePicker = UIImagePickerController()
     
-    @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var judul: UILabel!
@@ -27,11 +26,13 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.isHiddenInfos(true)
+        
         imagePicker.delegate = self
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .camera
         
-        self.isHiddenInfos(true)
+        
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -64,6 +65,7 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
                 //self.contentLabel.text = firstResult.identifier
                 print(firstResult.identifier)
                 self.judul.text = firstResult.identifier
+                self.isHiddenInfos(false)
             }
         }
         

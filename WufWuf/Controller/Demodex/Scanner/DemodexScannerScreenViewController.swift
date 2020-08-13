@@ -14,21 +14,28 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
     
     let imagePicker = UIImagePickerController()
     
-    
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var judul: UILabel!
+    @IBOutlet weak var viewDiagnosa: UIView!
+    @IBOutlet weak var imageView2: UIImageView!
+    @IBOutlet weak var tombolPeta: UIButton!
+    @IBOutlet weak var viewGambar: UIView!
+    @IBOutlet weak var viewSaran: UIView!
+    @IBOutlet weak var viewPenanganan: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.isHiddenInfos(true)
         
         imagePicker.delegate = self
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .camera
+        
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         if let userPickedImage = info[.originalImage] as? UIImage {
-            self.imageView.image = userPickedImage
+            self.imageView2.image = userPickedImage
             
             guard let ciimage = CIImage(image: userPickedImage) else {
                 fatalError("could not conver UIImage into CIImage")
@@ -55,6 +62,8 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
                 //MARK: PUT INFO HERE
                 //self.contentLabel.text = firstResult.identifier
                 print(firstResult.identifier)
+                self.judul.text = firstResult.identifier
+                self.isHiddenInfos(false)
             }
         }
         
@@ -69,5 +78,14 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
     
     @IBAction func cameraTapped(_ sender: Any) {
         present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func isHiddenInfos(_ bool: Bool){
+        judul.isHidden = bool
+        viewDiagnosa.isHidden = bool
+        tombolPeta.isHidden = bool
+        viewGambar.isHidden = bool
+        viewSaran.isHidden = bool
+        viewPenanganan.isHidden = bool
     }
 }
