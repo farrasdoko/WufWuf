@@ -47,6 +47,14 @@
                                     <segue destination="Sae-n2-jaa" kind="show" id="R8i-di-a8R"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZK2-w8-3BS">
+                                <rect key="frame" x="38" y="560" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Artikel Katarak"/>
+                                <connections>
+                                    <action selector="buttonArticleCataractTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ce6-ic-vEC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
