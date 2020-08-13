@@ -14,9 +14,15 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
     
     let imagePicker = UIImagePickerController()
     
-    
-    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var judul: UILabel!
+    @IBOutlet weak var viewDiagnosa: UIView!
+    @IBOutlet weak var tombolPeta: UIButton!
+    @IBOutlet weak var viewGambar: UIView!
+    @IBOutlet weak var viewSaran: UIView!
+    @IBOutlet weak var viewPenanganan: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +30,8 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
         imagePicker.delegate = self
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .camera
+        
+        self.isHiddenInfos(true)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -36,8 +44,9 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
             }
             detect(ciimage)
         }
-        
         imagePicker.dismiss(animated: true, completion: nil)
+        
+        self.isHiddenInfos(false)
     }
     
     func detect(_ image: CIImage) {
@@ -52,8 +61,9 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
             
             if let firstResult = results.first {
                 //MARK: PUT INFO HERE and determine what info will be
-                self.contentLabel.text = firstResult.identifier
+                //self.contentLabel.text = firstResult.identifier
                 print(firstResult.identifier)
+                self.judul.text = firstResult.identifier
             }
         }
         
@@ -64,10 +74,18 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
         } catch {
             print(error)
         }
-        
     }
     
     @IBAction func cameraTapped2(_ sender: Any) {
         present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func isHiddenInfos(_ bool: Bool){
+        judul.isHidden = bool
+        viewDiagnosa.isHidden = bool
+        tombolPeta.isHidden = bool
+        viewGambar.isHidden = bool
+        viewSaran.isHidden = bool
+        viewPenanganan.isHidden = bool
     }
 }
