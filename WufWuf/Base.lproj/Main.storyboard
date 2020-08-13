@@ -16,23 +16,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EL1-qO-FDW">
-                                <rect key="frame" x="21" y="222" width="118" height="30"/>
+                                <rect key="frame" x="83" y="759" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Tampilan Katarak"/>
                                 <connections>
                                     <segue destination="fYq-oF-7pi" kind="show" id="dd2-vq-CQB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKR-ER-dTZ">
-                                <rect key="frame" x="21" y="289" width="131" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Tampilan Demodex"/>
-                                <connections>
-                                    <segue destination="Sae-n2-jaa" kind="show" id="R8i-di-a8R"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdk-bw-jK6">
-                                <rect key="frame" x="20" y="481" width="147" height="30"/>
+                                <rect key="frame" x="134" y="213" width="147" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Article Main"/>
                                 <connections>
@@ -40,11 +32,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPQ-HS-4nc">
-                                <rect key="frame" x="20" y="554" width="131" height="30"/>
+                                <rect key="frame" x="142" y="281" width="131" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Peta"/>
                                 <connections>
                                     <segue destination="zk2-uV-8Zv" kind="show" id="mVr-tL-fVE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKR-ER-dTZ">
+                                <rect key="frame" x="224" y="751" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tampilan Demodex"/>
+                                <connections>
+                                    <segue destination="Sae-n2-jaa" kind="show" id="R8i-di-a8R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,7 +64,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="caC-LM-A7i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="301" y="-717"/>
+            <point key="canvasLocation" x="346" y="-694"/>
         </scene>
         <!--ScannerScreen-->
         <scene sceneID="x9J-K9-xUq">
@@ -74,7 +74,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Qn-Zp-QRD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="226" y="-761"/>
+            <point key="canvasLocation" x="304" y="-736"/>
         </scene>
         <!--Map-->
         <scene sceneID="Kiq-3f-rWT">
@@ -84,7 +84,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXP-gD-RIe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="238" y="-615"/>
+            <point key="canvasLocation" x="257" y="-606"/>
         </scene>
         <!--k-->
         <scene sceneID="Jv8-QH-FgJ">
@@ -94,7 +94,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWy-rJ-hWc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="270" y="-657"/>
+            <point key="canvasLocation" x="243" y="-648"/>
         </scene>
     </scenes>
 </document>

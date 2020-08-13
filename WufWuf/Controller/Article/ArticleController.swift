@@ -67,6 +67,7 @@ class ArticleController: UIViewController {
                 break
             }
         case "Demodex":
+            
             switch sender.titleForSegment(at: sender.selectedSegmentIndex) {
             case "Pengertian":
                 detailLabel.attributedText = getArticle(demodexPengertian)

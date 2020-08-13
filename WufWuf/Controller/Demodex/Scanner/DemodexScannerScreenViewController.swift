@@ -14,7 +14,7 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
     
     let imagePicker = UIImagePickerController()
     
-    @IBOutlet weak var contentLabel: UILabel!
+    
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         if let userPickedImage = info[.originalImage] as? UIImage {
-            imageView.image = userPickedImage
+            self.imageView.image = userPickedImage
             
             guard let ciimage = CIImage(image: userPickedImage) else {
                 fatalError("could not conver UIImage into CIImage")
@@ -53,7 +53,7 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
             
             if let firstResult = results.first {
                 //MARK: PUT INFO HERE
-                self.contentLabel.text = firstResult.identifier
+                //self.contentLabel.text = firstResult.identifier
                 print(firstResult.identifier)
             }
         }
