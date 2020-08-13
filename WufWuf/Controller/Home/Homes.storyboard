@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rBu-Ds-Xm5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home Article-->
+        <!--Feed-->
         <scene sceneID="TO3-Zw-h3x">
             <objects>
                 <viewController id="CPF-qX-Zth" customClass="HomeArticle" customModule="WufWuf" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,80 +16,132 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-08-07 at 19.15.24" translatesAutoresizingMaskIntoConstraints="NO" id="Kmb-p7-FYj">
-                                <rect key="frame" x="20" y="83" width="374" height="269"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner-feed" translatesAutoresizingMaskIntoConstraints="NO" id="Kmb-p7-FYj">
+                                <rect key="frame" x="76" y="163" width="262" height="229"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Kmb-p7-FYj" secondAttribute="height" multiplier="262:229" id="agq-pM-f41"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Identifikasi gejala Katarak dan Demodex" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWI-B3-SiD">
-                                <rect key="frame" x="34" y="371" width="346" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Identifikasi gejala Katarak dan Demodex pada anjing kesayangan anda sejak dini " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PWI-B3-SiD">
+                                <rect key="frame" x="23" y="447" width="368" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7RT-Zd-HvG">
-                                <rect key="frame" x="28" y="432" width="358" height="430"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pRU-xX-JBW">
-                                    <size key="itemSize" width="358" height="120"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="viewCellArticle" id="wBR-Cy-icv" customClass="ArticleCollectionViewCell" customModule="WufWuf" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="358" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="R6s-8o-r4T">
-                                            <rect key="frame" x="0.0" y="0.0" width="358" height="120"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zga-ry-uWS">
-                                                    <rect key="frame" x="8" y="10" width="100" height="100"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flb-vx-lIS">
-                                                    <rect key="frame" x="116" y="50" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="358" height="120"/>
-                                        <connections>
-                                            <outlet property="imageViewArticle" destination="zga-ry-uWS" id="0d7-hX-qPF"/>
-                                            <outlet property="labelNameArticle" destination="Flb-vx-lIS" id="kds-W7-5HG"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pada anjing kesayangan anda sejak dini" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pt2-XL-w6N">
-                                <rect key="frame" x="37" y="401" width="340" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BV1-P3-Wa3">
+                                <rect key="frame" x="17" y="614" width="380" height="180"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vi7-pN-uhA">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Katarak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqu-CM-mP6">
+                                                <rect key="frame" x="58" y="139.5" width="64" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="katarak-feed" translatesAutoresizingMaskIntoConstraints="NO" id="HDo-rm-UA3">
+                                                <rect key="frame" x="38.5" y="67.5" width="103" height="53"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="oqu-CM-mP6" firstAttribute="centerX" secondItem="Vi7-pN-uhA" secondAttribute="centerX" id="WyL-lb-yhz"/>
+                                            <constraint firstAttribute="width" secondItem="Vi7-pN-uhA" secondAttribute="height" multiplier="1:1" id="b9G-Qk-Wjl"/>
+                                            <constraint firstItem="HDo-rm-UA3" firstAttribute="centerX" secondItem="Vi7-pN-uhA" secondAttribute="centerX" id="dqT-7y-9yz"/>
+                                            <constraint firstItem="oqu-CM-mP6" firstAttribute="top" secondItem="HDo-rm-UA3" secondAttribute="bottom" constant="19" id="gg3-X2-fhw"/>
+                                            <constraint firstItem="oqu-CM-mP6" firstAttribute="bottom" secondItem="Vi7-pN-uhA" secondAttribute="bottom" constant="-19" id="u5r-kz-Mr2"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVL-hc-xGs">
+                                        <rect key="frame" x="200" y="0.0" width="180" height="180"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demodex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAS-h3-4R2">
+                                                <rect key="frame" x="50.5" y="139.5" width="79" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demodex-feed" translatesAutoresizingMaskIntoConstraints="NO" id="uh6-nf-MPn">
+                                                <rect key="frame" x="40.5" y="28.5" width="99" height="92"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="wAS-h3-4R2" firstAttribute="bottom" secondItem="NVL-hc-xGs" secondAttribute="bottom" constant="-19" id="4eN-Qy-0C8"/>
+                                            <constraint firstAttribute="width" secondItem="NVL-hc-xGs" secondAttribute="height" multiplier="1:1" id="L6J-cc-Kq5"/>
+                                            <constraint firstItem="wAS-h3-4R2" firstAttribute="top" secondItem="uh6-nf-MPn" secondAttribute="bottom" constant="19" id="PvJ-FQ-Q4D"/>
+                                            <constraint firstItem="uh6-nf-MPn" firstAttribute="centerX" secondItem="NVL-hc-xGs" secondAttribute="centerX" id="maq-1O-hgF"/>
+                                            <constraint firstItem="wAS-h3-4R2" firstAttribute="centerX" secondItem="NVL-hc-xGs" secondAttribute="centerX" id="rmh-SL-gVL"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="Putih (Secondary)"/>
+                        <constraints>
+                            <constraint firstItem="LoZ-pf-li6" firstAttribute="trailing" secondItem="PWI-B3-SiD" secondAttribute="trailing" constant="23" id="4JK-A5-Gtj"/>
+                            <constraint firstItem="Kmb-p7-FYj" firstAttribute="leading" secondItem="LoZ-pf-li6" secondAttribute="leading" constant="76" id="8DS-H5-h5R"/>
+                            <constraint firstItem="LoZ-pf-li6" firstAttribute="trailing" secondItem="Kmb-p7-FYj" secondAttribute="trailing" constant="76" id="95T-aV-GzI"/>
+                            <constraint firstItem="PWI-B3-SiD" firstAttribute="top" secondItem="Kmb-p7-FYj" secondAttribute="bottom" constant="55" id="CON-Yt-hRW"/>
+                            <constraint firstItem="LoZ-pf-li6" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="BV1-P3-Wa3" secondAttribute="bottom" constant="20" id="DaY-Tw-g5u"/>
+                            <constraint firstItem="BV1-P3-Wa3" firstAttribute="top" secondItem="PWI-B3-SiD" secondAttribute="bottom" priority="750" constant="95" id="Lyb-Rt-vl1"/>
+                            <constraint firstItem="LoZ-pf-li6" firstAttribute="trailing" secondItem="BV1-P3-Wa3" secondAttribute="trailing" constant="17" id="ST4-2N-jf2"/>
+                            <constraint firstItem="BV1-P3-Wa3" firstAttribute="leading" secondItem="LoZ-pf-li6" secondAttribute="leading" constant="17" id="VCV-zO-rbU"/>
+                            <constraint firstItem="LoZ-pf-li6" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="BV1-P3-Wa3" secondAttribute="bottom" priority="750" constant="68" id="emD-by-Oc1"/>
+                            <constraint firstItem="Kmb-p7-FYj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="LoZ-pf-li6" secondAttribute="top" constant="20" id="ik4-hV-0PU"/>
+                            <constraint firstItem="PWI-B3-SiD" firstAttribute="leading" secondItem="LoZ-pf-li6" secondAttribute="leading" constant="23" id="k0h-rO-GUI"/>
+                            <constraint firstItem="Kmb-p7-FYj" firstAttribute="top" secondItem="LoZ-pf-li6" secondAttribute="top" priority="250" constant="75" id="w3y-o5-fCd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LoZ-pf-li6"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Feed" largeTitleDisplayMode="never" id="ddR-79-AIE"/>
                     <connections>
-                        <outlet property="collectionView" destination="7RT-Zd-HvG" id="ibJ-Qc-rw6"/>
+                        <outlet property="demodexView" destination="NVL-hc-xGs" id="VzX-AF-6z3"/>
+                        <outlet property="katarakView" destination="Vi7-pN-uhA" id="JNH-o0-BDW"/>
                         <outlet property="mainImage" destination="Kmb-p7-FYj" id="oax-L1-8z7"/>
                         <outlet property="mainLabel" destination="PWI-B3-SiD" id="Jqc-SD-JJv"/>
-                        <outlet property="mainLabel2" destination="pt2-XL-w6N" id="oAW-Mm-Sl4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWn-RC-d0i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="261" y="87"/>
+            <point key="canvasLocation" x="1171.0144927536232" y="86.383928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xHf-1w-gS2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rBu-Ds-Xm5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EWB-2F-MN7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CPF-qX-Zth" kind="relationship" relationship="rootViewController" id="R03-oa-uBI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="32b-0s-oxf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260.86956521739131" y="86.383928571428569"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 2020-08-07 at 19.15.24" width="792" height="640"/>
+        <image name="banner-feed" width="262" height="229"/>
+        <image name="demodex-feed" width="99" height="92"/>
+        <image name="katarak-feed" width="103" height="53"/>
+        <namedColor name="Putih (Secondary)">
+            <color red="0.9309999942779541" green="0.97299998998641968" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

@@ -14,14 +14,14 @@ class ArticleController: UIViewController {
     @IBOutlet weak var segmented: UISegmentedControl!
     @IBOutlet weak var detailLabel: UITextView!
     
-    var parsedData: (title: String?, image: UIImage?, detail: NSMutableAttributedString?)
+    var navTitle: String?
     var detail = NSMutableAttributedString()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-                navigationItem.title = parsedData.title
-                bannerImg.image = parsedData.image
+        navigationItem.title = navTitle
+        changeDetail()
     }
     
     func getArticle(_ detail: [Any]) -> NSMutableAttributedString {
@@ -48,27 +48,31 @@ class ArticleController: UIViewController {
     }
     
     @IBAction func onChanged(_ sender: UISegmentedControl) {
-        switch title {
+        changeDetail()
+    }
+    
+    func changeDetail() {
+        switch navTitle {
         case "Katarak":
-            switch sender.titleForSegment(at: sender.selectedSegmentIndex) {
+            switch segmented.titleForSegment(at: segmented.selectedSegmentIndex) {
             case "Pengertian":
                 detailLabel.attributedText = getArticle(katarakPengertian)
-                bannerImg.image = UIImage(named: "katarak-pengertian")
+                bannerImg.image = UIImage(named: "pengertian-katarak")
                 break
             case "Penyebab":
                 detailLabel.attributedText = getArticle(katarakPenyebab)
-                bannerImg.image = UIImage(named: "katarak-penyebab")
+                bannerImg.image = UIImage(named: "penyebab-katarak")
                 break
             case "Gejala":
                 detailLabel.attributedText = getArticle(katarakGejala)
-                bannerImg.image = UIImage(named: "katarak-gajala")
+                bannerImg.image = UIImage(named: "gejala-katarak")
                 break
             default:
                 break
             }
         case "Demodex":
             
-            switch sender.titleForSegment(at: sender.selectedSegmentIndex) {
+            switch segmented.titleForSegment(at: segmented.selectedSegmentIndex) {
             case "Pengertian":
                 detailLabel.attributedText = getArticle(demodexPengertian)
                 bannerImg.image = UIImage(named: "demodex-pengertian")
@@ -87,7 +91,6 @@ class ArticleController: UIViewController {
         default:
             break
         }
-        
     }
     func resizeImage(_ image: UIImage,_ height: CGFloat) -> UIImage {
         let scale = height / image.size.height
