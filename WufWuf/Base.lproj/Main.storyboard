@@ -84,17 +84,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXP-gD-RIe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="257" y="-606"/>
+            <point key="canvasLocation" x="283" y="-585"/>
         </scene>
-        <!--k-->
+        <!--article-->
         <scene sceneID="Jv8-QH-FgJ">
             <objects>
-                <viewControllerPlaceholder storyboardName="Article" referencedIdentifier="k" id="cdP-1M-IFs" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Article" referencedIdentifier="article" id="cdP-1M-IFs" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Dgu-vV-wLM"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWy-rJ-hWc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="243" y="-648"/>
+            <point key="canvasLocation" x="242" y="-619"/>
         </scene>
     </scenes>
 </document>

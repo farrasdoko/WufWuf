@@ -8,62 +8,47 @@
 
 import UIKit
 
-class HomeArticle: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class HomeArticle: UIViewController {
     
-    var dataArticle = [Articlee]()
-
-    @IBOutlet weak var collectionView: UICollectionView!
+    private enum senderID: String {
+        case demodexTap, katarakTap
+    }
+    
     @IBOutlet weak var mainImage: UIImageView!
-    
     @IBOutlet weak var mainLabel: UILabel!
     
-    @IBOutlet weak var mainLabel2: UILabel!
+    @IBOutlet weak var katarakView: UIView!
+    @IBOutlet weak var demodexView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-            collectionView.delegate = self
-            collectionView.dataSource = self
-            
-            initDataArticle()
-        }
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(goToNextScreen))
+        gesture.name = senderID.katarakTap.rawValue
+        katarakView.addGestureRecognizer(gesture)
         
-        func initDataArticle() {
-            let Article1 = Articlee(title: "Cara menggunakan scanner di aplikasi ini", imageName: "artikel-demo")
-            let Article2 = Articlee(title: "Bored", imageName: "attachment")
-            //let Article3 = Article(title: "Confused", imageName: "")
-                     
-            dataArticle.append(Article1)
-            dataArticle.append(Article2)
-            //dataArticles.append()
-            
-            // trigger refresh collection view
-            collectionView.reloadData()
-            }
-
-
-                 // MARK: Menentukan jumlah item yang akan di tampilkan
-            func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-                     // MARK: Menghitung jumlah item array dataEmojies
-                     return dataArticle.count
-                    }
-                 
-                 // MARK: mengatur view cell
-            func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-                 
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "viewCellArticle", for: indexPath) as! ArticleCollectionViewCell
-                     // set nilai ke view dalam cell
-                let article = dataArticle[indexPath.row]
-                     cell.labelNameArticle.text = article.title!
-                     cell.imageViewArticle.image = UIImage(named: article.imageName!)
-                return cell
-                }
-    
-                 // MARK: mengatur layout view cell
-            func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-                     // Lebar & tinggil cell
-                return CGSize(width: collectionView.frame.width, height: 120)
-                }
+        let gesture2 = UITapGestureRecognizer(target: self, action: #selector(goToNextScreen))
+        gesture2.name = senderID.demodexTap.rawValue
+        demodexView.addGestureRecognizer(gesture2)
     }
+    
+    @objc func goToNextScreen(_ sender: UITapGestureRecognizer) {
+        
+        let storyboard = UIStoryboard(name: "Article", bundle: nil)
+        let articleController = storyboard.instantiateViewController(withIdentifier: "article") as! ArticleController
+        
+        switch sender.name {
+        case senderID.demodexTap.rawValue:
+            articleController.navTitle = "Demodex"
+            break
+        case senderID.katarakTap.rawValue:
+            articleController.navTitle = "Katarak"
+            break
+        default:
+            break
+        }
+        navigationController?.pushViewController(articleController, animated: true)
+    }
+    
+}
 

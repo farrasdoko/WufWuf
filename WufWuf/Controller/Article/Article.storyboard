@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Qj-g1-DxT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Qj-g1-DxT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -10,7 +10,7 @@
         <!--Article Controller-->
         <scene sceneID="jZZ-pe-tWk">
             <objects>
-                <viewController storyboardIdentifier="k" id="7Qj-g1-DxT" customClass="ArticleController" customModule="WufWuf" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="article" id="7Qj-g1-DxT" customClass="ArticleController" customModule="WufWuf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kGz-IX-o9l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,7 +97,7 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
         <!--Info Controller-->
         <scene sceneID="deV-AC-FAy">
             <objects>
-                <viewController id="cf3-yg-GIi" customClass="InfoController" customModule="WufWuf" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="info" id="cf3-yg-GIi" customClass="InfoController" customModule="WufWuf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dYO-Ky-uVM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
