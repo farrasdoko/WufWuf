@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		49D04E3E24DD8FD600737842 /* Homes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D04E3D24DD8FD600737842 /* Homes.storyboard */; };
 		49D04E4424DD920100737842 /* HomeArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D04E4324DD920100737842 /* HomeArticle.swift */; };
+		A917DB7024E668B800B09B6B /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A917DB6F24E668B800B09B6B /* test.storyboard */; };
 		A963E14424DD14CB00D6CF39 /* ScannerScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A963E14324DD14CB00D6CF39 /* ScannerScreen.storyboard */; };
 		A963E14624DD153100D6CF39 /* ScannerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A963E14524DD153100D6CF39 /* ScannerScreenViewController.swift */; };
 		A9A5389324E238B10090A678 /* CataractDogImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A9A5389224E238B10090A678 /* CataractDogImageClassifier.mlmodel */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		49D04E3D24DD8FD600737842 /* Homes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homes.storyboard; sourceTree = "<group>"; };
 		49D04E4324DD920100737842 /* HomeArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeArticle.swift; sourceTree = "<group>"; };
+		A917DB6F24E668B800B09B6B /* test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
 		A963E14324DD14CB00D6CF39 /* ScannerScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScannerScreen.storyboard; sourceTree = "<group>"; };
 		A963E14524DD153100D6CF39 /* ScannerScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerScreenViewController.swift; sourceTree = "<group>"; };
 		A9A5389224E238B10090A678 /* CataractDogImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CataractDogImageClassifier.mlmodel; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				A9C4B12624E28BD700912461 /* DemoDexScannerScreen.storyboard */,
 				A9C4B12824E28C1400912461 /* DemodexScannerScreenViewController.swift */,
 				A9C4B13224E3C71D00912461 /* DemodexDogImageClassifier.mlmodel */,
+				A917DB6F24E668B800B09B6B /* test.storyboard */,
 			);
 			path = Scanner;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				A963E14424DD14CB00D6CF39 /* ScannerScreen.storyboard in Resources */,
 				ED9B9E0824DA220E00B90B24 /* Assets.xcassets in Resources */,
 				49D04E3E24DD8FD600737842 /* Homes.storyboard in Resources */,
+				A917DB7024E668B800B09B6B /* test.storyboard in Resources */,
 				ED9B9E0624DA220C00B90B24 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

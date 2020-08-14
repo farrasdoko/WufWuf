@@ -64,8 +64,17 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
                 //MARK: PUT INFO HERE and determine what info will be
                 //self.contentLabel.text = firstResult.identifier
                 print(firstResult.identifier)
-                self.judul.text = firstResult.identifier
-                self.isHiddenInfos(false)
+
+                
+                if (firstResult.identifier == "Healthy"){
+                    self.judul.text = "Wow, mata anjing anda sehat"
+                    self.isHiddenInfos(true)
+                    self.judul.isHidden = false
+                    
+                }else{
+                    self.judul.text = "Mata anjing anda memiliki penyakit katarak"
+                    self.isHiddenInfos(true)
+                }
             }
         }
         

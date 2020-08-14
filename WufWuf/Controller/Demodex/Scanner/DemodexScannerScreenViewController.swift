@@ -14,13 +14,15 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
     
     let imagePicker = UIImagePickerController()
     
+
+    @IBOutlet weak var imageView2: UIImageView!
     @IBOutlet weak var judul: UILabel!
     @IBOutlet weak var viewDiagnosa: UIView!
-    @IBOutlet weak var imageView2: UIImageView!
     @IBOutlet weak var tombolPeta: UIButton!
     @IBOutlet weak var viewGambar: UIView!
     @IBOutlet weak var viewSaran: UIView!
     @IBOutlet weak var viewPenanganan: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +31,6 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
         imagePicker.delegate = self
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .camera
-        
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -60,10 +61,18 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
             
             if let firstResult = results.first {
                 //MARK: PUT INFO HERE
-                //self.contentLabel.text = firstResult.identifier
+                
                 print(firstResult.identifier)
-                self.judul.text = firstResult.identifier
-                self.isHiddenInfos(false)
+                self.isHiddenInfos(true)
+                if (firstResult.identifier == "Healthy"){
+                    self.judul.text = "Wow, kulit anjing anda sehat"
+                    self.judul.isHidden = false
+                }else{
+                    self.judul.text = "Kulit anjing anda memiliki penyakit demodex"
+                    self.isHiddenInfos(true)
+                }
+                
+                
             }
         }
         
