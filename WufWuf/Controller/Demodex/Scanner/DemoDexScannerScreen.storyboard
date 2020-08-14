@@ -32,7 +32,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9s7-3X-ueh">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1925"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1673.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bt0-1g-bdO" userLabel="imageView">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
@@ -101,86 +101,8 @@ Diagnosa hanya dapat dilakukan oleh dokter!</string>
                                                     <segue destination="aOf-tv-yzu" kind="show" id="Mjh-VN-1tC"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9d-kR-RsM" userLabel="ViewGambar">
-                                                <rect key="frame" x="0.0" y="472" width="414" height="251.5"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bj7-F2-gHF">
-                                                        <rect key="frame" x="19" y="7" width="376" height="237.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gambar dari Demodex" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g9-Es-NTz">
-                                                                <rect key="frame" x="0.0" y="0.0" width="376" height="21.5"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WAI-Lr-Qpb">
-                                                                <rect key="frame" x="0.0" y="26.5" width="376" height="103"/>
-                                                                <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demodex-pengertian" translatesAutoresizingMaskIntoConstraints="NO" id="XA7-SY-N0V">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="185.5" height="103"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="103" id="Oz8-GT-UNY"/>
-                                                                        </constraints>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                                <integer key="value" value="5"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
-                                                                    </imageView>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demodex-gejala" translatesAutoresizingMaskIntoConstraints="NO" id="OS4-ks-K74">
-                                                                        <rect key="frame" x="190.5" y="0.0" width="185.5" height="103"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="103" id="Z6d-LU-1pv"/>
-                                                                        </constraints>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                                <integer key="value" value="5"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
-                                                                    </imageView>
-                                                                </subviews>
-                                                            </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rOZ-iy-oeQ">
-                                                                <rect key="frame" x="0.0" y="134.5" width="376" height="103"/>
-                                                                <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demodex-penyebab" translatesAutoresizingMaskIntoConstraints="NO" id="kHD-Qn-s7d">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="185.5" height="103"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="103" id="TWC-2k-gDV"/>
-                                                                        </constraints>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                                <integer key="value" value="5"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
-                                                                    </imageView>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demodex-4" translatesAutoresizingMaskIntoConstraints="NO" id="SUD-BI-ekq">
-                                                                        <rect key="frame" x="190.5" y="0.0" width="185.5" height="103"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="103" id="Xq8-2Z-r9f"/>
-                                                                        </constraints>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                                <integer key="value" value="5"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
-                                                                    </imageView>
-                                                                </subviews>
-                                                            </stackView>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstItem="bj7-F2-gHF" firstAttribute="top" secondItem="T9d-kR-RsM" secondAttribute="top" constant="7" id="ExT-B6-OBM"/>
-                                                    <constraint firstAttribute="bottom" secondItem="bj7-F2-gHF" secondAttribute="bottom" constant="7" id="KSh-wH-hfq"/>
-                                                    <constraint firstAttribute="trailing" secondItem="bj7-F2-gHF" secondAttribute="trailing" constant="19" id="TGZ-gW-DPm"/>
-                                                    <constraint firstItem="bj7-F2-gHF" firstAttribute="leading" secondItem="T9d-kR-RsM" secondAttribute="leading" constant="19" id="uCU-ej-FOR"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBV-rs-ckj" userLabel="ViewSaran">
-                                                <rect key="frame" x="0.0" y="723.5" width="414" height="386"/>
+                                                <rect key="frame" x="0.0" y="472" width="414" height="386"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-lQ-05Y">
                                                         <rect key="frame" x="19" y="7" width="376" height="372"/>
@@ -221,7 +143,7 @@ Hindari makanan yang mengandung pengawet, karena pengawet pada dogfood atau snac
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2y-hJ-yBo" userLabel="ViewPenanganan">
-                                                <rect key="frame" x="0.0" y="1109.5" width="414" height="815.5"/>
+                                                <rect key="frame" x="0.0" y="858" width="414" height="815.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tCe-Or-pt9">
                                                         <rect key="frame" x="19" y="7" width="376" height="801.5"/>
@@ -325,14 +247,13 @@ Hindari makanan yang mengandung pengawet, karena pengawet pada dogfood atau snac
                         <outlet property="judul" destination="2mS-6E-qnE" id="FnY-mU-ihg"/>
                         <outlet property="tombolPeta" destination="jvS-4H-xMy" id="OF6-9O-tHp"/>
                         <outlet property="viewDiagnosa" destination="VSa-Xb-8rG" id="gO2-Hb-8vJ"/>
-                        <outlet property="viewGambar" destination="T9d-kR-RsM" id="Ph9-4w-kif"/>
                         <outlet property="viewPenanganan" destination="g2y-hJ-yBo" id="v2w-op-NS4"/>
                         <outlet property="viewSaran" destination="BBV-rs-ckj" id="y6j-mT-nKj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T3C-2W-o0U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-368.11594202898556" y="96.428571428571431"/>
+            <point key="canvasLocation" x="-35" y="88"/>
         </scene>
         <!--Map-->
         <scene sceneID="mfu-7U-WOm">
@@ -342,14 +263,10 @@ Hindari makanan yang mengandung pengawet, karena pengawet pada dogfood atau snac
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yPY-Jd-4lc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="445" y="-106"/>
+            <point key="canvasLocation" x="510" y="-104"/>
         </scene>
     </scenes>
     <resources>
-        <image name="demodex-4" width="186" height="103"/>
-        <image name="demodex-gejala" width="414" height="276"/>
-        <image name="demodex-pengertian" width="414" height="276"/>
-        <image name="demodex-penyebab" width="414" height="276"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <namedColor name="Biru (Secondary)">
             <color red="0.15899999439716339" green="0.57599997520446777" blue="0.8190000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

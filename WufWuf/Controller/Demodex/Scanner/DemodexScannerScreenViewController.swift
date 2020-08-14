@@ -19,7 +19,6 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
     @IBOutlet weak var judul: UILabel!
     @IBOutlet weak var viewDiagnosa: UIView!
     @IBOutlet weak var tombolPeta: UIButton!
-    @IBOutlet weak var viewGambar: UIView!
     @IBOutlet weak var viewSaran: UIView!
     @IBOutlet weak var viewPenanganan: UIView!
     
@@ -71,8 +70,6 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
                     self.judul.text = "Kulit anjing anda memiliki penyakit demodex"
                     self.isHiddenInfos(true)
                 }
-                
-                
             }
         }
         
@@ -93,7 +90,6 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
         judul.isHidden = bool
         viewDiagnosa.isHidden = bool
         tombolPeta.isHidden = bool
-        viewGambar.isHidden = bool
         viewSaran.isHidden = bool
         viewPenanganan.isHidden = bool
     }

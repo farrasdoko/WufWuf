@@ -40,15 +40,15 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="396.5" height="271.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Katarak" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mny-M4-z43" userLabel="Judul">
-                                                <rect key="frame" x="0.0" y="281.5" width="396.5" height="13.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mny-M4-z43" userLabel="Judul">
+                                                <rect key="frame" x="0.0" y="281.5" width="396.5" height="275"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <color key="textColor" name="Hitam (Secondary)"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pLr-Cd-3bQ" userLabel="ViewDiagnosa">
-                                                <rect key="frame" x="0.0" y="305" width="396.5" height="172"/>
+                                                <rect key="frame" x="0.0" y="566.5" width="396.5" height="172"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Diagnosa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMa-yP-yGd">
                                                         <rect key="frame" x="19" y="7" width="81" height="21.5"/>
@@ -82,7 +82,7 @@ Diagnosa hanya dapat dilakukan oleh dokter!</string>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sI2-6a-ps8" userLabel="TombolPeta">
-                                                <rect key="frame" x="0.0" y="487" width="396.5" height="60"/>
+                                                <rect key="frame" x="0.0" y="748.5" width="396.5" height="60"/>
                                                 <color key="backgroundColor" name="Biru (Secondary)"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="V4O-Q5-Ind"/>
@@ -102,84 +102,6 @@ Diagnosa hanya dapat dilakukan oleh dokter!</string>
                                                     <segue destination="OCs-EH-GXc" kind="show" id="KfW-Ul-aKb"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJq-dD-HU9" userLabel="ViewGambar">
-                                                <rect key="frame" x="0.0" y="557" width="396.5" height="251.5"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="krb-f4-gP2">
-                                                        <rect key="frame" x="19" y="7" width="358.5" height="237.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gambar dari Katarak" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsY-jA-hSe">
-                                                                <rect key="frame" x="0.0" y="0.0" width="358.5" height="21.5"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qxz-OD-NNW">
-                                                                <rect key="frame" x="0.0" y="26.5" width="358.5" height="103"/>
-                                                                <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Katarak1" translatesAutoresizingMaskIntoConstraints="NO" id="vb1-gF-dyO">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="176.5" height="103"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="103" id="o2h-Fw-Rvg"/>
-                                                                        </constraints>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                                <integer key="value" value="5"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
-                                                                    </imageView>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Katarak3" translatesAutoresizingMaskIntoConstraints="NO" id="1N8-Br-Iu0">
-                                                                        <rect key="frame" x="181.5" y="0.0" width="177" height="103"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="103" id="e1c-5j-Z0e"/>
-                                                                        </constraints>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                                <integer key="value" value="5"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
-                                                                    </imageView>
-                                                                </subviews>
-                                                            </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uFn-FZ-R15">
-                                                                <rect key="frame" x="0.0" y="134.5" width="358.5" height="103"/>
-                                                                <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Katarak2" translatesAutoresizingMaskIntoConstraints="NO" id="Zp5-Yy-hyw">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="176.5" height="103"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="103" id="9gQ-5I-qHP"/>
-                                                                        </constraints>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                                <integer key="value" value="5"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
-                                                                    </imageView>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Katarak4" translatesAutoresizingMaskIntoConstraints="NO" id="6hf-Yg-7bO">
-                                                                        <rect key="frame" x="181.5" y="0.0" width="177" height="103"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="103" id="dt0-pv-04n"/>
-                                                                        </constraints>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                                <integer key="value" value="5"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
-                                                                    </imageView>
-                                                                </subviews>
-                                                            </stackView>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstItem="krb-f4-gP2" firstAttribute="top" secondItem="cJq-dD-HU9" secondAttribute="top" constant="7" id="FF2-R0-kUQ"/>
-                                                    <constraint firstItem="krb-f4-gP2" firstAttribute="leading" secondItem="cJq-dD-HU9" secondAttribute="leading" constant="19" id="SPt-C6-WP2"/>
-                                                    <constraint firstAttribute="trailing" secondItem="krb-f4-gP2" secondAttribute="trailing" constant="19" id="be2-Og-ruV"/>
-                                                    <constraint firstAttribute="bottom" secondItem="krb-f4-gP2" secondAttribute="bottom" constant="7" id="ksD-iW-cQI"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xr0-Sq-bRy" userLabel="ViewSaran">
                                                 <rect key="frame" x="0.0" y="818.5" width="396.5" height="278.5"/>
                                                 <subviews>
@@ -294,7 +216,6 @@ Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tid
                         <outlet property="judul" destination="mny-M4-z43" id="Snu-7E-Nc4"/>
                         <outlet property="tombolPeta" destination="sI2-6a-ps8" id="Lzm-Bf-FoV"/>
                         <outlet property="viewDiagnosa" destination="pLr-Cd-3bQ" id="sx2-vn-jg1"/>
-                        <outlet property="viewGambar" destination="cJq-dD-HU9" id="4qi-tw-CB6"/>
                         <outlet property="viewPenanganan" destination="WBb-S4-A31" id="emg-o9-RcS"/>
                         <outlet property="viewSaran" destination="Xr0-Sq-bRy" id="Xav-VB-oCf"/>
                     </connections>
@@ -316,10 +237,6 @@ Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tid
     </scenes>
     <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
-        <image name="Katarak1" width="186" height="103"/>
-        <image name="Katarak2" width="186" height="103"/>
-        <image name="Katarak3" width="186" height="103"/>
-        <image name="Katarak4" width="186" height="103"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <namedColor name="Biru (Secondary)">
             <color red="0.15899999439716339" green="0.57599997520446777" blue="0.8190000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -19,19 +19,24 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
     @IBOutlet weak var judul: UILabel!
     @IBOutlet weak var viewDiagnosa: UIView!
     @IBOutlet weak var tombolPeta: UIButton!
-    @IBOutlet weak var viewGambar: UIView!
     @IBOutlet weak var viewSaran: UIView!
     @IBOutlet weak var viewPenanganan: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.isHiddenInfos(true)
+        
         
         imagePicker.delegate = self
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .camera
         
+        DispatchQueue.main.async {
+            self.viewDiagnosa.isHidden = true
+            self.tombolPeta.isHidden = true
+            self.viewSaran.isHidden = true
+            self.viewPenanganan.isHidden = true
+        }
         
     }
     
@@ -47,7 +52,6 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
         }
         imagePicker.dismiss(animated: true, completion: nil)
         
-        self.isHiddenInfos(false)
     }
     
     func detect(_ image: CIImage) {
@@ -64,16 +68,31 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
                 //MARK: PUT INFO HERE and determine what info will be
                 //self.contentLabel.text = firstResult.identifier
                 print(firstResult.identifier)
+                let isHealthy = firstResult.identifier == "Healthy"
 
                 
-                if (firstResult.identifier == "Healthy"){
+                if (isHealthy){
                     self.judul.text = "Wow, mata anjing anda sehat"
-                    self.isHiddenInfos(true)
-                    self.judul.isHidden = false
-                    
+                    DispatchQueue.main.async {
+                        self.viewDiagnosa.isHidden = true
+                        self.tombolPeta.isHidden = true
+                        self.viewSaran.isHidden = true
+                        self.viewPenanganan.isHidden = true
+                    }
                 }else{
                     self.judul.text = "Mata anjing anda memiliki penyakit katarak"
-                    self.isHiddenInfos(true)
+                    DispatchQueue.main.async {
+                        self.viewDiagnosa.isHidden = false
+                        self.tombolPeta.isHidden = false
+                        self.viewSaran.isHidden = false
+                        self.viewPenanganan.isHidden = false
+                    }
+                }
+                
+                
+                
+                DispatchQueue.main.async {
+                    self.judul.isHidden = false
                 }
             }
         }
@@ -91,12 +110,13 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
         present(imagePicker, animated: true, completion: nil)
     }
     
-    func isHiddenInfos(_ bool: Bool){
-        judul.isHidden = bool
-        viewDiagnosa.isHidden = bool
-        tombolPeta.isHidden = bool
-        viewGambar.isHidden = bool
-        viewSaran.isHidden = bool
-        viewPenanganan.isHidden = bool
-    }
+//    func isHiddenInfos(_ bool: Bool){
+//        DispatchQueue.main.async {
+//            self.viewDiagnosa.isHidden = bool
+//            self.tombolPeta.isHidden = bool
+//            self.viewGambar.isHidden = bool
+//            self.viewSaran.isHidden = bool
+//            self.viewPenanganan.isHidden = bool
+//        }
+//    }
 }
