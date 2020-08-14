@@ -25,11 +25,17 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.isHiddenInfos(true)
         
         imagePicker.delegate = self
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .camera
+        
+        DispatchQueue.main.async {
+            self.viewDiagnosa.isHidden = true
+            self.tombolPeta.isHidden = true
+            self.viewSaran.isHidden = true
+            self.viewPenanganan.isHidden = true
+        }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -62,13 +68,27 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
                 //MARK: PUT INFO HERE
                 
                 print(firstResult.identifier)
-                self.isHiddenInfos(true)
+                
                 if (firstResult.identifier == "Healthy"){
                     self.judul.text = "Wow, kulit anjing anda sehat"
-                    self.judul.isHidden = false
+                    DispatchQueue.main.async {
+                        self.viewDiagnosa.isHidden = true
+                        self.tombolPeta.isHidden = true
+                        self.viewSaran.isHidden = true
+                        self.viewPenanganan.isHidden = true
+                    }
                 }else{
                     self.judul.text = "Kulit anjing anda memiliki penyakit demodex"
-                    self.isHiddenInfos(true)
+                    DispatchQueue.main.async {
+                        self.viewDiagnosa.isHidden = false
+                        self.tombolPeta.isHidden = false
+                        self.viewSaran.isHidden = false
+                        self.viewPenanganan.isHidden = false
+                    }
+                }
+                
+                DispatchQueue.main.async {
+                    self.judul.isHidden = false
                 }
             }
         }
@@ -86,11 +106,5 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
         present(imagePicker, animated: true, completion: nil)
     }
     
-    func isHiddenInfos(_ bool: Bool){
-        judul.isHidden = bool
-        viewDiagnosa.isHidden = bool
-        tombolPeta.isHidden = bool
-        viewSaran.isHidden = bool
-        viewPenanganan.isHidden = bool
-    }
+    
 }

@@ -25,8 +25,6 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         imagePicker.delegate = self
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .camera
@@ -88,8 +86,6 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
                         self.viewPenanganan.isHidden = false
                     }
                 }
-                
-                
                 
                 DispatchQueue.main.async {
                     self.judul.isHidden = false
