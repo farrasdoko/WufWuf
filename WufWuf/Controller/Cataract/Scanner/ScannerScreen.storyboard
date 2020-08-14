@@ -11,7 +11,7 @@
         <!--Scanner Screen View Controller-->
         <scene sceneID="AJA-dT-dYn">
             <objects>
-                <viewController storyboardIdentifier="ScannerScreen1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o2L-Mq-M7S" customClass="ScannerScreenViewController" customModule="WufWuf" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScannerScreen1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o2L-Mq-M7S" customClass="ScannerScreenViewController" customModule="Halo_Dog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dEu-sF-NhS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

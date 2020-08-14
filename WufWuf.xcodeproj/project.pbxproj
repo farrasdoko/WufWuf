@@ -46,7 +46,7 @@
 		ED62C42B24DC3DB100AB43EB /* ArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = "<group>"; };
 		ED62C42E24DC409E00AB43EB /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		ED7DCC6324E257090067CD5E /* InfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
-		ED9B9DFB24DA220C00B90B24 /* WufWuf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WufWuf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED9B9DFB24DA220C00B90B24 /* Halo Dog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Halo Dog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9B9DFE24DA220C00B90B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED9B9E0024DA220C00B90B24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ED9B9E0224DA220C00B90B24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		ED9B9DFC24DA220C00B90B24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED9B9DFB24DA220C00B90B24 /* WufWuf.app */,
+				ED9B9DFB24DA220C00B90B24 /* Halo Dog.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,7 +201,7 @@
 			);
 			name = WufWuf;
 			productName = WufWuf;
-			productReference = ED9B9DFB24DA220C00B90B24 /* WufWuf.app */;
+			productReference = ED9B9DFB24DA220C00B90B24 /* Halo Dog.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -425,7 +425,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michaeltamsil.wufwuf;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Halo Dog";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -444,7 +444,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michaeltamsil.wufwuf;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Halo Dog";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

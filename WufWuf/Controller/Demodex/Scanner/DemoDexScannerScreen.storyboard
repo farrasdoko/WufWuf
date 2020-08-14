@@ -11,7 +11,7 @@
         <!--Demodex Scanner Screen View Controller-->
         <scene sceneID="LIz-D7-7qq">
             <objects>
-                <viewController storyboardIdentifier="main" id="Clx-ro-SHh" customClass="DemodexScannerScreenViewController" customModule="WufWuf" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" id="Clx-ro-SHh" customClass="DemodexScannerScreenViewController" customModule="Halo_Dog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H41-ES-lqX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,23 +41,26 @@
                                                     <constraint firstAttribute="height" constant="240" id="9c9-zG-y7T"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Demodex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhJ-vT-Rje" userLabel="Judul">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demodex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhJ-vT-Rje" userLabel="Judul">
                                                 <rect key="frame" x="0.0" y="250" width="396.5" height="0.0"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" id="Qn5-H7-Qq0"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <color key="textColor" name="Hitam (Secondary)"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1J-nc-iO9" userLabel="ViewDiagnosa">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1J-nc-iO9" userLabel="ViewDiagnosa">
                                                 <rect key="frame" x="0.0" y="260" width="396.5" height="190"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" text="Diagnosa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3v-mK-fWU">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Diagnosa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3v-mK-fWU">
                                                         <rect key="frame" x="19" y="7" width="81" height="21.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" name="Hitam (Secondary)"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8s-Z6-PnK" userLabel="DiagnosaDetail">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8s-Z6-PnK" userLabel="DiagnosaDetail">
                                                         <rect key="frame" x="19" y="35.5" width="358.5" height="143.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <string key="text">Diagnosa yang dapat dilakukan pada kasus demodekosis adalah dengan kerokan kulit yang agak dalam dari bagian tengah lesi, kemudian diberi tetesan KOH 10 % untuk diamati di bawah mikroskop. Apabila positif maka akan ditemukan parasit demodex yang bentuknya seperti wortel atau cerutu. 
@@ -77,7 +80,7 @@ Diagnosa hanya dapat dilakukan oleh dokter!</string>
                                                     <constraint firstAttribute="bottom" secondItem="t8s-Z6-PnK" secondAttribute="bottom" constant="11" id="oMt-hM-RhJ"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC5-ZH-NAD" userLabel="TombolPeta">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC5-ZH-NAD" userLabel="TombolPeta">
                                                 <rect key="frame" x="0.0" y="460" width="396.5" height="40"/>
                                                 <color key="backgroundColor" name="Biru (Secondary)"/>
                                                 <constraints>
@@ -97,7 +100,7 @@ Diagnosa hanya dapat dilakukan oleh dokter!</string>
                                                     <segue destination="aOf-tv-yzu" kind="show" id="3q5-Cg-Fma"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8AX-yi-zlT" userLabel="ViewGambar">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8AX-yi-zlT" userLabel="ViewGambar">
                                                 <rect key="frame" x="0.0" y="510" width="396.5" height="251.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="j1s-U7-WWH">
@@ -175,20 +178,20 @@ Diagnosa hanya dapat dilakukan oleh dokter!</string>
                                                     <constraint firstItem="j1s-U7-WWH" firstAttribute="top" secondItem="8AX-yi-zlT" secondAttribute="top" constant="7" id="OyI-Y7-KIc"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IXO-Iy-wvX" userLabel="ViewSaran">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IXO-Iy-wvX" userLabel="ViewSaran">
                                                 <rect key="frame" x="0.0" y="771.5" width="396.5" height="421.5"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sxB-xD-H9C">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sxB-xD-H9C">
                                                         <rect key="frame" x="19" y="7" width="358.5" height="407.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" text="Saran" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh6-Tu-zms">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Saran" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh6-Tu-zms">
                                                                 <rect key="frame" x="0.0" y="0.0" width="358.5" height="21.5"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                                 <color key="textColor" name="Hitam (Secondary)"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHI-w6-B4x">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHI-w6-B4x">
                                                                 <rect key="frame" x="0.0" y="31.5" width="358.5" height="376"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <string key="text">jika anjing anda terkena penyakit demodex yang harus pertama diperbaiki adalah daya tahan tubuhnya. Daya tahan tubuh jelek itu biasanya akibat cacingan dan juga karena gizi yang tidak seimbang. Segeralah bawa ke dokter hewan terdekat Semua anjing yang terkena demodek biasanya diobati dengan diberi suntikan dan antibiotik untuk kulit. 
@@ -201,6 +204,11 @@ Hindari makanan yang mengandung pengawet, karena pengawet pada dogfood atau snac
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="gHI-w6-B4x" firstAttribute="bottom" secondItem="sxB-xD-H9C" secondAttribute="bottomMargin" id="JM9-su-ARF"/>
+                                                            <constraint firstItem="gHI-w6-B4x" firstAttribute="top" secondItem="dh6-Tu-zms" secondAttribute="bottom" constant="10" id="dAG-yu-xB2"/>
+                                                            <constraint firstAttribute="bottom" secondItem="gHI-w6-B4x" secondAttribute="bottom" id="tFG-a4-XJw"/>
+                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -211,21 +219,21 @@ Hindari makanan yang mengandung pengawet, karena pengawet pada dogfood atau snac
                                                     <constraint firstItem="sxB-xD-H9C" firstAttribute="top" secondItem="IXO-Iy-wvX" secondAttribute="top" constant="7" id="fmN-6w-Hit"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iSe-Ya-03e" userLabel="ViewPenanganan">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iSe-Ya-03e" userLabel="ViewPenanganan">
                                                 <rect key="frame" x="0.0" y="1203" width="396.5" height="803.5"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OtI-py-YO1">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OtI-py-YO1">
                                                         <rect key="frame" x="19" y="7" width="358.5" height="789.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" text="Penanganan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJu-Lc-egJ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="358.5" height="9.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="358.5" height="21.5"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                                 <color key="textColor" name="Hitam (Secondary)"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ew-rg-SKB" userLabel="PenangananDetail">
-                                                                <rect key="frame" x="0.0" y="19.5" width="358.5" height="770"/>
+                                                                <rect key="frame" x="0.0" y="31.5" width="358.5" height="758"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <string key="text">1. Beri pakan dengan protein tinggi.
 2. Bawa anjing Anda ke dokter hewan untuk
@@ -289,6 +297,8 @@ Hindari makanan yang mengandung pengawet, karena pengawet pada dogfood atau snac
                                         <color key="backgroundColor" name="Putih (Secondary)"/>
                                         <constraints>
                                             <constraint firstItem="L0S-Yb-hEA" firstAttribute="leading" secondItem="A4b-zK-4bq" secondAttribute="leading" id="Ob0-Vw-X6W"/>
+                                            <constraint firstItem="iSe-Ya-03e" firstAttribute="top" secondItem="A4b-zK-4bq" secondAttribute="top" constant="1203" id="WHp-9y-3Oc"/>
+                                            <constraint firstItem="IXO-Iy-wvX" firstAttribute="top" secondItem="A4b-zK-4bq" secondAttribute="top" constant="771.5" id="eY6-rG-CcQ"/>
                                             <constraint firstItem="hhJ-vT-Rje" firstAttribute="top" secondItem="L0S-Yb-hEA" secondAttribute="bottom" constant="10" id="gnl-oX-ZWX"/>
                                             <constraint firstItem="L0S-Yb-hEA" firstAttribute="top" secondItem="A4b-zK-4bq" secondAttribute="top" id="jhX-gK-nBv"/>
                                             <constraint firstAttribute="trailing" secondItem="L0S-Yb-hEA" secondAttribute="trailing" id="qX4-Nd-jKw"/>
