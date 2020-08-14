@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Qj-g1-DxT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Qj-g1-DxT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,24 +20,40 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0S-wO-z3N">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="647"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0W1-48-sO1">
-                                                <rect key="frame" x="16" y="340" width="382" height="280"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <string key="text">Opacity terbatas pada area lensa mata atau kapsul atau dapat mempengaruhi keseluruhan struktur. Katarak sempurna mempengaruhi kedua bola mata dimana mengakibatkan kebutaan, ketika daerah kecil yang mengalami katarak non-progresif, hal itu tidak akan mengganggu pengelihatan. 
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bGJ-5d-sr5">
+                                                <rect key="frame" x="16" y="340" width="382" height="307"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0W1-48-sO1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="280"/>
+                                                        <string key="text">Opacity terbatas pada area lensa mata atau kapsul atau dapat mempengaruhi keseluruhan struktur. Katarak sempurna mempengaruhi kedua bola mata dimana mengakibatkan kebutaan, ketika daerah kecil yang mengalami katarak non-progresif, hal itu tidak akan mengganggu pengelihatan. 
 
 Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat berkembang menjadi katarak sekunder karena gangguan lain yang diwariskan oleh indukan seperti atrofi retina atau glaukoma yang progresif.</string>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
+                                                        <color key="textColor" name="Hitam (Secondary)"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhc-0J-dfS">
+                                                        <rect key="frame" x="0.0" y="280" width="382" height="27"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
+                                                        <state key="normal" title="Baca Selanjutnya">
+                                                            <color key="titleColor" name="Biru (Secondary)"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="readMoreTapped:" destination="7Qj-g1-DxT" eventType="touchUpInside" id="fJF-J7-hBM"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3d8-3x-Eax">
                                                 <rect key="frame" x="16" y="291" width="382" height="32"/>
                                                 <segments>
                                                     <segment title="Pengertian"/>
                                                     <segment title="Penyebab"/>
                                                     <segment title="Gejala"/>
+                                                    <segment title="Diagnosa"/>
                                                 </segments>
                                                 <color key="selectedSegmentTintColor" red="0.23921568627450979" green="0.52156862745098043" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
@@ -54,13 +71,13 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
                                         <color key="backgroundColor" red="0.96470588235294119" green="0.98431372549019602" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="BdK-JM-6jL" firstAttribute="leading" secondItem="k0S-wO-z3N" secondAttribute="leading" id="0MV-sq-vCQ"/>
-                                            <constraint firstItem="0W1-48-sO1" firstAttribute="leading" secondItem="k0S-wO-z3N" secondAttribute="leading" constant="16" id="0OI-fO-DMQ"/>
                                             <constraint firstItem="3d8-3x-Eax" firstAttribute="leading" secondItem="k0S-wO-z3N" secondAttribute="leading" constant="16" id="FRg-8P-z0w"/>
+                                            <constraint firstItem="bGJ-5d-sr5" firstAttribute="top" secondItem="3d8-3x-Eax" secondAttribute="bottom" constant="18" id="IHI-Jb-EM8"/>
                                             <constraint firstAttribute="trailing" secondItem="BdK-JM-6jL" secondAttribute="trailing" id="J4i-sp-pV7"/>
-                                            <constraint firstItem="0W1-48-sO1" firstAttribute="top" secondItem="3d8-3x-Eax" secondAttribute="bottom" constant="18" id="Rr4-ZD-30k"/>
+                                            <constraint firstItem="bGJ-5d-sr5" firstAttribute="leading" secondItem="k0S-wO-z3N" secondAttribute="leading" constant="16" id="hJD-bk-Fzb"/>
                                             <constraint firstItem="3d8-3x-Eax" firstAttribute="top" secondItem="BdK-JM-6jL" secondAttribute="bottom" constant="16" id="i4A-u0-83A"/>
-                                            <constraint firstAttribute="bottom" secondItem="0W1-48-sO1" secondAttribute="bottom" id="l7Y-Nb-kbz"/>
-                                            <constraint firstAttribute="trailing" secondItem="0W1-48-sO1" secondAttribute="trailing" constant="16" id="rGg-nE-tG8"/>
+                                            <constraint firstAttribute="bottom" secondItem="bGJ-5d-sr5" secondAttribute="bottom" id="kG5-yV-Zre"/>
+                                            <constraint firstAttribute="trailing" secondItem="bGJ-5d-sr5" secondAttribute="trailing" constant="16" id="tdh-yh-CkA"/>
                                             <constraint firstItem="BdK-JM-6jL" firstAttribute="top" secondItem="k0S-wO-z3N" secondAttribute="top" id="tmu-II-jQ0"/>
                                             <constraint firstAttribute="trailing" secondItem="3d8-3x-Eax" secondAttribute="trailing" constant="16" id="wCb-vl-cz3"/>
                                         </constraints>
@@ -69,6 +86,7 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="k0S-wO-z3N" firstAttribute="top" secondItem="NJd-a1-Xhm" secondAttribute="top" id="6OP-O1-ecd"/>
+                                    <constraint firstItem="k0S-wO-z3N" firstAttribute="width" secondItem="NJd-a1-Xhm" secondAttribute="width" id="P5m-ze-4HD"/>
                                     <constraint firstAttribute="bottom" secondItem="k0S-wO-z3N" secondAttribute="bottom" id="Y4H-1K-Dke"/>
                                     <constraint firstItem="k0S-wO-z3N" firstAttribute="leading" secondItem="NJd-a1-Xhm" secondAttribute="leading" id="jEu-Fa-xy0"/>
                                     <constraint firstAttribute="trailing" secondItem="k0S-wO-z3N" secondAttribute="trailing" id="xdQ-Zi-huz"/>
@@ -78,6 +96,7 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
                         <color key="backgroundColor" red="0.96470588239999999" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="NJd-a1-Xhm" firstAttribute="leading" secondItem="ZRx-ee-vln" secondAttribute="leading" id="Bea-6z-lfw"/>
+                            <constraint firstItem="NJd-a1-Xhm" firstAttribute="width" secondItem="ZRx-ee-vln" secondAttribute="width" id="Cwr-SX-g36"/>
                             <constraint firstItem="ZRx-ee-vln" firstAttribute="bottom" secondItem="NJd-a1-Xhm" secondAttribute="bottom" id="EEB-IV-agC"/>
                             <constraint firstItem="NJd-a1-Xhm" firstAttribute="top" secondItem="ZRx-ee-vln" secondAttribute="top" id="SVP-Fq-3e3"/>
                             <constraint firstItem="NJd-a1-Xhm" firstAttribute="trailing" secondItem="ZRx-ee-vln" secondAttribute="trailing" id="uxr-tr-36l"/>
@@ -87,6 +106,7 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
                     <connections>
                         <outlet property="bannerImg" destination="BdK-JM-6jL" id="4rl-xg-Nu3"/>
                         <outlet property="detailLabel" destination="0W1-48-sO1" id="exi-E3-PjD"/>
+                        <outlet property="readMore" destination="Fhc-0J-dfS" id="9Ib-8e-yIr"/>
                         <outlet property="segmented" destination="3d8-3x-Eax" id="elp-Tj-WNj"/>
                     </connections>
                 </viewController>
@@ -364,5 +384,11 @@ Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tid
         <image name="artikel-demo" width="911" height="592"/>
         <image name="banner" width="534" height="284"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <namedColor name="Biru (Secondary)">
+            <color red="0.15899999439716339" green="0.57599997520446777" blue="0.8190000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Hitam (Secondary)">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

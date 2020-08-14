@@ -422,13 +422,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = J5T564JM4P;
+				DEVELOPMENT_TEAM = 8NCFZ4PR92;
 				INFOPLIST_FILE = WufWuf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.michaeltamsil.wufwuf;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doko.wufwuf;
 				PRODUCT_NAME = "Halo Dog";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -441,13 +441,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = J5T564JM4P;
+				DEVELOPMENT_TEAM = 8NCFZ4PR92;
 				INFOPLIST_FILE = WufWuf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.michaeltamsil.wufwuf;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doko.wufwuf;
 				PRODUCT_NAME = "Halo Dog";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
