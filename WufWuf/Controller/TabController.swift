@@ -17,15 +17,21 @@ class TabController: UITabBarController {
         let feedController = homeStoryboard.instantiateInitialViewController()
         feedController?.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(named: "feed-icon")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "filled-feed-icon")?.withRenderingMode(.alwaysOriginal))
         
-        let scanController = ArticleController()
-        scanController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "scanner-icon")?.withRenderingMode(.alwaysOriginal), tag: 1)
         
-        let fileConroller = ArticleController()
-        let fileBar = UITabBarItem(title: "File", image: UIImage(named: "feed-icon")?.withRenderingMode(.alwaysOriginal), tag: 2)
-        fileBar.isEnabled = false
-        fileConroller.tabBarItem = fileBar
+        let scanKatarakController:UIViewController = UIStoryboard(name: "ScannerScreen", bundle: nil).instantiateViewController(withIdentifier: "ScannerScreen1") as UIViewController
+        //let scanKatarakController = ScannerScreenViewController()
+        scanKatarakController.tabBarItem = UITabBarItem(title: "Katarak", image: UIImage(systemName: "camera.fill")?.withRenderingMode(.alwaysOriginal).withTintColor(UIColor(named: "Biru (Secondary)") ?? UIColor.blue), tag: 1)
         
-        viewControllers = [feedController!, scanController, fileConroller]
+        let scanDemodexController:UIViewController = UIStoryboard(name: "DemoDexScannerScreen", bundle: nil).instantiateViewController(withIdentifier: "main") as UIViewController
+        scanDemodexController.tabBarItem = UITabBarItem(title: "Demodex", image: UIImage(systemName: "camera.fill")?.withRenderingMode(.alwaysOriginal).withTintColor(UIColor(named: "Biru (Secondary)") ?? UIColor.blue) , tag: 2)
+        
+        
+//        let fileConroller = ArticleController()
+//        let fileBar = UITabBarItem(title: "File", image: UIImage(named: "feed-icon")?.withRenderingMode(.alwaysOriginal), tag: 2)
+//        fileBar.isEnabled = false
+//        fileConroller.tabBarItem = fileBar
+        
+        viewControllers = [feedController!, scanKatarakController, scanDemodexController]
     }
     
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {

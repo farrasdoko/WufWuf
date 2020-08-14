@@ -19,11 +19,11 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>our app need camera to identify</string>
+	<string>aplikasi ini membutuhkan kamera anda</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Lokasi Anda saat ini akan ditampilkan di peta dan digunakan untuk petunjuk arah, hasil pencarian di sekitar, dan perkiraan waktu perjalanan.</string>
 	<key>UIApplicationSceneManifest</key>

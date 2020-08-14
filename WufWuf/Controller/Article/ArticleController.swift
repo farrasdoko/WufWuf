@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ArticleController: UIViewController {
     
     @IBOutlet weak var bannerImg: UIImageView!
@@ -19,6 +20,7 @@ class ArticleController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         navigationItem.title = navTitle
         changeDetail()
@@ -92,6 +94,7 @@ class ArticleController: UIViewController {
             break
         }
     }
+    
     func resizeImage(_ image: UIImage,_ height: CGFloat) -> UIImage {
         let scale = height / image.size.height
         let width = image.size.width * scale

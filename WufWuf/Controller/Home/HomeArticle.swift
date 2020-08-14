@@ -38,14 +38,14 @@ class HomeArticle: UIViewController {
         let articleController = storyboard.instantiateViewController(withIdentifier: "article") as! ArticleController
         
         switch sender.name {
-        case senderID.demodexTap.rawValue:
-            articleController.navTitle = "Demodex"
-            break
-        case senderID.katarakTap.rawValue:
-            articleController.navTitle = "Katarak"
-            break
-        default:
-            break
+            case senderID.demodexTap.rawValue:
+                articleController.navTitle = "Demodex"
+                break
+            case senderID.katarakTap.rawValue:
+                articleController.navTitle = "Katarak"
+                break
+            default:
+                break
         }
         navigationController?.pushViewController(articleController, animated: true)
     }

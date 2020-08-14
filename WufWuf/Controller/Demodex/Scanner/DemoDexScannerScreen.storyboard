@@ -11,7 +11,7 @@
         <!--Demodex Scanner Screen View Controller-->
         <scene sceneID="LIz-D7-7qq">
             <objects>
-                <viewController storyboardIdentifier="main" id="Clx-ro-SHh" customClass="DemodexScannerScreenViewController" customModule="WufWuf" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" id="Clx-ro-SHh" customClass="DemodexScannerScreenViewController" customModule="Halo_Dog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H41-ES-lqX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,7 @@
                             <navigationBar contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bvC-GJ-11u">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
-                                    <navigationItem title="Diagnosis Demodex" id="iif-Mb-uQK">
+                                    <navigationItem title="Periksa Kulit Anjing Anda" id="iif-Mb-uQK">
                                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="j63-5T-2gv">
                                             <connections>
                                                 <action selector="cameraTapped:" destination="Clx-ro-SHh" id="m1s-7c-U3Z"/>
@@ -31,34 +31,37 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5O0-jr-Ypa">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A4b-zK-4bq">
-                                        <rect key="frame" x="0.0" y="0.0" width="396.5" height="2006.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9s7-3X-ueh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1925"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L0S-Yb-hEA" userLabel="imageView">
-                                                <rect key="frame" x="0.0" y="0.0" width="396.5" height="240"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bt0-1g-bdO" userLabel="imageView">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="240" id="9c9-zG-y7T"/>
+                                                    <constraint firstAttribute="height" constant="240" id="8C4-jf-W9O"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Demodex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhJ-vT-Rje" userLabel="Judul">
-                                                <rect key="frame" x="0.0" y="250" width="396.5" height="0.0"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demodex" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mS-6E-qnE" userLabel="Judul">
+                                                <rect key="frame" x="0.0" y="240" width="414" height="0.0"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" id="cxd-jq-Oa6"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <color key="textColor" name="Hitam (Secondary)"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1J-nc-iO9" userLabel="ViewDiagnosa">
-                                                <rect key="frame" x="0.0" y="260" width="396.5" height="190"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSa-Xb-8rG" userLabel="ViewDiagnosa">
+                                                <rect key="frame" x="0.0" y="240" width="414" height="172"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" text="Diagnosa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3v-mK-fWU">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Diagnosa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5I-IV-lWJ">
                                                         <rect key="frame" x="19" y="7" width="81" height="21.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" name="Hitam (Secondary)"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8s-Z6-PnK" userLabel="DiagnosaDetail">
-                                                        <rect key="frame" x="19" y="35.5" width="358.5" height="143.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vT0-Gv-ktO" userLabel="DiagnosaDetail">
+                                                        <rect key="frame" x="19" y="35.5" width="376" height="125.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <string key="text">Diagnosa yang dapat dilakukan pada kasus demodekosis adalah dengan kerokan kulit yang agak dalam dari bagian tengah lesi, kemudian diberi tetesan KOH 10 % untuk diamati di bawah mikroskop. Apabila positif maka akan ditemukan parasit demodex yang bentuknya seperti wortel atau cerutu. 
 Diagnosa hanya dapat dilakukan oleh dokter!</string>
@@ -69,20 +72,21 @@ Diagnosa hanya dapat dilakukan oleh dokter!</string>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="t8s-Z6-PnK" secondAttribute="trailing" constant="19" id="Amj-9e-31X"/>
-                                                    <constraint firstItem="t8s-Z6-PnK" firstAttribute="leading" secondItem="c1J-nc-iO9" secondAttribute="leading" constant="19" id="H29-vk-Re5"/>
-                                                    <constraint firstItem="J3v-mK-fWU" firstAttribute="top" secondItem="c1J-nc-iO9" secondAttribute="top" constant="7" id="Vn2-Ag-p2Y"/>
-                                                    <constraint firstItem="t8s-Z6-PnK" firstAttribute="top" secondItem="J3v-mK-fWU" secondAttribute="bottom" constant="7" id="a8q-IR-EbN"/>
-                                                    <constraint firstItem="J3v-mK-fWU" firstAttribute="leading" secondItem="t8s-Z6-PnK" secondAttribute="leading" id="hPx-UX-rho"/>
-                                                    <constraint firstAttribute="bottom" secondItem="t8s-Z6-PnK" secondAttribute="bottom" constant="11" id="oMt-hM-RhJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vT0-Gv-ktO" secondAttribute="trailing" constant="19" id="5sz-CF-fAA"/>
+                                                    <constraint firstItem="vT0-Gv-ktO" firstAttribute="top" secondItem="h5I-IV-lWJ" secondAttribute="bottom" constant="7" id="Op6-u7-HyG"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vT0-Gv-ktO" secondAttribute="bottom" constant="11" id="k95-F7-yyM"/>
+                                                    <constraint firstItem="h5I-IV-lWJ" firstAttribute="top" secondItem="VSa-Xb-8rG" secondAttribute="top" constant="7" id="tuE-uK-30h"/>
+                                                    <constraint firstItem="h5I-IV-lWJ" firstAttribute="leading" secondItem="vT0-Gv-ktO" secondAttribute="leading" id="vG5-8C-Gkw"/>
+                                                    <constraint firstItem="vT0-Gv-ktO" firstAttribute="leading" secondItem="VSa-Xb-8rG" secondAttribute="leading" constant="19" id="yDl-2o-WNh"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC5-ZH-NAD" userLabel="TombolPeta">
-                                                <rect key="frame" x="0.0" y="460" width="396.5" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvS-4H-xMy" userLabel="TombolPeta">
+                                                <rect key="frame" x="0.0" y="412" width="414" height="60"/>
                                                 <color key="backgroundColor" name="Biru (Secondary)"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="U8L-G4-zNP"/>
+                                                    <constraint firstAttribute="height" constant="60" id="saZ-lK-qgc"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="Temukan Klinik Hewan Terdekat" image="magnifyingglass" catalog="system">
@@ -94,29 +98,29 @@ Diagnosa hanya dapat dilakukan oleh dokter!</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="aOf-tv-yzu" kind="show" id="3q5-Cg-Fma"/>
+                                                    <segue destination="aOf-tv-yzu" kind="show" id="Mjh-VN-1tC"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8AX-yi-zlT" userLabel="ViewGambar">
-                                                <rect key="frame" x="0.0" y="510" width="396.5" height="251.5"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9d-kR-RsM" userLabel="ViewGambar">
+                                                <rect key="frame" x="0.0" y="472" width="414" height="251.5"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="j1s-U7-WWH">
-                                                        <rect key="frame" x="19" y="7" width="358.5" height="237.5"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bj7-F2-gHF">
+                                                        <rect key="frame" x="19" y="7" width="376" height="237.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gambar dari Demodex" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFx-fr-dqR">
-                                                                <rect key="frame" x="0.0" y="0.0" width="358.5" height="21.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gambar dari Demodex" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g9-Es-NTz">
+                                                                <rect key="frame" x="0.0" y="0.0" width="376" height="21.5"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8I6-GJ-jrU">
-                                                                <rect key="frame" x="0.0" y="26.5" width="358.5" height="103"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WAI-Lr-Qpb">
+                                                                <rect key="frame" x="0.0" y="26.5" width="376" height="103"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demodex-pengertian" translatesAutoresizingMaskIntoConstraints="NO" id="FSq-fh-yUb">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="176.5" height="103"/>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demodex-pengertian" translatesAutoresizingMaskIntoConstraints="NO" id="XA7-SY-N0V">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="185.5" height="103"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="103" id="5DG-s1-OKF"/>
+                                                                            <constraint firstAttribute="height" constant="103" id="Oz8-GT-UNY"/>
                                                                         </constraints>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -124,10 +128,10 @@ Diagnosa hanya dapat dilakukan oleh dokter!</string>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </imageView>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demodex-gejala" translatesAutoresizingMaskIntoConstraints="NO" id="8XG-h0-b5U">
-                                                                        <rect key="frame" x="181.5" y="0.0" width="177" height="103"/>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demodex-gejala" translatesAutoresizingMaskIntoConstraints="NO" id="OS4-ks-K74">
+                                                                        <rect key="frame" x="190.5" y="0.0" width="185.5" height="103"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="103" id="G7Q-X8-Cxd"/>
+                                                                            <constraint firstAttribute="height" constant="103" id="Z6d-LU-1pv"/>
                                                                         </constraints>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -137,13 +141,13 @@ Diagnosa hanya dapat dilakukan oleh dokter!</string>
                                                                     </imageView>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2dX-eK-l05">
-                                                                <rect key="frame" x="0.0" y="134.5" width="358.5" height="103"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rOZ-iy-oeQ">
+                                                                <rect key="frame" x="0.0" y="134.5" width="376" height="103"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demodex-penyebab" translatesAutoresizingMaskIntoConstraints="NO" id="h3X-8u-wus">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="176.5" height="103"/>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demodex-penyebab" translatesAutoresizingMaskIntoConstraints="NO" id="kHD-Qn-s7d">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="185.5" height="103"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="103" id="rl1-v9-hT4"/>
+                                                                            <constraint firstAttribute="height" constant="103" id="TWC-2k-gDV"/>
                                                                         </constraints>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -151,10 +155,10 @@ Diagnosa hanya dapat dilakukan oleh dokter!</string>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </imageView>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demodex-4" translatesAutoresizingMaskIntoConstraints="NO" id="SrB-fI-bPE">
-                                                                        <rect key="frame" x="181.5" y="0.0" width="177" height="103"/>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demodex-4" translatesAutoresizingMaskIntoConstraints="NO" id="SUD-BI-ekq">
+                                                                        <rect key="frame" x="190.5" y="0.0" width="185.5" height="103"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="103" id="1cW-ta-3Fh"/>
+                                                                            <constraint firstAttribute="height" constant="103" id="Xq8-2Z-r9f"/>
                                                                         </constraints>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -169,27 +173,27 @@ Diagnosa hanya dapat dilakukan oleh dokter!</string>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="j1s-U7-WWH" firstAttribute="leading" secondItem="8AX-yi-zlT" secondAttribute="leading" constant="19" id="5M9-nY-bHR"/>
-                                                    <constraint firstAttribute="bottom" secondItem="j1s-U7-WWH" secondAttribute="bottom" constant="7" id="BYa-Vw-eVg"/>
-                                                    <constraint firstAttribute="trailing" secondItem="j1s-U7-WWH" secondAttribute="trailing" constant="19" id="Hwa-F9-Nqy"/>
-                                                    <constraint firstItem="j1s-U7-WWH" firstAttribute="top" secondItem="8AX-yi-zlT" secondAttribute="top" constant="7" id="OyI-Y7-KIc"/>
+                                                    <constraint firstItem="bj7-F2-gHF" firstAttribute="top" secondItem="T9d-kR-RsM" secondAttribute="top" constant="7" id="ExT-B6-OBM"/>
+                                                    <constraint firstAttribute="bottom" secondItem="bj7-F2-gHF" secondAttribute="bottom" constant="7" id="KSh-wH-hfq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bj7-F2-gHF" secondAttribute="trailing" constant="19" id="TGZ-gW-DPm"/>
+                                                    <constraint firstItem="bj7-F2-gHF" firstAttribute="leading" secondItem="T9d-kR-RsM" secondAttribute="leading" constant="19" id="uCU-ej-FOR"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IXO-Iy-wvX" userLabel="ViewSaran">
-                                                <rect key="frame" x="0.0" y="771.5" width="396.5" height="421.5"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBV-rs-ckj" userLabel="ViewSaran">
+                                                <rect key="frame" x="0.0" y="723.5" width="414" height="386"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sxB-xD-H9C">
-                                                        <rect key="frame" x="19" y="7" width="358.5" height="407.5"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-lQ-05Y">
+                                                        <rect key="frame" x="19" y="7" width="376" height="372"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" text="Saran" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh6-Tu-zms">
-                                                                <rect key="frame" x="0.0" y="0.0" width="358.5" height="21.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Saran" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhb-vK-vWc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="376" height="21.5"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                                 <color key="textColor" name="Hitam (Secondary)"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHI-w6-B4x">
-                                                                <rect key="frame" x="0.0" y="31.5" width="358.5" height="376"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfb-3b-e1d">
+                                                                <rect key="frame" x="0.0" y="31.5" width="376" height="340.5"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <string key="text">jika anjing anda terkena penyakit demodex yang harus pertama diperbaiki adalah daya tahan tubuhnya. Daya tahan tubuh jelek itu biasanya akibat cacingan dan juga karena gizi yang tidak seimbang. Segeralah bawa ke dokter hewan terdekat Semua anjing yang terkena demodek biasanya diobati dengan diberi suntikan dan antibiotik untuk kulit. 
 
@@ -201,31 +205,36 @@ Hindari makanan yang mengandung pengawet, karena pengawet pada dogfood atau snac
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Qfb-3b-e1d" firstAttribute="top" secondItem="Mhb-vK-vWc" secondAttribute="bottom" constant="10" id="2KU-5T-zpv"/>
+                                                            <constraint firstItem="Qfb-3b-e1d" firstAttribute="bottom" secondItem="IRc-lQ-05Y" secondAttribute="bottomMargin" id="MJD-Tf-RiU"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Qfb-3b-e1d" secondAttribute="bottom" id="ruY-wf-BTx"/>
+                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="sxB-xD-H9C" secondAttribute="bottom" constant="7" id="4JW-Uk-QeL"/>
-                                                    <constraint firstAttribute="trailing" secondItem="sxB-xD-H9C" secondAttribute="trailing" constant="19" id="76E-oj-NdM"/>
-                                                    <constraint firstItem="sxB-xD-H9C" firstAttribute="leading" secondItem="IXO-Iy-wvX" secondAttribute="leading" constant="19" id="LfC-ON-ke1"/>
-                                                    <constraint firstItem="sxB-xD-H9C" firstAttribute="top" secondItem="IXO-Iy-wvX" secondAttribute="top" constant="7" id="fmN-6w-Hit"/>
+                                                    <constraint firstItem="IRc-lQ-05Y" firstAttribute="leading" secondItem="BBV-rs-ckj" secondAttribute="leading" constant="19" id="NPi-tQ-WPg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IRc-lQ-05Y" secondAttribute="trailing" constant="19" id="bLq-DP-o25"/>
+                                                    <constraint firstItem="IRc-lQ-05Y" firstAttribute="top" secondItem="BBV-rs-ckj" secondAttribute="top" constant="7" id="of9-WL-4HY"/>
+                                                    <constraint firstAttribute="bottom" secondItem="IRc-lQ-05Y" secondAttribute="bottom" constant="7" id="wgT-cN-FAp"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iSe-Ya-03e" userLabel="ViewPenanganan">
-                                                <rect key="frame" x="0.0" y="1203" width="396.5" height="803.5"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2y-hJ-yBo" userLabel="ViewPenanganan">
+                                                <rect key="frame" x="0.0" y="1109.5" width="414" height="815.5"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OtI-py-YO1">
-                                                        <rect key="frame" x="19" y="7" width="358.5" height="789.5"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tCe-Or-pt9">
+                                                        <rect key="frame" x="19" y="7" width="376" height="801.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" text="Penanganan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJu-Lc-egJ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="358.5" height="9.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Penanganan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPW-rM-uWf">
+                                                                <rect key="frame" x="0.0" y="0.0" width="376" height="21.5"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                                 <color key="textColor" name="Hitam (Secondary)"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ew-rg-SKB" userLabel="PenangananDetail">
-                                                                <rect key="frame" x="0.0" y="19.5" width="358.5" height="770"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d94-nT-Kja" userLabel="PenangananDetail">
+                                                                <rect key="frame" x="0.0" y="31.5" width="376" height="770"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <string key="text">1. Beri pakan dengan protein tinggi.
 2. Bawa anjing Anda ke dokter hewan untuk
@@ -279,61 +288,51 @@ Hindari makanan yang mengandung pengawet, karena pengawet pada dogfood atau snac
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="OtI-py-YO1" secondAttribute="bottom" constant="7" id="KMe-jc-wJE"/>
-                                                    <constraint firstAttribute="trailing" secondItem="OtI-py-YO1" secondAttribute="trailing" constant="19" id="QiX-fh-M1o"/>
-                                                    <constraint firstItem="OtI-py-YO1" firstAttribute="top" secondItem="iSe-Ya-03e" secondAttribute="top" constant="7" id="ZhP-kT-f1c"/>
-                                                    <constraint firstItem="OtI-py-YO1" firstAttribute="leading" secondItem="iSe-Ya-03e" secondAttribute="leading" constant="19" id="lfn-nL-yjz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tCe-Or-pt9" secondAttribute="trailing" constant="19" id="2QP-79-QYN"/>
+                                                    <constraint firstItem="tCe-Or-pt9" firstAttribute="leading" secondItem="g2y-hJ-yBo" secondAttribute="leading" constant="19" id="EAd-Lu-k9o"/>
+                                                    <constraint firstAttribute="bottom" secondItem="tCe-Or-pt9" secondAttribute="bottom" constant="7" id="wW2-V5-3PS"/>
+                                                    <constraint firstItem="tCe-Or-pt9" firstAttribute="top" secondItem="g2y-hJ-yBo" secondAttribute="top" constant="7" id="xmf-pv-9W6"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" name="Putih (Secondary)"/>
-                                        <constraints>
-                                            <constraint firstItem="L0S-Yb-hEA" firstAttribute="leading" secondItem="A4b-zK-4bq" secondAttribute="leading" id="Ob0-Vw-X6W"/>
-                                            <constraint firstItem="hhJ-vT-Rje" firstAttribute="top" secondItem="L0S-Yb-hEA" secondAttribute="bottom" constant="10" id="gnl-oX-ZWX"/>
-                                            <constraint firstItem="L0S-Yb-hEA" firstAttribute="top" secondItem="A4b-zK-4bq" secondAttribute="top" id="jhX-gK-nBv"/>
-                                            <constraint firstAttribute="trailing" secondItem="L0S-Yb-hEA" secondAttribute="trailing" id="qX4-Nd-jKw"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" name="Putih (Secondary)"/>
                                 <constraints>
-                                    <constraint firstItem="A4b-zK-4bq" firstAttribute="trailing" secondItem="0T5-nn-S06" secondAttribute="trailing" id="6tv-9I-F8i"/>
-                                    <constraint firstItem="A4b-zK-4bq" firstAttribute="leading" secondItem="0T5-nn-S06" secondAttribute="leading" id="70M-th-60O"/>
-                                    <constraint firstItem="A4b-zK-4bq" firstAttribute="width" secondItem="ldW-D7-aW9" secondAttribute="width" multiplier="0.957219" id="U8R-k7-GUM"/>
-                                    <constraint firstItem="A4b-zK-4bq" firstAttribute="bottom" secondItem="0T5-nn-S06" secondAttribute="bottom" id="Xem-ep-aVK"/>
-                                    <constraint firstItem="A4b-zK-4bq" firstAttribute="height" secondItem="5O0-jr-Ypa" secondAttribute="height" multiplier="2.59238" id="crE-Ta-we4"/>
-                                    <constraint firstItem="A4b-zK-4bq" firstAttribute="top" secondItem="0T5-nn-S06" secondAttribute="top" id="vsN-5B-Zcu"/>
+                                    <constraint firstAttribute="trailing" secondItem="9s7-3X-ueh" secondAttribute="trailing" id="DoF-XS-hfJ"/>
+                                    <constraint firstItem="9s7-3X-ueh" firstAttribute="width" secondItem="5O0-jr-Ypa" secondAttribute="width" id="NXU-DN-qNG"/>
+                                    <constraint firstAttribute="bottom" secondItem="9s7-3X-ueh" secondAttribute="bottom" id="aKK-oB-Gcc"/>
+                                    <constraint firstItem="9s7-3X-ueh" firstAttribute="top" secondItem="5O0-jr-Ypa" secondAttribute="top" id="fAm-yP-7Cd"/>
+                                    <constraint firstItem="9s7-3X-ueh" firstAttribute="height" secondItem="5O0-jr-Ypa" secondAttribute="height" priority="250" id="fQn-mA-dk5"/>
+                                    <constraint firstItem="9s7-3X-ueh" firstAttribute="leading" secondItem="5O0-jr-Ypa" secondAttribute="leading" id="rSs-ry-txO"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="0T5-nn-S06"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="ldW-D7-aW9"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5O0-jr-Ypa" firstAttribute="leading" secondItem="lYU-zQ-6xC" secondAttribute="leading" id="0Lf-2R-KJO"/>
-                            <constraint firstItem="bvC-GJ-11u" firstAttribute="trailing" secondItem="lYU-zQ-6xC" secondAttribute="trailing" id="D9C-Vm-DMI"/>
-                            <constraint firstItem="5O0-jr-Ypa" firstAttribute="top" secondItem="bvC-GJ-11u" secondAttribute="bottom" id="Wyq-Fv-1si"/>
-                            <constraint firstItem="5O0-jr-Ypa" firstAttribute="bottom" secondItem="lYU-zQ-6xC" secondAttribute="bottom" id="cRQ-46-eWH"/>
-                            <constraint firstAttribute="trailing" secondItem="5O0-jr-Ypa" secondAttribute="trailing" id="egi-b4-2yo"/>
-                            <constraint firstItem="bvC-GJ-11u" firstAttribute="leading" secondItem="lYU-zQ-6xC" secondAttribute="leading" id="kWt-bj-ky0"/>
-                            <constraint firstItem="bvC-GJ-11u" firstAttribute="top" secondItem="lYU-zQ-6xC" secondAttribute="top" id="n9N-BZ-4pq"/>
-                            <constraint firstItem="A4b-zK-4bq" firstAttribute="height" secondItem="H41-ES-lqX" secondAttribute="height" multiplier="2.2394" id="ylN-Bi-OwK"/>
+                            <constraint firstItem="bvC-GJ-11u" firstAttribute="trailing" secondItem="lYU-zQ-6xC" secondAttribute="trailing" id="3EX-kv-no4"/>
+                            <constraint firstItem="5O0-jr-Ypa" firstAttribute="top" secondItem="bvC-GJ-11u" secondAttribute="bottom" id="6uZ-Zc-wiA"/>
+                            <constraint firstItem="5O0-jr-Ypa" firstAttribute="bottom" secondItem="lYU-zQ-6xC" secondAttribute="bottom" id="Ap4-Ez-E2n"/>
+                            <constraint firstItem="bvC-GJ-11u" firstAttribute="top" secondItem="lYU-zQ-6xC" secondAttribute="top" id="GJP-0y-tuY"/>
+                            <constraint firstItem="5O0-jr-Ypa" firstAttribute="leading" secondItem="lYU-zQ-6xC" secondAttribute="leading" id="HQw-Vg-jPo"/>
+                            <constraint firstItem="5O0-jr-Ypa" firstAttribute="trailing" secondItem="lYU-zQ-6xC" secondAttribute="trailing" id="VDy-9l-ChJ"/>
+                            <constraint firstItem="bvC-GJ-11u" firstAttribute="leading" secondItem="lYU-zQ-6xC" secondAttribute="leading" id="g5J-Ip-yuV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lYU-zQ-6xC"/>
                     </view>
                     <connections>
-                        <outlet property="imageView2" destination="L0S-Yb-hEA" id="ubG-WX-Ket"/>
-                        <outlet property="judul" destination="hhJ-vT-Rje" id="G40-Wm-DVp"/>
-                        <outlet property="tombolPeta" destination="fC5-ZH-NAD" id="kXk-oa-Vtd"/>
-                        <outlet property="viewDiagnosa" destination="c1J-nc-iO9" id="Z4b-Wg-i0O"/>
-                        <outlet property="viewGambar" destination="8AX-yi-zlT" id="qwD-DD-kMQ"/>
-                        <outlet property="viewPenanganan" destination="iSe-Ya-03e" id="jLs-hi-hTY"/>
-                        <outlet property="viewSaran" destination="IXO-Iy-wvX" id="LKQ-bp-Mhk"/>
+                        <outlet property="imageView2" destination="Bt0-1g-bdO" id="oii-yq-khe"/>
+                        <outlet property="judul" destination="2mS-6E-qnE" id="FnY-mU-ihg"/>
+                        <outlet property="tombolPeta" destination="jvS-4H-xMy" id="OF6-9O-tHp"/>
+                        <outlet property="viewDiagnosa" destination="VSa-Xb-8rG" id="gO2-Hb-8vJ"/>
+                        <outlet property="viewGambar" destination="T9d-kR-RsM" id="Ph9-4w-kif"/>
+                        <outlet property="viewPenanganan" destination="g2y-hJ-yBo" id="v2w-op-NS4"/>
+                        <outlet property="viewSaran" destination="BBV-rs-ckj" id="y6j-mT-nKj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T3C-2W-o0U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-368" y="97"/>
+            <point key="canvasLocation" x="-368.11594202898556" y="96.428571428571431"/>
         </scene>
         <!--Map-->
         <scene sceneID="mfu-7U-WOm">
