@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o2L-Mq-M7S">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o2L-Mq-M7S">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -37,50 +37,16 @@
                                         <rect key="frame" x="0.0" y="0.0" width="396.5" height="1400.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X9F-Qj-OGh" userLabel="imageView">
-                                                <rect key="frame" x="0.0" y="0.0" width="396.5" height="271.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="396.5" height="728.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mny-M4-z43" userLabel="Judul">
-                                                <rect key="frame" x="0.0" y="281.5" width="396.5" height="275"/>
+                                                <rect key="frame" x="0.0" y="738.5" width="396.5" height="0.0"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <color key="textColor" name="Hitam (Secondary)"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pLr-Cd-3bQ" userLabel="ViewDiagnosa">
-                                                <rect key="frame" x="0.0" y="566.5" width="396.5" height="172"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Diagnosa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMa-yP-yGd">
-                                                        <rect key="frame" x="19" y="7" width="81" height="21.5"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                        <color key="textColor" name="Hitam (Secondary)"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aey-H8-hl3" userLabel="DiagnosaDetail">
-                                                        <rect key="frame" x="19" y="35.5" width="358.5" height="125.5"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <string key="text">1.  Berdasarkan gejala klinis yang muncul
-2. Berdasarkan sejarah penyakit pada anjing
-3. Berdasarkan pemeriksaan fisik
-4. Lakukan pemeriksaan laboratorium (test darah 
-    komplit dan test urin)
-5. Electroretinography test
-Diagnosa hanya dapat dilakukan oleh dokter!</string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <color key="textColor" name="Hitam (Secondary)"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstItem="aey-H8-hl3" firstAttribute="top" secondItem="RMa-yP-yGd" secondAttribute="bottom" constant="7" id="ERP-b7-6RQ"/>
-                                                    <constraint firstAttribute="bottom" secondItem="aey-H8-hl3" secondAttribute="bottom" constant="11" id="ToS-Ya-flR"/>
-                                                    <constraint firstItem="aey-H8-hl3" firstAttribute="leading" secondItem="pLr-Cd-3bQ" secondAttribute="leading" constant="19" id="hhD-V3-Rfp"/>
-                                                    <constraint firstItem="RMa-yP-yGd" firstAttribute="leading" secondItem="aey-H8-hl3" secondAttribute="leading" id="kIW-lE-1eA"/>
-                                                    <constraint firstItem="RMa-yP-yGd" firstAttribute="top" secondItem="pLr-Cd-3bQ" secondAttribute="top" constant="7" id="tvw-nS-aKD"/>
-                                                    <constraint firstAttribute="trailing" secondItem="aey-H8-hl3" secondAttribute="trailing" constant="19" id="xUq-Gg-ibf"/>
-                                                </constraints>
-                                            </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sI2-6a-ps8" userLabel="TombolPeta">
                                                 <rect key="frame" x="0.0" y="748.5" width="396.5" height="60"/>
                                                 <color key="backgroundColor" name="Biru (Secondary)"/>
@@ -215,7 +181,6 @@ Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tid
                         <outlet property="imageView" destination="X9F-Qj-OGh" id="9T8-IJ-6ux"/>
                         <outlet property="judul" destination="mny-M4-z43" id="Snu-7E-Nc4"/>
                         <outlet property="tombolPeta" destination="sI2-6a-ps8" id="Lzm-Bf-FoV"/>
-                        <outlet property="viewDiagnosa" destination="pLr-Cd-3bQ" id="sx2-vn-jg1"/>
                         <outlet property="viewPenanganan" destination="WBb-S4-A31" id="emg-o9-RcS"/>
                         <outlet property="viewSaran" destination="Xr0-Sq-bRy" id="Xav-VB-oCf"/>
                     </connections>

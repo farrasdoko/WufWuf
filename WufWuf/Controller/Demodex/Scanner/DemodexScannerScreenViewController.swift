@@ -17,7 +17,6 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
 
     @IBOutlet weak var imageView2: UIImageView!
     @IBOutlet weak var judul: UILabel!
-    @IBOutlet weak var viewDiagnosa: UIView!
     @IBOutlet weak var tombolPeta: UIButton!
     @IBOutlet weak var viewSaran: UIView!
     @IBOutlet weak var viewPenanganan: UIView!
@@ -31,7 +30,6 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
         imagePicker.sourceType = .camera
         
         DispatchQueue.main.async {
-            self.viewDiagnosa.isHidden = true
             self.tombolPeta.isHidden = true
             self.viewSaran.isHidden = true
             self.viewPenanganan.isHidden = true
@@ -72,7 +70,6 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
                 if (firstResult.identifier == "Healthy"){
                     self.judul.text = "Wow, kulit anjing anda sehat"
                     DispatchQueue.main.async {
-                        self.viewDiagnosa.isHidden = true
                         self.tombolPeta.isHidden = true
                         self.viewSaran.isHidden = true
                         self.viewPenanganan.isHidden = true
@@ -80,7 +77,6 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
                 }else{
                     self.judul.text = "Kulit anjing anda memiliki penyakit demodex"
                     DispatchQueue.main.async {
-                        self.viewDiagnosa.isHidden = false
                         self.tombolPeta.isHidden = false
                         self.viewSaran.isHidden = false
                         self.viewPenanganan.isHidden = false

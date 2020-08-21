@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rBu-Ds-Xm5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rBu-Ds-Xm5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -99,7 +99,6 @@
                             <constraint firstItem="BV1-P3-Wa3" firstAttribute="top" secondItem="PWI-B3-SiD" secondAttribute="bottom" priority="750" constant="95" id="Lyb-Rt-vl1"/>
                             <constraint firstItem="LoZ-pf-li6" firstAttribute="trailing" secondItem="BV1-P3-Wa3" secondAttribute="trailing" constant="17" id="ST4-2N-jf2"/>
                             <constraint firstItem="BV1-P3-Wa3" firstAttribute="leading" secondItem="LoZ-pf-li6" secondAttribute="leading" constant="17" id="VCV-zO-rbU"/>
-                            <constraint firstItem="LoZ-pf-li6" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="BV1-P3-Wa3" secondAttribute="bottom" priority="750" constant="68" id="emD-by-Oc1"/>
                             <constraint firstItem="Kmb-p7-FYj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="LoZ-pf-li6" secondAttribute="top" constant="20" id="ik4-hV-0PU"/>
                             <constraint firstItem="PWI-B3-SiD" firstAttribute="leading" secondItem="LoZ-pf-li6" secondAttribute="leading" constant="23" id="k0h-rO-GUI"/>
                             <constraint firstItem="Kmb-p7-FYj" firstAttribute="top" secondItem="LoZ-pf-li6" secondAttribute="top" priority="250" constant="75" id="w3y-o5-fCd"/>
