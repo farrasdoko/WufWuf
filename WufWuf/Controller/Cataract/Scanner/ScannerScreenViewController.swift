@@ -17,7 +17,6 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var judul: UILabel!
-    @IBOutlet weak var viewDiagnosa: UIView!
     @IBOutlet weak var tombolPeta: UIButton!
     @IBOutlet weak var viewSaran: UIView!
     @IBOutlet weak var viewPenanganan: UIView!
@@ -30,7 +29,6 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
         imagePicker.sourceType = .camera
         
         DispatchQueue.main.async {
-            self.viewDiagnosa.isHidden = true
             self.tombolPeta.isHidden = true
             self.viewSaran.isHidden = true
             self.viewPenanganan.isHidden = true
@@ -72,7 +70,6 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
                 if (isHealthy){
                     self.judul.text = "Wow, mata anjing anda sehat"
                     DispatchQueue.main.async {
-                        self.viewDiagnosa.isHidden = true
                         self.tombolPeta.isHidden = true
                         self.viewSaran.isHidden = true
                         self.viewPenanganan.isHidden = true
@@ -80,7 +77,6 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
                 }else{
                     self.judul.text = "Mata anjing anda memiliki penyakit katarak"
                     DispatchQueue.main.async {
-                        self.viewDiagnosa.isHidden = false
                         self.tombolPeta.isHidden = false
                         self.viewSaran.isHidden = false
                         self.viewPenanganan.isHidden = false
