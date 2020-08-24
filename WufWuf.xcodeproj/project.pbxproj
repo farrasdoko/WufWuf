@@ -10,6 +10,7 @@
 		49D04E3E24DD8FD600737842 /* Homes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D04E3D24DD8FD600737842 /* Homes.storyboard */; };
 		49D04E4424DD920100737842 /* HomeArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D04E4324DD920100737842 /* HomeArticle.swift */; };
 		A917DB7024E668B800B09B6B /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A917DB6F24E668B800B09B6B /* test.storyboard */; };
+		A921305124F3A0F900BBDFD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A921305024F3A0F900BBDFD1 /* LaunchScreen.storyboard */; };
 		A963E14424DD14CB00D6CF39 /* ScannerScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A963E14324DD14CB00D6CF39 /* ScannerScreen.storyboard */; };
 		A963E14624DD153100D6CF39 /* ScannerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A963E14524DD153100D6CF39 /* ScannerScreenViewController.swift */; };
 		A9A5389324E238B10090A678 /* CataractDogImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A9A5389224E238B10090A678 /* CataractDogImageClassifier.mlmodel */; };
@@ -28,13 +29,13 @@
 		ED9B9E0324DA220C00B90B24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9B9E0224DA220C00B90B24 /* ViewController.swift */; };
 		ED9B9E0624DA220C00B90B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9B9E0424DA220C00B90B24 /* Main.storyboard */; };
 		ED9B9E0824DA220E00B90B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9B9E0724DA220E00B90B24 /* Assets.xcassets */; };
-		ED9B9E0B24DA220E00B90B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9B9E0924DA220E00B90B24 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49D04E3D24DD8FD600737842 /* Homes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homes.storyboard; sourceTree = "<group>"; };
 		49D04E4324DD920100737842 /* HomeArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeArticle.swift; sourceTree = "<group>"; };
 		A917DB6F24E668B800B09B6B /* test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
+		A921305024F3A0F900BBDFD1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A963E14324DD14CB00D6CF39 /* ScannerScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScannerScreen.storyboard; sourceTree = "<group>"; };
 		A963E14524DD153100D6CF39 /* ScannerScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerScreenViewController.swift; sourceTree = "<group>"; };
 		A9A5389224E238B10090A678 /* CataractDogImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CataractDogImageClassifier.mlmodel; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		ED9B9E0224DA220C00B90B24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED9B9E0524DA220C00B90B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED9B9E0724DA220E00B90B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ED9B9E0A24DA220E00B90B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED9B9E0C24DA220E00B90B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,8 +167,8 @@
 				ED9B9E0224DA220C00B90B24 /* ViewController.swift */,
 				ED9B9E0424DA220C00B90B24 /* Main.storyboard */,
 				ED9B9E0724DA220E00B90B24 /* Assets.xcassets */,
-				ED9B9E0924DA220E00B90B24 /* LaunchScreen.storyboard */,
 				ED9B9E0C24DA220E00B90B24 /* Info.plist */,
+				A921305024F3A0F900BBDFD1 /* LaunchScreen.storyboard */,
 			);
 			path = WufWuf;
 			sourceTree = "<group>";
@@ -245,7 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED9B9E0B24DA220E00B90B24 /* LaunchScreen.storyboard in Resources */,
+				A921305124F3A0F900BBDFD1 /* LaunchScreen.storyboard in Resources */,
 				A9C4B12724E28BD700912461 /* DemoDexScannerScreen.storyboard in Resources */,
 				ED62C42A24DC39AB00AB43EB /* Article.storyboard in Resources */,
 				ED225AB524E35FC400F28982 /* Map.storyboard in Resources */,
@@ -289,14 +289,6 @@
 				ED9B9E0524DA220C00B90B24 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		ED9B9E0924DA220E00B90B24 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ED9B9E0A24DA220E00B90B24 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

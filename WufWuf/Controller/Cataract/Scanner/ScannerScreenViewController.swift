@@ -63,7 +63,7 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
             if let firstResult = results.first {
                 //MARK: PUT INFO HERE and determine what info will be
                 //self.contentLabel.text = firstResult.identifier
-                print(firstResult.identifier)
+                print(firstResult)
                 let isHealthy = firstResult.identifier == "Healthy"
 
                 
