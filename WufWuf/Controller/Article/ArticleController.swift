@@ -101,7 +101,7 @@ class ArticleController: UIViewController {
                 break
             case "Diagnosa":
                 detailLabel.attributedText = getArticle(katarakDiagnosa)
-                bannerImg.image = UIImage(named: "penyebab-katarak")
+                bannerImg.image = UIImage(named: "diagnosa-katarak")
                 readMore.isHidden = true
                 break
             default:
@@ -129,7 +129,7 @@ class ArticleController: UIViewController {
                 break
             case "Diagnosa":
                 detailLabel.attributedText = getArticle(demodexDiagnosa)
-                bannerImg.image = UIImage(named: "demodex-penyebab")
+                bannerImg.image = UIImage(named: "demodex-diagnosa")
                 readMore.isHidden = true
                 break
             default:

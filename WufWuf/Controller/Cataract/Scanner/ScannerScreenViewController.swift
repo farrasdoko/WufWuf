@@ -63,7 +63,7 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
             if let firstResult = results.first {
                 //MARK: PUT INFO HERE and determine what info will be
                 //self.contentLabel.text = firstResult.identifier
-                print(firstResult.identifier)
+                print(firstResult)
                 let isHealthy = firstResult.identifier == "Healthy"
 
                 
@@ -101,14 +101,4 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
     @IBAction func cameraTapped2(_ sender: Any) {
         present(imagePicker, animated: true, completion: nil)
     }
-    
-//    func isHiddenInfos(_ bool: Bool){
-//        DispatchQueue.main.async {
-//            self.viewDiagnosa.isHidden = bool
-//            self.tombolPeta.isHidden = bool
-//            self.viewGambar.isHidden = bool
-//            self.viewSaran.isHidden = bool
-//            self.viewPenanganan.isHidden = bool
-//        }
-//    }
 }

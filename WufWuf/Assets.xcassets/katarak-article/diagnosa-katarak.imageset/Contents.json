@@ -1,14 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "diagnosa-katarak@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "diagnosa-katarak@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "diagnosa-katarak@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
