@@ -18,6 +18,10 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bvC-GJ-11u">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" name="Putih (Secondary)"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" name="Hitam (Secondary)"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Periksa Kulit Anjing Anda" id="iif-Mb-uQK">
                                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="j63-5T-2gv">
@@ -36,7 +40,7 @@
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bt0-1g-bdO" userLabel="imageView">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" name="Putih (Secondary)"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="240" id="8C4-jf-W9O"/>
                                                 </constraints>
@@ -188,6 +192,7 @@ Hindari makanan yang mengandung pengawet, karena pengawet pada dogfood atau snac
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <color key="backgroundColor" name="Putih (Secondary)"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="2mS-6E-qnE" secondAttribute="trailing" id="EFT-Rz-1Fh"/>
                                             <constraint firstItem="2mS-6E-qnE" firstAttribute="leading" secondItem="9s7-3X-ueh" secondAttribute="leading" id="Hez-Rg-wDx"/>
@@ -205,7 +210,7 @@ Hindari makanan yang mengandung pengawet, karena pengawet pada dogfood atau snac
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="Putih (Secondary)"/>
                         <constraints>
                             <constraint firstItem="bvC-GJ-11u" firstAttribute="trailing" secondItem="lYU-zQ-6xC" secondAttribute="trailing" id="3EX-kv-no4"/>
                             <constraint firstItem="5O0-jr-Ypa" firstAttribute="top" secondItem="bvC-GJ-11u" secondAttribute="bottom" id="6uZ-Zc-wiA"/>

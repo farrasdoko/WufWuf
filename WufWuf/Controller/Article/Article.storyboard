@@ -60,7 +60,7 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
                                                     <action selector="onChanged:" destination="7Qj-g1-DxT" eventType="valueChanged" id="4bA-Hg-uMv"/>
                                                 </connections>
                                             </segmentedControl>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="artikel-demo" translatesAutoresizingMaskIntoConstraints="NO" id="BdK-JM-6jL">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BdK-JM-6jL">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="275"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="BdK-JM-6jL" secondAttribute="height" multiplier="414:275" id="afV-LE-qSb"/>
@@ -128,7 +128,7 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbN-Xi-pam">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1080"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="GFF-FT-uNk">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GFF-FT-uNk">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="GFF-FT-uNk" secondAttribute="height" multiplier="207:142" id="d4u-2M-ZQk"/>
@@ -381,8 +381,6 @@ Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tid
         <image name="Katarak2" width="186" height="103"/>
         <image name="Katarak3" width="186" height="103"/>
         <image name="Katarak4" width="186" height="103"/>
-        <image name="artikel-demo" width="911" height="592"/>
-        <image name="banner" width="534" height="284"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <namedColor name="Biru (Secondary)">
             <color red="0.15899999439716339" green="0.57599997520446777" blue="0.8190000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

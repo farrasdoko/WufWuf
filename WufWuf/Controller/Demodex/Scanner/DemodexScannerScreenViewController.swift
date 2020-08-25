@@ -30,6 +30,7 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
         imagePicker.sourceType = .camera
         
         DispatchQueue.main.async {
+            self.judul.isHidden = true
             self.tombolPeta.isHidden = true
             self.viewSaran.isHidden = true
             self.viewPenanganan.isHidden = true

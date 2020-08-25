@@ -20,8 +20,13 @@ class HomeArticle: UIViewController {
     @IBOutlet weak var katarakView: UIView!
     @IBOutlet weak var demodexView: UIView!
     
+    @IBOutlet weak var ItemNavigasi: UINavigationItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+   
+        self.navigationController?.navigationBar.isTranslucent = false
+        
         // Do any additional setup after loading the view.
         let gesture = UITapGestureRecognizer(target: self, action: #selector(goToNextScreen))
         gesture.name = senderID.katarakTap.rawValue
