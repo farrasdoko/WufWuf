@@ -107,6 +107,7 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="ddR-79-AIE"/>
                     <connections>
+                        <outlet property="ItemNavigasi" destination="ddR-79-AIE" id="3fL-Ns-Hcj"/>
                         <outlet property="demodexView" destination="NVL-hc-xGs" id="VzX-AF-6z3"/>
                         <outlet property="katarakView" destination="Vi7-pN-uhA" id="JNH-o0-BDW"/>
                         <outlet property="mainImage" destination="Kmb-p7-FYj" id="oax-L1-8z7"/>
@@ -122,9 +123,17 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rBu-Ds-Xm5" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EWB-2F-MN7">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EWB-2F-MN7" userLabel="NavigationBar">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Putih (Secondary)"/>
+                        <color key="barTintColor" name="Putih (Secondary)"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="Hitam (Secondary)"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="Hitam (Secondary)"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

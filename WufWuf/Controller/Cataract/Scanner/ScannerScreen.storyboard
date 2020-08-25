@@ -19,6 +19,10 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKO-na-5nj">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <color key="backgroundColor" name="Putih (Secondary)"/>
+                                <color key="barTintColor" name="Putih (Secondary)"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" name="Hitam (Secondary)"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Periksa Mata Anjing Anda" id="HTD-qn-Q9X">
                                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="4lr-CZ-6BL">
@@ -38,7 +42,7 @@
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X9F-Qj-OGh" userLabel="imageView">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" name="Putih (Secondary)"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="240" id="gX2-gp-Tbo"/>
                                                 </constraints>
