@@ -68,7 +68,24 @@ class ArticleController: UIViewController {
                 imageCentered.addAttribute(.paragraphStyle, value: paragraph, range: NSMakeRange(0, 1))
                 
                 string.append(imageCentered)
-            } else {
+            } else if let article = article as? [String] {
+                let attrString = NSMutableAttributedString()
+                for listedString in article {
+                    let index = listedString.index(listedString.startIndex, offsetBy: 3)
+                    let bullet = listedString[..<index]
+                    
+                    var attributes: [NSAttributedString.Key:Any] = [.font:UIFont.systemFont(ofSize: 17)]
+                    
+                    let paragraph = NSMutableParagraphStyle()
+                    paragraph.headIndent = (bullet as NSString).size(withAttributes: attributes).width
+                    attributes[.paragraphStyle] = paragraph
+                    
+                    attrString.append(NSAttributedString(string: listedString, attributes: attributes))
+                }
+                
+                string.append(attrString)
+            }
+            else {
                 string.append(article as! NSAttributedString)
             }
         }
