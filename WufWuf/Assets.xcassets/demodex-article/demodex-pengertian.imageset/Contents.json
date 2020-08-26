@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "demodex-pengertian.png",
+      "filename" : "Picture.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "demodex-pengertian@2x.png",
+      "filename" : "Picture@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "demodex-pengertian@3x.png",
+      "filename" : "Picture@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
