@@ -28,3 +28,8 @@ let metodeDiagnosa = NSAttributedString(string: "Metode Diagnosa\n\n", attribute
 let diagnosaBold = NSAttributedString(string: "Diagnosa hanya dapat dilakukan oleh dokter!", attributes: [.font:UIFont.boldSystemFont(ofSize: 17)])
 let katarakDiagnosa: [Any] = [metodeDiagnosa, "1.  Berdasarkan gejala klinis yang muncul\n2. Berdasarkan sejarah penyakit pada anjing\n3. Berdasarkan pemeriksaan fisik\n4. Lakukan pemeriksaan laboratorium (test darah komplit dan test urin)\n5. Electroretinography test\n\n", diagnosaBold]
 let demodexDiagnosa: [Any] = [metodeDiagnosa, "Diagnosa yang dapat dilakukan pada kasus demodekosis adalah dengan kerokan kulit yang agak dalam dari bagian tengah lesi, kemudian diberi tetesan KOH 10 % untuk diamati di bawah mikroskop. Apabila positif maka akan ditemukan parasit demodex yang bentuknya seperti wortel atau cerutu. \n\n", diagnosaBold]
+
+let linkText = NSAttributedString(string: "Baca selanjutnya", attributes: [
+    .font:UIFont.systemFont(ofSize: 17),
+    .foregroundColor:UIColor(named: "Biru (Secondary)"),
+    .link:"read_more"])
