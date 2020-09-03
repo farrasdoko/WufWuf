@@ -10,7 +10,8 @@
         <!--Map-->
         <scene sceneID="duP-KP-4Gs">
             <objects>
-                <viewController storyboardIdentifier="mapController" id="7RK-Vf-UAG" customClass="MapController" customModule="WufWuf" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4xh-Vd-TlO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="mapController" id="7RK-Vf-UAG" customClass="MapController" customModule="Halo_Dog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xGY-Sn-uKn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,10 +31,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Map" largeTitleDisplayMode="never" id="Vrr-kJ-osS"/>
                     <connections>
-                        <outlet property="clinicMap" destination="Iaa-Y4-6af" id="5MB-T5-ddc"/>
+                        <outlet property="clinicMap" destination="Iaa-Y4-6af" id="bOq-GG-X1N"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4xh-Vd-TlO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1794.2028985507247" y="85.714285714285708"/>
         </scene>
