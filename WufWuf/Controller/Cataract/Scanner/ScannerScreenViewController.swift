@@ -60,13 +60,14 @@ class ScannerScreenViewController : UIViewController, UIImagePickerControllerDel
                 fatalError("Model failed to process image")
             }
             
+            print(results)
+            
             if let firstResult = results.first {
                 //MARK: PUT INFO HERE and determine what info will be
                 //self.contentLabel.text = firstResult.identifier
                 print(firstResult)
                 let isHealthy = firstResult.identifier == "Healthy"
 
-                
                 if (isHealthy){
                     self.judul.text = "Wow, mata anjing anda sehat"
                     DispatchQueue.main.async {
