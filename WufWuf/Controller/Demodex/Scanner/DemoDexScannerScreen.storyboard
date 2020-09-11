@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Clx-ro-SHh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Clx-ro-SHh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -24,11 +24,21 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Periksa Kulit Anjing Anda" id="iif-Mb-uQK">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="j63-5T-2gv">
-                                            <connections>
-                                                <action selector="cameraTapped:" destination="Clx-ro-SHh" id="m1s-7c-U3Z"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="backBarButtonItem" title=" " id="N8I-YH-oja"/>
+                                        <rightBarButtonItems>
+                                            <barButtonItem image="camera" catalog="system" id="j63-5T-2gv" userLabel="Camera">
+                                                <color key="tintColor" name="Biru (Secondary)"/>
+                                                <connections>
+                                                    <action selector="cameraTapped:" destination="Clx-ro-SHh" id="m1s-7c-U3Z"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem image="photo" catalog="system" id="o4C-vX-pNm" userLabel="Photo">
+                                                <color key="tintColor" name="Biru (Secondary)"/>
+                                                <connections>
+                                                    <action selector="photoTapped:" destination="Clx-ro-SHh" id="kaP-yx-Tqk"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -36,17 +46,17 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9s7-3X-ueh">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1521.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1318.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bt0-1g-bdO" userLabel="imageView">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demodex-skin" translatesAutoresizingMaskIntoConstraints="NO" id="Bt0-1g-bdO" userLabel="imageView">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
                                                 <color key="backgroundColor" name="Putih (Secondary)"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="240" id="8C4-jf-W9O"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mS-6E-qnE" userLabel="Judul">
-                                                <rect key="frame" x="0.0" y="240" width="414" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ambil Gambar kulit anjing anda seperti di atas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mS-6E-qnE" userLabel="Judul">
+                                                <rect key="frame" x="0.0" y="240" width="414" height="67.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Adm-kh-ODX"/>
@@ -56,7 +66,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvS-4H-xMy" userLabel="TombolPeta">
-                                                <rect key="frame" x="0.0" y="260" width="414" height="60"/>
+                                                <rect key="frame" x="0.0" y="307.5" width="414" height="60"/>
                                                 <color key="backgroundColor" name="Biru (Secondary)"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="saZ-lK-qgc"/>
@@ -77,10 +87,10 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBV-rs-ckj" userLabel="ViewSaran">
-                                                <rect key="frame" x="0.0" y="320" width="414" height="386"/>
+                                                <rect key="frame" x="0.0" y="367.5" width="414" height="135.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-lQ-05Y">
-                                                        <rect key="frame" x="19" y="7" width="376" height="372"/>
+                                                        <rect key="frame" x="19" y="7" width="376" height="121.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Saran" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhb-vK-vWc">
                                                                 <rect key="frame" x="0.0" y="0.0" width="376" height="21.5"/>
@@ -90,13 +100,9 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfb-3b-e1d">
-                                                                <rect key="frame" x="0.0" y="31.5" width="376" height="340.5"/>
+                                                                <rect key="frame" x="0.0" y="31.5" width="376" height="90"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <string key="text">jika anjing anda terkena penyakit demodex yang harus pertama diperbaiki adalah daya tahan tubuhnya. Daya tahan tubuh jelek itu biasanya akibat cacingan dan juga karena gizi yang tidak seimbang. Segeralah bawa ke dokter hewan terdekat Semua anjing yang terkena demodek biasanya diobati dengan diberi suntikan dan antibiotik untuk kulit. 
-
-Pengobatan dengan cara itu bersifat sementara karena tidak memperbaiki daya tahan tubuh anjing. Suntikan yang biasa diberikan oleh dokter hewan itu berfungsi untuk mengurangi populasi parasit demodek di bawah kulit anjing anda. Pada beberapa kasus demodek apa yang anjing anda akan sangat berpengaruh kepada proses penyembuhan.
-
-Hindari makanan yang mengandung pengawet, karena pengawet pada dogfood atau snack yang berpengawet akan mengganggu perbaikan kulit anjing.</string>
+                                                                <string key="text">jika anjing anda terkena penyakit demodex yang harus pertama diperbaiki adalah daya tahan tubuhnya. Daya tahan tubuh jelek itu biasanya akibat cacingan dan juga karena gizi yang tidak seimbang. Segeralah bawa ke dokter hewan terdekat. </string>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <color key="textColor" name="Hitam (Secondary)"/>
                                                                 <nil key="highlightedColor"/>
@@ -118,7 +124,7 @@ Hindari makanan yang mengandung pengawet, karena pengawet pada dogfood atau snac
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2y-hJ-yBo" userLabel="ViewPenanganan">
-                                                <rect key="frame" x="0.0" y="706" width="414" height="815.5"/>
+                                                <rect key="frame" x="0.0" y="503" width="414" height="815.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tCe-Or-pt9">
                                                         <rect key="frame" x="19" y="7" width="376" height="801.5"/>
@@ -167,15 +173,12 @@ Hindari makanan yang mengandung pengawet, karena pengawet pada dogfood atau snac
     meningkat lagi dan menyerang kulitnya. 
     Penggunaan ivermectin juga tidak dapat 
     dilakukan dalam jangka waktu yang lama karena 
-    dapat berbahaya bagi kesehatan anjing. Jenis 
-    anjing Herder dan Border Collie memiliki reaksi 
+    dapat berbahaya bagi kesehatan anjing. Border 
+    Collie memiliki reaksi 
     alergi terhadap Ivermectin sehingga 
     pengobatan dengan Ivermectin tidak 
     dianjurkan.
-7.  Bekas kandang (semua material) didesinfeksi 
-    atau dibakari belerang di dlm kandang selama 2 
-    jam, diulang selang 10 hari (tungau tahan 12-15 
-    hari diluar tubuh). </string>
+7.  Buat kandang anjing sementara utk ditinggali oleh anjing, dan bekas kandang anjing (termasuk material) di desinfeksi / dibakari dengan belarang di dlm kandang selama 2 jam, &amp; diulangi selang 10 hari</string>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <color key="textColor" name="Hitam (Secondary)"/>
                                                                 <nil key="highlightedColor"/>
@@ -225,7 +228,6 @@ Hindari makanan yang mengandung pengawet, karena pengawet pada dogfood atau snac
                     <connections>
                         <outlet property="imageView2" destination="Bt0-1g-bdO" id="oii-yq-khe"/>
                         <outlet property="judul" destination="2mS-6E-qnE" id="FnY-mU-ihg"/>
-                        <outlet property="tombolPeta" destination="jvS-4H-xMy" id="OF6-9O-tHp"/>
                         <outlet property="viewPenanganan" destination="g2y-hJ-yBo" id="v2w-op-NS4"/>
                         <outlet property="viewSaran" destination="BBV-rs-ckj" id="y6j-mT-nKj"/>
                     </connections>
@@ -246,7 +248,10 @@ Hindari makanan yang mengandung pengawet, karena pengawet pada dogfood atau snac
         </scene>
     </scenes>
     <resources>
+        <image name="camera" catalog="system" width="128" height="96"/>
+        <image name="demodex-skin" width="210.5" height="179.5"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <namedColor name="Biru (Secondary)">
             <color red="0.15899999439716339" green="0.57599997520446777" blue="0.8190000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
