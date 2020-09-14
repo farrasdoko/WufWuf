@@ -13,10 +13,12 @@
 		A921305124F3A0F900BBDFD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A921305024F3A0F900BBDFD1 /* LaunchScreen.storyboard */; };
 		A963E14424DD14CB00D6CF39 /* ScannerScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A963E14324DD14CB00D6CF39 /* ScannerScreen.storyboard */; };
 		A963E14624DD153100D6CF39 /* ScannerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A963E14524DD153100D6CF39 /* ScannerScreenViewController.swift */; };
-		A9A5389324E238B10090A678 /* CataractDogImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A9A5389224E238B10090A678 /* CataractDogImageClassifier.mlmodel */; };
+		A9655A0824FCD372003E1698 /* MapMKAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9655A0724FCD372003E1698 /* MapMKAnnotation.swift */; };
+		A9655A7E24FF428D003E1698 /* MapUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9655A7D24FF428D003E1698 /* MapUIButton.swift */; };
+		A9B733D32500EC6F009496C0 /* DemodexDogImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A9B733D22500EC6F009496C0 /* DemodexDogImageClassifier.mlmodel */; };
+		A9B733D52500ECB7009496C0 /* CataractDogImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A9B733D42500ECB7009496C0 /* CataractDogImageClassifier.mlmodel */; };
 		A9C4B12724E28BD700912461 /* DemoDexScannerScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C4B12624E28BD700912461 /* DemoDexScannerScreen.storyboard */; };
 		A9C4B12924E28C1400912461 /* DemodexScannerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4B12824E28C1400912461 /* DemodexScannerScreenViewController.swift */; };
-		A9C4B13324E3C71D00912461 /* DemodexDogImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A9C4B13224E3C71D00912461 /* DemodexDogImageClassifier.mlmodel */; };
 		ED225AB324E35FBB00F28982 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED225AB224E35FBB00F28982 /* MapController.swift */; };
 		ED225AB524E35FC400F28982 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED225AB424E35FC400F28982 /* Map.storyboard */; };
 		ED55A35224E56A4800277394 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED55A35124E56A4800277394 /* TabController.swift */; };
@@ -38,10 +40,12 @@
 		A921305024F3A0F900BBDFD1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A963E14324DD14CB00D6CF39 /* ScannerScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScannerScreen.storyboard; sourceTree = "<group>"; };
 		A963E14524DD153100D6CF39 /* ScannerScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerScreenViewController.swift; sourceTree = "<group>"; };
-		A9A5389224E238B10090A678 /* CataractDogImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CataractDogImageClassifier.mlmodel; sourceTree = "<group>"; };
+		A9655A0724FCD372003E1698 /* MapMKAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMKAnnotation.swift; sourceTree = "<group>"; };
+		A9655A7D24FF428D003E1698 /* MapUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUIButton.swift; sourceTree = "<group>"; };
+		A9B733D22500EC6F009496C0 /* DemodexDogImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DemodexDogImageClassifier.mlmodel; sourceTree = "<group>"; };
+		A9B733D42500ECB7009496C0 /* CataractDogImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CataractDogImageClassifier.mlmodel; sourceTree = "<group>"; };
 		A9C4B12624E28BD700912461 /* DemoDexScannerScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DemoDexScannerScreen.storyboard; sourceTree = "<group>"; };
 		A9C4B12824E28C1400912461 /* DemodexScannerScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemodexScannerScreenViewController.swift; sourceTree = "<group>"; };
-		A9C4B13224E3C71D00912461 /* DemodexDogImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DemodexDogImageClassifier.mlmodel; sourceTree = "<group>"; };
 		ED225AB224E35FBB00F28982 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		ED225AB424E35FC400F28982 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		ED55A35124E56A4800277394 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
@@ -89,9 +93,9 @@
 		A963E13E24DD081200D6CF39 /* Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				A9B733D42500ECB7009496C0 /* CataractDogImageClassifier.mlmodel */,
 				A963E14324DD14CB00D6CF39 /* ScannerScreen.storyboard */,
 				A963E14524DD153100D6CF39 /* ScannerScreenViewController.swift */,
-				A9A5389224E238B10090A678 /* CataractDogImageClassifier.mlmodel */,
 			);
 			path = Scanner;
 			sourceTree = "<group>";
@@ -107,9 +111,9 @@
 		A9C4B12524E28B7B00912461 /* Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				A9B733D22500EC6F009496C0 /* DemodexDogImageClassifier.mlmodel */,
 				A9C4B12624E28BD700912461 /* DemoDexScannerScreen.storyboard */,
 				A9C4B12824E28C1400912461 /* DemodexScannerScreenViewController.swift */,
-				A9C4B13224E3C71D00912461 /* DemodexDogImageClassifier.mlmodel */,
 				A917DB6F24E668B800B09B6B /* test.storyboard */,
 			);
 			path = Scanner;
@@ -120,6 +124,8 @@
 			children = (
 				ED225AB224E35FBB00F28982 /* MapController.swift */,
 				ED225AB424E35FC400F28982 /* Map.storyboard */,
+				A9655A0724FCD372003E1698 /* MapMKAnnotation.swift */,
+				A9655A7D24FF428D003E1698 /* MapUIButton.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -265,16 +271,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				49D04E4424DD920100737842 /* HomeArticle.swift in Sources */,
+				A9B733D52500ECB7009496C0 /* CataractDogImageClassifier.mlmodel in Sources */,
 				ED9B9E0324DA220C00B90B24 /* ViewController.swift in Sources */,
 				ED9B9DFF24DA220C00B90B24 /* AppDelegate.swift in Sources */,
 				ED62C42C24DC3DB100AB43EB /* ArticleController.swift in Sources */,
+				A9655A0824FCD372003E1698 /* MapMKAnnotation.swift in Sources */,
 				ED225AB324E35FBB00F28982 /* MapController.swift in Sources */,
 				A963E14624DD153100D6CF39 /* ScannerScreenViewController.swift in Sources */,
+				A9B733D32500EC6F009496C0 /* DemodexDogImageClassifier.mlmodel in Sources */,
 				ED9B9E0124DA220C00B90B24 /* SceneDelegate.swift in Sources */,
-				A9C4B13324E3C71D00912461 /* DemodexDogImageClassifier.mlmodel in Sources */,
 				ED55A35224E56A4800277394 /* TabController.swift in Sources */,
+				A9655A7E24FF428D003E1698 /* MapUIButton.swift in Sources */,
 				ED62C42F24DC409E00AB43EB /* Article.swift in Sources */,
-				A9A5389324E238B10090A678 /* CataractDogImageClassifier.mlmodel in Sources */,
 				A9C4B12924E28C1400912461 /* DemodexScannerScreenViewController.swift in Sources */,
 				ED7DCC6424E257090067CD5E /* InfoController.swift in Sources */,
 			);
@@ -413,7 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = J5T564JM4P;
 				INFOPLIST_FILE = WufWuf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -432,7 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = J5T564JM4P;
 				INFOPLIST_FILE = WufWuf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -32,7 +32,7 @@ class ArticleController: UIViewController {
             break
         case "Demodex":
             let cameraBarItem = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(goToDemodexScr))
-            navigationItem.setRightBarButton(cameraBarItem, animated: false)
+            navigationItem.setRightBarButton(cameraBarItem, animated: false) 
             break
         default:
             break

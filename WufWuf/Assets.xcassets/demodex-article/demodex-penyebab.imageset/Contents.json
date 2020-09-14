@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "demodex-penyebab.png",
+      "filename" : "Bitmap.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "demodex-penyebab@2x.png",
+      "filename" : "Bitmap@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "demodex-penyebab@3x.png",
+      "filename" : "Bitmap@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

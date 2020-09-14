@@ -9,6 +9,7 @@
 import UIKit
 import CoreML
 import Vision
+import AVFoundation
 
 class DemodexScannerScreenViewController : UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -17,7 +18,6 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
 
     @IBOutlet weak var imageView2: UIImageView!
     @IBOutlet weak var judul: UILabel!
-    @IBOutlet weak var tombolPeta: UIButton!
     @IBOutlet weak var viewSaran: UIView!
     @IBOutlet weak var viewPenanganan: UIView!
     
@@ -26,19 +26,17 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
         super.viewDidLoad()
         
         imagePicker.delegate = self
-        imagePicker.allowsEditing = false
-        imagePicker.sourceType = .camera
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .photoLibrary
         
         DispatchQueue.main.async {
-            self.tombolPeta.isHidden = true
             self.viewSaran.isHidden = true
             self.viewPenanganan.isHidden = true
         }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        
-        if let userPickedImage = info[.originalImage] as? UIImage {
+        if let userPickedImage = info[.editedImage] as? UIImage {
             self.imageView2.image = userPickedImage
             
             guard let ciimage = CIImage(image: userPickedImage) else {
@@ -46,41 +44,47 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
             }
             detect(ciimage)
             
+        }else {
+            print("cant take userPickedImage")
         }
-        
         imagePicker.dismiss(animated: true, completion: nil)
     }
     
     func detect(_ image: CIImage) {
+        DispatchQueue.main.async {
+            self.viewSaran.isHidden = true
+            self.viewPenanganan.isHidden = true
+        }
+
         guard let model = try? VNCoreMLModel(for: DemodexDogImageClassifier().model) else {
             fatalError("Loading CoreML Model Failed.")
         }
-        
         
         let request = VNCoreMLRequest(model: model) { (request, error) in
             guard let results = request.results as? [VNClassificationObservation] else {
                 fatalError("Model failed to process image")
             }
             
+            print(results)
+            
             if let firstResult = results.first {
-                //MARK: PUT INFO HERE
+                //MARK: PUT INFO HERE and determine what info will be
+                // self.contentLabel.text = firstResult.identifier
+//                print(firstResult)
                 
-                print(firstResult.identifier)
+                let category = firstResult.identifier
                 
-                if (firstResult.identifier == "Healthy"){
-                    self.judul.text = "Wow, kulit anjing anda sehat"
-                    DispatchQueue.main.async {
-                        self.tombolPeta.isHidden = true
-                        self.viewSaran.isHidden = true
-                        self.viewPenanganan.isHidden = true
-                    }
-                }else{
-                    self.judul.text = "Kulit anjing anda memiliki penyakit demodex"
-                    DispatchQueue.main.async {
-                        self.tombolPeta.isHidden = false
-                        self.viewSaran.isHidden = false
-                        self.viewPenanganan.isHidden = false
-                    }
+                switch category {
+                    case "Demodex":
+                        self.judul.text = "Kulit anjing anda memiliki penyakit demodex"
+                        DispatchQueue.main.async {
+                            self.viewSaran.isHidden = false
+                            self.viewPenanganan.isHidden = false
+                        }
+                    case "Healthy":
+                        self.judul.text = "Wow, kulit anjing anda sehat"
+                    default:
+                        self.judul.text = "Maaf, gambar tidak dapat mendeteksi kulit anjing. Coba ambil foto kulit anjing sekali lagi"
                 }
                 
                 DispatchQueue.main.async {
@@ -99,8 +103,34 @@ class DemodexScannerScreenViewController : UIViewController, UIImagePickerContro
     }
     
     @IBAction func cameraTapped(_ sender: Any) {
-        present(imagePicker, animated: true, completion: nil)
+        func openCamera(){
+            imagePicker.sourceType = .camera
+            present(imagePicker, animated: true, completion: nil)
+        }
+        
+        switch AVCaptureDevice.authorizationStatus(for: .video){
+            case .authorized:
+                openCamera()
+                break
+            default:
+                print("Default")
+                AVCaptureDevice.requestAccess(for: .video) { granted in
+                    if granted {
+                        openCamera()
+                    }else {
+                        DispatchQueue.main.async {
+                            let alert = UIAlertController(title: "permohonan penggunaan kamera", message: "mohon mengizinkan penggunaan kamera di menu setting, Halo Dog & hidupkan mode kamera", preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                        }
+                    }
+                }
+                break
+        }
     }
     
-    
+    @IBAction func photoTapped(_ sender: UIBarButtonItem) {
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+    }
 }

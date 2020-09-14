@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o2L-Mq-M7S">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o2L-Mq-M7S">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -19,14 +19,26 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKO-na-5nj">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <color key="backgroundColor" name="Putih (Secondary)"/>
+                                <color key="barTintColor" name="Putih (Secondary)"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" name="Hitam (Secondary)"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Periksa Mata Anjing Anda" id="HTD-qn-Q9X">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="4lr-CZ-6BL">
-                                            <color key="tintColor" name="Biru (Secondary)"/>
-                                            <connections>
-                                                <action selector="cameraTapped2:" destination="o2L-Mq-M7S" id="TPS-Z9-cQL"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem systemItem="camera" id="4lr-CZ-6BL">
+                                                <color key="tintColor" name="Biru (Secondary)"/>
+                                                <connections>
+                                                    <action selector="cameraTapped2:" destination="o2L-Mq-M7S" id="TPS-Z9-cQL"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Item" image="photo" catalog="system" id="tr4-n1-nqh" userLabel="Photo">
+                                                <color key="tintColor" name="Biru (Secondary)"/>
+                                                <connections>
+                                                    <action selector="photoTapped:" destination="o2L-Mq-M7S" id="jxG-xg-6g6"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -34,25 +46,25 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LpW-MY-0Rb">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="912"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="979.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X9F-Qj-OGh" userLabel="imageView">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Katarak2" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X9F-Qj-OGh" userLabel="imageView">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" name="Putih (Secondary)"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="240" id="gX2-gp-Tbo"/>
                                                 </constraints>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mny-M4-z43" userLabel="Judul">
-                                                <rect key="frame" x="0.0" y="250" width="414" height="0.0"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ambil gambar mata anjing anda seperti di gambar atas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mny-M4-z43" userLabel="Judul">
+                                                <rect key="frame" x="0.0" y="250" width="414" height="67.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <color key="textColor" name="Hitam (Secondary)"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sI2-6a-ps8" userLabel="TombolPeta">
-                                                <rect key="frame" x="0.0" y="260" width="414" height="60"/>
+                                                <rect key="frame" x="0.0" y="327.5" width="414" height="60"/>
                                                 <color key="backgroundColor" name="Biru (Secondary)"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="V4O-Q5-Ind"/>
@@ -73,7 +85,7 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xr0-Sq-bRy" userLabel="ViewSaran">
-                                                <rect key="frame" x="0.0" y="330" width="414" height="278.5"/>
+                                                <rect key="frame" x="0.0" y="397.5" width="414" height="278.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JCt-s1-mFj">
                                                         <rect key="frame" x="19" y="7" width="376" height="264.5"/>
@@ -107,7 +119,7 @@ Dokter hewan akan melakukan pemeriksaan darah bisa untuk mendeteksi kondisi anji
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBb-S4-A31" userLabel="ViewPenanganan">
-                                                <rect key="frame" x="0.0" y="618.5" width="414" height="293.5"/>
+                                                <rect key="frame" x="0.0" y="686" width="414" height="293.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bm1-4u-Qc0">
                                                         <rect key="frame" x="19" y="7" width="376" height="279.5"/>
@@ -182,7 +194,6 @@ Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tid
                     <connections>
                         <outlet property="imageView" destination="X9F-Qj-OGh" id="9T8-IJ-6ux"/>
                         <outlet property="judul" destination="mny-M4-z43" id="Snu-7E-Nc4"/>
-                        <outlet property="tombolPeta" destination="sI2-6a-ps8" id="Lzm-Bf-FoV"/>
                         <outlet property="viewPenanganan" destination="WBb-S4-A31" id="emg-o9-RcS"/>
                         <outlet property="viewSaran" destination="Xr0-Sq-bRy" id="Xav-VB-oCf"/>
                     </connections>
@@ -204,7 +215,9 @@ Katarak merupakan penyakit yang kerusakannya terus berkembang, sehingga jika tid
     </scenes>
     <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
+        <image name="Katarak2" width="186" height="103"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <namedColor name="Biru (Secondary)">
             <color red="0.15899999439716339" green="0.57599997520446777" blue="0.8190000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
