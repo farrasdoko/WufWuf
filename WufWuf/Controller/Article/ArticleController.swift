@@ -7,13 +7,13 @@
 //
 
 import UIKit
-
+import ReadMoreTextView
 
 class ArticleController: UIViewController {
     
     @IBOutlet weak var bannerImg: UIImageView!
     @IBOutlet weak var segmented: UISegmentedControl!
-    @IBOutlet weak var detailLabel: UITextView!
+    @IBOutlet weak var detailLabel: ReadMoreTextView!
     @IBOutlet weak var readMore: UIButton!
     
     var navTitle: String?
@@ -39,6 +39,9 @@ class ArticleController: UIViewController {
         }
         
         changeDetail()
+        
+        // TAG: - Deprecated Read More Button
+        readMore.isHidden = true
     }
     
     @objc func goToDemodexScr() {
@@ -101,25 +104,40 @@ class ArticleController: UIViewController {
         case "Katarak":
             switch segmented.titleForSegment(at: segmented.selectedSegmentIndex) {
             case "Pengertian":
-                detailLabel.attributedText = getArticle(katarakPengertian)
                 detail = getArticle(katarakPengertian)
+                let attr = NSAttributedString(string: kPengertianMore, attributes: [.font:UIFont.systemFont(ofSize: 17)])
+                detail.append(attr)
+                detailLabel.attributedText = detail
+                
                 bannerImg.image = UIImage(named: "pengertian-katarak")
-                readMore.isHidden = false
+                
+                let attributedReadMoreText = NSMutableAttributedString(string: "... ")
+                attributedReadMoreText.append(NSAttributedString(string: "selanjutnya", attributes: [
+                    .foregroundColor: UIColor.lightGray,
+                    .font: UIFont.systemFont(ofSize: 17)
+                ]))
+                detailLabel.attributedReadMoreText = attributedReadMoreText
+                
+                detailLabel.shouldTrim = true
+                detailLabel.setNeedsUpdateTrim()
                 break
             case "Penyebab":
                 detailLabel.attributedText = getArticle(katarakPenyebab)
                 bannerImg.image = UIImage(named: "penyebab-katarak")
-                readMore.isHidden = true
+                
+                detailLabel.shouldTrim = false
                 break
             case "Gejala":
                 detailLabel.attributedText = getArticle(katarakGejala)
                 bannerImg.image = UIImage(named: "gejala-katarak")
-                readMore.isHidden = true
+                
+                detailLabel.shouldTrim = false
                 break
             case "Diagnosa":
                 detailLabel.attributedText = getArticle(katarakDiagnosa)
                 bannerImg.image = UIImage(named: "diagnosa-katarak")
-                readMore.isHidden = true
+                
+                detailLabel.shouldTrim = false
                 break
             default:
                 break
@@ -128,26 +146,52 @@ class ArticleController: UIViewController {
             
             switch segmented.titleForSegment(at: segmented.selectedSegmentIndex) {
             case "Pengertian":
-                detailLabel.attributedText = getArticle(demodexPengertian)
-                bannerImg.image = UIImage(named: "demodex-pengertian")
                 detail = getArticle(demodexPengertian)
-                readMore.isHidden = false
+                let attr = NSAttributedString(string: dPengertianMore, attributes: [.font:UIFont.systemFont(ofSize: 17)])
+                detail.append(attr)
+                detailLabel.attributedText = detail
+                
+                bannerImg.image = UIImage(named: "demodex-pengertian")
+                
+                let attributedReadMoreText = NSMutableAttributedString(string: "... ")
+                attributedReadMoreText.append(NSAttributedString(string: "selanjutnya", attributes: [
+                    .foregroundColor: UIColor.lightGray,
+                    .font: UIFont.systemFont(ofSize: 17)
+                ]))
+                detailLabel.attributedReadMoreText = attributedReadMoreText
+                
+                detailLabel.shouldTrim = true
+                detailLabel.setNeedsUpdateTrim()
                 break
             case "Penyebab":
                 detailLabel.attributedText = getArticle(demodexPenyebab)
                 bannerImg.image = UIImage(named: "demodex-penyebab")
-                readMore.isHidden = true
+                
+                detailLabel.shouldTrim = false
                 break
             case "Gejala":
-                detailLabel.attributedText = getArticle(demodexGejala)
-                bannerImg.image = UIImage(named: "demodex-gejala")
                 detail = getArticle(demodexGejala)
-                readMore.isHidden = false
+                let attr = NSAttributedString(string: dGejalaMore, attributes: [.font:UIFont.systemFont(ofSize: 17)])
+                detail.append(attr)
+                detailLabel.attributedText = detail
+                
+                bannerImg.image = UIImage(named: "demodex-gejala")
+
+                let attributedReadMoreText = NSMutableAttributedString(string: "... ")
+                attributedReadMoreText.append(NSAttributedString(string: "selanjutnya", attributes: [
+                    .foregroundColor: UIColor.lightGray,
+                    .font: UIFont.systemFont(ofSize: 17)
+                ]))
+                detailLabel.attributedReadMoreText = attributedReadMoreText
+
+                detailLabel.shouldTrim = true
+                detailLabel.setNeedsUpdateTrim()
                 break
             case "Diagnosa":
                 detailLabel.attributedText = getArticle(demodexDiagnosa)
                 bannerImg.image = UIImage(named: "demodex-diagnosa")
-                readMore.isHidden = true
+                
+                detailLabel.shouldTrim = false
                 break
             default:
                 break

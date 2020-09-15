@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Qj-g1-DxT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Qj-g1-DxT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -20,22 +20,28 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0S-wO-z3N">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="647"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="586"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bGJ-5d-sr5">
-                                                <rect key="frame" x="16" y="340" width="382" height="307"/>
+                                                <rect key="frame" x="16" y="340" width="382" height="246"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0W1-48-sO1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="280"/>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0W1-48-sO1" customClass="ReadMoreTextView" customModule="ReadMoreTextView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="219"/>
                                                         <string key="text">Opacity terbatas pada area lensa mata atau kapsul atau dapat mempengaruhi keseluruhan struktur. Katarak sempurna mempengaruhi kedua bola mata dimana mengakibatkan kebutaan, ketika daerah kecil yang mengalami katarak non-progresif, hal itu tidak akan mengganggu pengelihatan. 
 
 Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat berkembang menjadi katarak sekunder karena gangguan lain yang diwariskan oleh indukan seperti atrofi retina atau glaukoma yang progresif.</string>
                                                         <color key="textColor" name="Hitam (Secondary)"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="maximumNumberOfLines">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldTrim" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </textView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhc-0J-dfS">
-                                                        <rect key="frame" x="0.0" y="280" width="382" height="27"/>
+                                                        <rect key="frame" x="0.0" y="219" width="382" height="27"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                                         <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
                                                         <state key="normal" title="Baca Selanjutnya">
@@ -105,7 +111,7 @@ Katarak primer timbul pada beberapa jenis trah; pada jenis lain katarak dapat be
                     </view>
                     <connections>
                         <outlet property="bannerImg" destination="BdK-JM-6jL" id="4rl-xg-Nu3"/>
-                        <outlet property="detailLabel" destination="0W1-48-sO1" id="exi-E3-PjD"/>
+                        <outlet property="detailLabel" destination="0W1-48-sO1" id="wsR-VV-iOq"/>
                         <outlet property="readMore" destination="Fhc-0J-dfS" id="9Ib-8e-yIr"/>
                         <outlet property="segmented" destination="3d8-3x-Eax" id="elp-Tj-WNj"/>
                     </connections>
